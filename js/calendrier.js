@@ -5,6 +5,7 @@ let curNbr
 let nextNbr
 let prevNbr
 
+
 const saisons =         ["printemps",   "ete",      "automne",  "hiver"]
 const styleSaisons =    ["prin",        "ete",      "aut",      "hiv"]
 const idSaisons =       ["saison1",     "saison2",  "saison3",  "saison4"]
@@ -24,6 +25,7 @@ function showSeason(event, tab, nbr) {
 
     document.getElementById("suivant").setAttribute("src", "img/saisons/"+saisons[nextNbr]+".svg")
     document.getElementById("suivant").classList.add(styleSaisons[nextNbr])
+
 
     document.getElementById("precedent").setAttribute("src", "img/saisons/"+saisons[prevNbr]+".svg")
     document.getElementById("precedent").classList.add(styleSaisons[prevNbr])
