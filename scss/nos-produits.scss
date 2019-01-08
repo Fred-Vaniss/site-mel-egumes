@@ -34,19 +34,20 @@
     height: 115px;
     width: 115px;
 
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+
+    display: flex;
+}
+
+.imgsaison{
     align-self: center;
     justify-self: center;
-
-    display: grid;
-
-    img{
-        align-self: center;
-        justify-self: center;
-
-        color: white;
-    }
-
+    color: white;
 }
+
+
 .prin{
     background-color: green;
 }
@@ -94,15 +95,17 @@
         right: -67px;
         top: -50px;
     }
-    #suivant{
+    #boutSuiv{
         position: absolute;
-        right: -67px;
+        right: -72px;
         top: 290px;
+        cursor: pointer;
     }
-    #precedent{
+    #boutPrec{
         position: absolute;
-        left: -67px;
+        left: -72px;
         top: 290px;
+        cursor: pointer;
     }
 }
 

@@ -32,8 +32,8 @@
             <!-- Boutton fermer -->
             <div id="nav">
                 <input id="fermer" type="image" src="img/img_wireframe_round.png" alt="Fermer la saison" width="100px" onclick="closeSeason(event)">
-                <input id="suivant" class="icosaison" type="image" src="img/img_wireframe_round.png" alt="Saison suivante" height="80px" onclick="switchSeason(event, nextNbr)">
-                <input id="precedent" class="icosaison" type="image" src="img/img_wireframe_round.png" alt="Saison suivante" height="80px" onclick="switchSeason(event,prevNbr)">
+                <div id="boutSuiv" class="icosaison" onclick="switchSeason(event, nextNbr)"> <img id="suivant" src="" alt="Saison suivante" height="80px"></div>
+                <div id="boutPrec" class="icosaison" onclick="switchSeason(event, prevNbr)"> <img id="precedent" src="" alt="Saison précédente" height="80px"></div>
             </div>
 
             <!-- Page avec la sélection des saisons -->
@@ -48,25 +48,25 @@
                 <div class="listeSaisons">
                     <div class="saison" id="sais1" onclick="showSeason(event, 'saison1', 0)" >
                         <div class="icosaison prin">
-                            <img src="img/saisons/printemps.svg" alt="" height="80px">
+                            <img class="imgsaison" src="img/saisons/printemps.svg" alt="" height="80px">
                         </div>
                         <p>Printemps</p>
                     </div>
                     <div class="saison" id="sais2" onclick="showSeason(event, 'saison2', 1)" >
                         <div class="icosaison ete">
-                            <img src="img/saisons/ete.svg" alt="" height="80px">
+                            <img class="imgsaison" src="img/saisons/ete.svg" alt="" height="80px">
                         </div>                        
                         <p>Eté</p>
                     </div>
                     <div class="saison" id="sais3" onclick="showSeason(event, 'saison3', 2)" >
                         <div class="icosaison aut">
-                            <img src="img/saisons/automne.svg" alt="" height="80px">
+                            <img class="imgsaison" src="img/saisons/automne.svg" alt="" height="80px">
                         </div>                         
                         <p>Automne</p>
                     </div>
                     <div class="saison" id="sais4" onclick="showSeason(event, 'saison4', 3)" >
                         <div class="icosaison hiv">
-                            <img src="img/saisons/hiver.svg" alt="" height="80px">
+                            <img class="imgsaison" src="img/saisons/hiver.svg" alt="" height="80px">
                         </div>                          
                         <p>Hiver</p>
                     </div>
