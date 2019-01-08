@@ -1,0 +1,26 @@
+@import "html";
+
+.boxOne, .boxTwo{
+    background-color: #d8e299;
+
+    margin: 50px 0;
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    border-image: url(../img/border.svg);
+    border-image-slice: 10%;
+    border-image-width: 8;
+    border-image-outset: 1;
+    border-image-repeat: stretch;
+}
+
+.boxOne{
+    // width: 1151px;
+    height: 602px;
+}
+
+.boxTwo{
+    // width: 1151px;
+    height: 366px;
+}

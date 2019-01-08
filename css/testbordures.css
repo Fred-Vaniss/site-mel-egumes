@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cantarell', sans-serif;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapperPadd {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.espace {
+  height: 500px;
+}
+
+.boxOne, .boxTwo {
+  background-color: #d8e299;
+  margin: 50px 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  -o-border-image: url(../img/border.svg);
+     border-image: url(../img/border.svg);
+  border-image-slice: 10%;
+  border-image-width: 8;
+  border-image-outset: 1;
+  border-image-repeat: stretch;
+}
+
+.boxOne {
+  height: 602px;
+}
+
+.boxTwo {
+  height: 366px;
+}
+/*# sourceMappingURL=testbordures.css.map */

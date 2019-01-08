@@ -1,0 +1,123 @@
+@import "html";
+@import "header";
+
+header{
+    position: absolute;
+}
+
+.intro{
+    background-image: url(../img/img_wireframe.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imgintro{
+    height: 90vh;
+    overflow: hidden;
+
+    position: relative;
+    img{ // Attribut temporaire pour le Wireframe
+        height: 100%;
+        width: 100%;
+    }
+
+    .introtext{
+        position: absolute;
+        top:30%;
+        right: 100px;
+        width: 480px;
+
+        h1{
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+}
+
+.article1{
+    margin-top: 90px;
+    margin-bottom: 45px;
+
+    .artcl{
+        position: relative;
+        .gridTxts{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+    
+            display: grid;
+            grid-template-columns: 510px 175px 1fr;
+            grid-template-rows: 100px 1fr;
+    
+            grid-template-areas:    ".    title   title"
+                                    ".    .       para";
+    
+            h2{
+                margin: 15px 0 0 0;
+                grid-area: title;
+            }
+    
+            p{
+                margin: 0;
+                display: block;
+                grid-area: para;
+            }
+        }
+    }
+}
+
+.zoneImg{
+    width: 567px;
+    height: 392px;
+    // float: left;
+    img{ // Attribut temporaire pour le Wireframe
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.article2{
+    margin-top: 45px;
+
+    .artcl{
+        position: relative;
+
+        .imgRight{
+             float: right;
+        }
+
+        .gridTxts{
+            position: absolute;
+
+            display: grid;
+            grid-template-columns: 570px 120px 1fr;
+            grid-template-rows: 100px 1fr;
+
+            grid-template-areas:    "title   title   ."
+                                    "para    .       .";
+
+            h2{
+                margin: 15px 0 0 0;
+                grid-area: title;
+            }
+
+            p{
+                margin: 0;
+                display: block;
+                grid-area: para;
+
+                text-align: right;
+            }
+
+        }
+    }
+    .artcl:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}

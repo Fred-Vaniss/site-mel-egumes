@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cantarell', sans-serif;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapperPadd {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.espace {
+  height: 500px;
+}
+
+#map {
+  width: 100%;
+  height: 800px;
+  background-color: grey;
+}
+/*# sourceMappingURL=testgmaps.css.map */
