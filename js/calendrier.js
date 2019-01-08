@@ -28,11 +28,11 @@ function showSeason(event, tab, nbr) {
 
     //Ajout de l'image et du style pour le boutton suivant
     document.getElementById("suivant").setAttribute("src", "img/saisons/"+saisons[nextNbr]+".svg")
-    document.getElementById("suivant").classList.add(styleSaisons[nextNbr])
+    document.getElementById("boutSuiv").classList.add(styleSaisons[nextNbr])
 
     //Ajout de l'image et du style pour le boutton précédent
     document.getElementById("precedent").setAttribute("src", "img/saisons/"+saisons[prevNbr]+".svg")
-    document.getElementById("precedent").classList.add(styleSaisons[prevNbr])
+    document.getElementById("boutPrec").classList.add(styleSaisons[prevNbr])
 }
 
 function closeSeason(event){
@@ -46,8 +46,8 @@ function closeSeason(event){
     curNbr = ""
 
     //Suppression du style pour les bouttons suivant et précédent
-    document.getElementById("suivant").classList.remove(styleSaisons[nextNbr])
-    document.getElementById("precedent").classList.remove(styleSaisons[prevNbr])
+    document.getElementById("boutSuiv").classList.remove(styleSaisons[nextNbr])
+    document.getElementById("boutPrec").classList.remove(styleSaisons[prevNbr])
 }
 
 function switchSeason(event,action){
@@ -56,8 +56,8 @@ function switchSeason(event,action){
 
     //Masquer l'onglet précédement ouvert et suppression des styles des bouttons suivant et précédent
     document.getElementById(openedTab).style.display = "none"
-    document.getElementById("suivant").classList.remove(styleSaisons[nextNbr])
-    document.getElementById("precedent").classList.remove(styleSaisons[prevNbr])
+    document.getElementById("boutSuiv").classList.remove(styleSaisons[nextNbr])
+    document.getElementById("boutPrec").classList.remove(styleSaisons[prevNbr])
 
     //Attribution de la variable pour l'onglet suivant ou précédent
     openedTab = idSaisons[action]
@@ -71,11 +71,11 @@ function switchSeason(event,action){
 
     //Ajout de l'image et du style pour le boutton suivant
     document.getElementById("suivant").setAttribute("src", "img/saisons/"+saisons[nextNbr]+".svg")
-    document.getElementById("suivant").classList.add(styleSaisons[nextNbr])
+    document.getElementById("boutSuiv").classList.add(styleSaisons[nextNbr])
 
     //Ajout de l'image et du style pour le boutton précédent
     document.getElementById("precedent").setAttribute("src", "img/saisons/"+saisons[prevNbr]+".svg")
-    document.getElementById("precedent").classList.add(styleSaisons[prevNbr])
+    document.getElementById("boutPrec").classList.add(styleSaisons[prevNbr])
 }
 
 

@@ -125,15 +125,19 @@ header {
   border-radius: 50%;
   height: 115px;
   width: 115px;
-  -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  display: -ms-grid;
-  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.icosaison img {
+.imgsaison {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -191,16 +195,18 @@ header {
   top: -50px;
 }
 
-#nav #suivant {
+#nav #boutSuiv {
   position: absolute;
-  right: -67px;
+  right: -72px;
   top: 290px;
+  cursor: pointer;
 }
 
-#nav #precedent {
+#nav #boutPrec {
   position: absolute;
-  left: -67px;
+  left: -72px;
   top: 290px;
+  cursor: pointer;
 }
 
 #saison1, #saison2, #saison3, #saison4 {
