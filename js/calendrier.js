@@ -1,7 +1,10 @@
 let openedTab
 let openedSeason
+
+let curNbr
 let nextNbr
 let prevNbr
+
 const saisons =         ["printemps",   "ete",      "automne",  "hiver"]
 const styleSaisons =    ["prin",        "ete",      "aut",      "hiv"]
 const idSaisons =       ["saison1",     "saison2",  "saison3",  "saison4"]
@@ -14,20 +17,10 @@ function showSeason(event, tab, nbr) {
     
     openedTab = tab
 
+    curNbr = nbr
     openedSeason = nbr
 
-    if (nbr == 3) {
-        nextNbr = 0
-    } else {
-        nextNbr = nbr+1
-    }
-
-    if (nbr == 0) {
-        prevNbr = 3
-    } else {
-        prevNbr = nbr-1
-    }
-
+    compareNumber()
 
     document.getElementById("suivant").setAttribute("src", "img/saisons/"+saisons[nextNbr]+".svg")
     document.getElementById("suivant").classList.add(styleSaisons[nextNbr])
@@ -48,9 +41,26 @@ function closeSeason(event){
 }
 
 function nextSeason(event){
+    document.getElementById("nav").style.display = "none"
+    document.getElementById(openedTab).style.display = "none"
 
+    openedTab = idSaison[nextNbr]
 }
 
 function previousSeason(event){
 
+}
+
+function compareNumber(){
+    if (curNbr == 3) {
+        nextNbr = 0
+    } else {
+        nextNbr = curNbr+1
+    }
+
+    if (curNbr == 0) {
+        prevNbr = 3
+    } else {
+        prevNbr = curNbr-1
+    }
 }
