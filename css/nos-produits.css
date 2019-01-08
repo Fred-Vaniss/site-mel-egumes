@@ -185,19 +185,19 @@ header {
           animation: fadeEffect 1s;
 }
 
-#nav .fermer {
+#nav #fermer {
   position: absolute;
   right: -67px;
   top: -50px;
 }
 
-#nav .suivant {
+#nav #suivant {
   position: absolute;
   right: -67px;
   top: 290px;
 }
 
-#nav .precedent {
+#nav #precedent {
   position: absolute;
   left: -67px;
   top: 290px;
