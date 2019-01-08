@@ -42,16 +42,16 @@ function closeSeason(event){
     document.getElementById("precedent").classList.remove(styleSaisons[prevNbr])
 }
 
-function nextSeason(event){
+function switchSeason(event,action){
     document.getElementById(openedTab).style.display = "none"
     document.getElementById("suivant").classList.remove(styleSaisons[nextNbr])
     document.getElementById("precedent").classList.remove(styleSaisons[prevNbr])
 
-    openedTab = idSaisons[nextNbr]
+    openedTab = idSaisons[action]
 
     document.getElementById(openedTab).style.display = "grid"
 
-    curNbr = nextNbr
+    curNbr = action
 
     compareNumber()
 
@@ -62,25 +62,6 @@ function nextSeason(event){
     document.getElementById("precedent").classList.add(styleSaisons[prevNbr])
 }
 
-function previousSeason(event){
-    document.getElementById(openedTab).style.display = "none"
-    document.getElementById("suivant").classList.remove(styleSaisons[nextNbr])
-    document.getElementById("precedent").classList.remove(styleSaisons[prevNbr])
-
-    openedTab = idSaisons[prevNbr]
-
-    document.getElementById(openedTab).style.display = "grid"
-
-    curNbr = prevNbr
-
-    compareNumber()
-
-    document.getElementById("suivant").setAttribute("src", "img/saisons/"+saisons[nextNbr]+".svg")
-    document.getElementById("suivant").classList.add(styleSaisons[nextNbr])
-
-    document.getElementById("precedent").setAttribute("src", "img/saisons/"+saisons[prevNbr]+".svg")
-    document.getElementById("precedent").classList.add(styleSaisons[prevNbr])
-}
 
 function compareNumber(){
     if (curNbr == 3) {
