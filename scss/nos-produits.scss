@@ -7,10 +7,6 @@
     border: 1px solid #000;
     padding: 0 15px;
     height: 704px;
-
-
-
-
 }
 
 
@@ -97,6 +93,16 @@
         position: absolute;
         right: -67px;
         top: -50px;
+    }
+    .suivant{
+        position: absolute;
+        right: -67px;
+        top: 290px;
+    }
+    .precedent{
+        position: absolute;
+        left: -67px;
+        top: 290px;
     }
 }
 
