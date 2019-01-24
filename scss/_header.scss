@@ -5,8 +5,8 @@ header{
 }
 
 .header{
-    display: grid;
-    grid-template-columns: 180px 1fr 98px; 
+    display: flex;
+    justify-content: space-between;
 
     .logomel{
         width: 180px;
