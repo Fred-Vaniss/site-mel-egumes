@@ -197,6 +197,12 @@ header {
   font-weight: bold;
 }
 
+#sais4 {
+  background-image: url(../img/saisons/bg_hiver.jpg);
+  background-position-x: center;
+  background-size: cover;
+}
+
 #nav {
   display: none;
   position: relative;
