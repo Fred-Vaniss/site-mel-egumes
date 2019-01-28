@@ -1,9 +1,6 @@
 @import "html";
 @import "header";
-
-header{
-    position: absolute;
-}
+@import "functions";
 
 .intro{
     background-image: url(../img/img_wireframe.png);

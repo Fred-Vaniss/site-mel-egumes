@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Cantarell', sans-serif;
+  font-size: 100%;
 }
 
 *, *:before, *:after {
@@ -13,6 +14,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -58,9 +60,13 @@ footer {
 }
 
 header {
-  margin: 25px 0 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 100;
+  height: 6.25em;
+  z-index: 10;
+  background-color: #f0ede9;
 }
 
 .header {
@@ -70,12 +76,32 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
-.header .logomel {
-  width: 180px;
+.header .logoCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10em;
+  height: 100%;
+  background-color: #dead65;
+}
+
+.header .logoCont .logomel {
+  height: 4.6875em;
   -ms-grid-column-align: end;
       justify-self: end;
+  fill: white;
 }
 
 .header nav {
@@ -92,6 +118,8 @@ header {
 .header nav .menu li {
   display: inline;
   margin-right: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .header nav .menu li a {
@@ -100,9 +128,17 @@ header {
   font-size: 14px;
 }
 
+.header nav .menu li a:hover {
+  color: #dead65;
+}
+
 .header .face {
   width: 50px;
   height: 60px;
   margin-left: 5px;
+}
+
+.firstSection {
+  margin-top: 6.25em;
 }
 /*# sourceMappingURL=communaute.css.map */

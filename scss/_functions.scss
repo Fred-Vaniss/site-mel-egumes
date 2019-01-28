@@ -1,0 +1,11 @@
+// Conversion des pixels en EM
+$browser-em-context: 16; // Default
+$browser-perc-context: 1200;
+
+@function em($pixels, $context: $browser-em-context) {
+  @return $pixels/$context+0em;
+}
+
+@function perc($pixels, $context: $browser-perc-context) {
+    @return ($pixels/$context)*100+0%;
+}

@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cantarell:400,400i,700');
 // font-family: 'Cantarell', sans-serif;
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700');
 // font-family: 'Montserrat', sans-serif;
 
 
 html{
     box-sizing: border-box;
     font-family: 'Cantarell', sans-serif;
+    font-size: 100%;
 }
 
 *, *:before, *:after{
@@ -16,6 +17,7 @@ html{
 
 body{
     margin: 0;
+    padding: 0;
 }
 
 .wrapper{

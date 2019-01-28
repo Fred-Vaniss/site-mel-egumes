@@ -1,17 +1,36 @@
+@import 'functions';
+
 header{
-    margin: 25px 0 0 0;
+    position: fixed;
+    top: 0; left: 0;
+
     width: 100%;
-    z-index: 100; 
+    height: em(100);
+    z-index: 10; 
+
+    background-color: #f0ede9;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 
-    .logomel{
-        width: 180px;
-        justify-self: end;
-        // grid-area: a;
+    .logoCont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: em(160);
+        height: 100%;
+        background-color: #dead65;
+        .logomel{
+            height: em(75);
+            justify-self: end;
+            fill: white;
+            // grid-area: a;
+        }
     }
     nav{
         justify-self: end;
@@ -24,10 +43,16 @@ header{
             li{
                 display: inline;
                 margin-right: 5px;
+
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
                 a{
                     text-decoration: none;
                     color: #000;
                     font-size: 14px;
+                }
+                a:hover{
+                    color: #dead65;
                 }
             }
         }
@@ -38,5 +63,8 @@ header{
         margin-left: 5px;
         // grid-area: c;
     }
-
 }
+
+.firstSection{
+    margin-top: em(100);
+} 
