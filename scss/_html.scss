@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700');
 // font-family: 'Montserrat', sans-serif;
 
+@import 'functions';
 
 html{
     box-sizing: border-box;
@@ -21,9 +22,11 @@ body{
 }
 
 .wrapper{
-    max-width: 1280px; 
+    max-width: em(960); 
     margin: 0 auto;
-    padding: 0 16px; 
+    padding: 0 em(24);
+    
+    // border: 1px solid #000;
 }
 
 .espace{

@@ -1,7 +1,10 @@
 @import "html";
+// @import "css-reset";
 @import "header";
 @import "functions";
 
-
+.intro{
+    margin-top: em(75);
+}
 
 @import 'footer';
