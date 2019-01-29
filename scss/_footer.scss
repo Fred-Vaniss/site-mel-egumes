@@ -1,11 +1,12 @@
 footer{
-    border-top: 1px solid #000;
     box-shadow: 0 -1px 2px #0000003d;
     height: 75px;
 
     margin-top: 50px; 
 
     background-color: #f0ede9;
+
+    padding-top: em(30);
 }
 
 .textFooter{
@@ -14,6 +15,4 @@ footer{
 
     font-weight: 200;
     font-size: em(12);
-
-    margin-top: 30px;
 }

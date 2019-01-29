@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -32,10 +33,12 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   width: 100%;
   height: 4.375em;
-  z-index: 10;
   background-color: #f0ede9;
+  -webkit-box-shadow: 0 1px 2px #0000003d;
+          box-shadow: 0 1px 2px #0000003d;
 }
 
 .header {
@@ -49,6 +52,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  padding-left: 0;
 }
 
 .logoCont {
@@ -83,8 +87,10 @@ nav {
   position: fixed;
   right: -13.75em;
   top: 4.375em;
+  z-index: 1;
   background-color: #f0ede9;
   height: 100%;
+  font-variant: small-caps;
   -ms-grid-column-align: end;
       justify-self: end;
   width: 13.75em;
@@ -121,7 +127,7 @@ nav {
   display: inline-block;
   width: 100%;
   font-size: 1.625em;
-  padding: 0.38462em 0.38462em;
+  padding: 0.57692em 0.57692em;
 }
 
 .menu li a:hover {
@@ -165,15 +171,21 @@ nav {
   .menu .menu-separator {
     display: unset;
   }
+  .showNav {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 footer {
-  border-top: 1px solid #000;
   -webkit-box-shadow: 0 -1px 2px #0000003d;
           box-shadow: 0 -1px 2px #0000003d;
   height: 75px;
   margin-top: 50px;
   background-color: #f0ede9;
+  padding-top: 1.875em;
 }
 
 .textFooter {
@@ -181,6 +193,5 @@ footer {
   text-align: center;
   font-weight: 200;
   font-size: 0.75em;
-  margin-top: 30px;
 }
 /*# sourceMappingURL=nos-activites.css.map */

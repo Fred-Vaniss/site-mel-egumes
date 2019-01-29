@@ -11,7 +11,7 @@
 	margin-top: em(70);
 	padding-bottom: em(20);
 
-    height: em(150);
+    height: em(200);
 
     background-image: url(../img/contact/bg_1.jpg);
     background-size: cover;
@@ -19,6 +19,7 @@
 	
 	h2{
 		font-family: 'Montserrat', sans-serif;
+		font-variant: small-caps;
 		font-weight: 500;
 		color: white;
 		font-size: em(24);
@@ -40,8 +41,9 @@
 
 .flexCoords{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	// flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	
 
 	article{
@@ -52,6 +54,7 @@
 		align-items: center;
 
 		min-height: em(190);
+		max-width: em(295);
 		.picto{
 			background-color: #dead65;
 			padding: em(15);
@@ -73,5 +76,11 @@
 		}
 	}
 }
+
+// ==============================================================
+// Formulaire de contact
+// ==============================================================
+
+
 
 @import 'footer';
