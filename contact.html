@@ -71,18 +71,31 @@
         <div class="wrapper">
             <h3>Ecrivez-nous</h3>
             <form action="">
-                <label for="lName">Nom</label>
-                <input type="text" name="lName" id="lName"><br>
-                <label for="fName">Prénom</label>
-                <input type="text" name="fName" id="fName"><br>
-                <label for="mail">E-mail</label>
-                <input type="email" name="mail" id="mail"><br>
-                <label for="adress">Adresse</label>
-                <input type="text" name="adress" id="adress"><br>
-                <label for="message">Message </label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+				<div class="fieldsGroup">
+					<div class="field">
+						<input type="text" name="lName" id="lName" required>
+		                <label for="lName">Nom</label>
+					</div>
+	                <div class="field">
+						<input type="text" name="fName" id="fName" required>
+						<label for="fName">Prénom</label>
+					</div>
+	                <div class="field">
+						<input type="email" name="mail" id="mail" required>
+						<label for="mail">E-mail</label>
+					</div>
+	                <div class="field">
+						<input type="text" name="adress" id="adress" required>
+						<label for="adress">Adresse</label>
+					</div>
+				</div>
+                <fieldsGroup>
+					<div class="field">
+						<textarea name="message" id="message" cols="30" rows="10" required></textarea>
+						<label for="message">Message </label>
+					</div>
+				</fieldsGroup>
                 <button type="submit">Envoyer</button>
-
             </form>
         </div>
     </section>

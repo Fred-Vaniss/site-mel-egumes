@@ -4,7 +4,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -260,7 +260,7 @@ nav {
 }
 
 .coords {
-  padding-top: 3.75em;
+  padding: 3.75em 0;
 }
 
 .flexCoords {
@@ -313,6 +313,76 @@ nav {
 
 .flexCoords article p {
   font-weight: 300;
+}
+
+.form h3 {
+  font-family: 'Oleo Script', cursive;
+  text-align: center;
+  font-size: 1.75em;
+  padding-bottom: 0.71429em;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 1.375em;
+}
+
+.field label {
+  position: absolute;
+  left: 0.3125em;
+  top: 0.3125em;
+  padding: 0.3125em 0.3125em 0 0.3125em;
+  color: #b2b2b2;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.field input {
+  height: 2.5em;
+  padding-left: 0.625em;
+}
+
+.field textarea {
+  padding: 0.4375em;
+}
+
+.field input, .field textarea {
+  width: 100%;
+  border: 0.125em solid #b2b2b2;
+  border-radius: 0.25em;
+}
+
+.field input:hover, .field textarea:hover {
+  border-color: #a57c62;
+}
+
+.field input:hover + label, .field textarea:hover + label {
+  color: black;
+}
+
+.field input:focus, .field textarea:focus {
+  border-color: #dead65;
+  outline: none;
+}
+
+.field input:focus + label, .field textarea:focus + label {
+  color: black;
+  -webkit-transform: translateY(-1.375em);
+          transform: translateY(-1.375em);
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.field input:valid + label, .field textarea:valid + label {
+  color: black;
+  -webkit-transform: translateY(-1.375em);
+          transform: translateY(-1.375em);
+  background-color: white;
 }
 
 footer {

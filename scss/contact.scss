@@ -36,7 +36,7 @@
 // ==============================================================
 
 .coords{
-	padding-top: em(60);
+	padding: em(60) 0;
 }
 
 .flexCoords{
@@ -81,6 +81,77 @@
 // Formulaire de contact
 // ==============================================================
 
+.form{
+	h3{
+		font-family: 'Oleo Script', cursive;
+		text-align: center;
+		font-size: em(28);
 
+		padding-bottom: em(20,28);
+	}
+}
+
+.field{
+	position: relative;
+
+	margin-bottom: em(22);
+
+	label{
+		position: absolute;
+		left: em(5); top: em(5);
+		padding: em(5) em(5) 0 em(5);
+
+		color: #b2b2b2;
+
+		transition: transform 0.1s;
+	}
+
+	input{
+		height: em(40);
+		padding-left: em(10);
+	}
+
+	textarea{
+		padding: em(7)
+	}
+
+	input, textarea{
+		width: 100%;
+		border: em(2) solid #b2b2b2;
+		border-radius: em(4);
+
+		&:hover{
+			border-color: #a57c62;
+			+label{
+				color: black;
+			}
+		}
+
+		&:focus{
+			border-color: #dead65;
+			outline: none;
+			+label{
+				color: black;
+				transform: translateY(em(-22));
+				background-color: white;
+
+				transition: transform 0.1s;
+			}
+		}
+		&:valid + label{
+			color: black;
+			transform: translateY(em(-22));
+			background-color: white;
+		}
+		// &:invalid{
+		// 	border-color: red;
+		// 	+label{
+		// 		color: black;
+		// 		transform: translateY(em(-22));
+		// 		background-color: white;
+		// 	}
+		// }
+	}
+}
 
 @import 'footer';
