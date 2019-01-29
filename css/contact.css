@@ -1,37 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700");
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Cantarell', sans-serif;
-  font-size: 100%;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  max-width: 60em;
-  margin: 0 auto;
-  padding: 0 1.5em;
-  height: 100%;
-}
-
-.espace {
-  height: 500px;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,6 +52,34 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  height: 100%;
+}
+
+.espace {
+  height: 500px;
 }
 
 header {
@@ -244,6 +244,64 @@ nav {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.coords {
+  padding-top: 3.75em;
+}
+
+.flexCoords {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexCoords article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 11.875em;
+}
+
+.flexCoords article .picto {
+  background-color: #dead65;
+  padding: 0.9375em;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flexCoords article h3 {
+  font-size: 1.125em;
+  margin: 0.83333em 0;
+  font-weight: 500;
+}
+
+.flexCoords article p {
+  font-weight: 300;
 }
 
 footer {

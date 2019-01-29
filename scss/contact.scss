@@ -1,5 +1,5 @@
-@import "html";
 @import "css-reset";
+@import "html";
 @import "header";
 @import "functions";
 
@@ -34,5 +34,44 @@
 // Coordonées du potager
 // ==============================================================
 
+.coords{
+	padding-top: em(60);
+}
+
+.flexCoords{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+
+	article{
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		min-height: em(190);
+		.picto{
+			background-color: #dead65;
+			padding: em(15);
+			border-radius: 50%;
+
+			height: 80px; width: 80px;
+
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		h3{
+			font-size: em(18);
+			margin: em(15,18) 0;
+			font-weight: 500;
+		}
+		p{
+			font-weight: 300;
+		}
+	}
+}
 
 @import 'footer';
