@@ -21,6 +21,7 @@ body {
   max-width: 60em;
   margin: 0 auto;
   padding: 0 1.5em;
+  height: 100%;
 }
 
 .espace {

@@ -1,10 +1,38 @@
 @import "html";
-// @import "css-reset";
+@import "css-reset";
 @import "header";
 @import "functions";
 
+
+// ==============================================================
+// Titre avec fond paralaxe
+// ==============================================================
 .intro{
-    margin-top: em(75);
+	margin-top: em(70);
+	padding-bottom: em(20);
+
+    height: em(150);
+
+    background-image: url(../img/contact/bg_1.jpg);
+    background-size: cover;
+	background-position-y: center;
+	
+	h2{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		color: white;
+		font-size: em(24);
+	}
 }
+
+.flexIntro{
+	display: flex;
+	align-items: flex-end;
+}
+
+// ==============================================================
+// Coordonées du potager
+// ==============================================================
+
 
 @import 'footer';
