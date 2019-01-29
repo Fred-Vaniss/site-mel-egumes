@@ -20,7 +20,7 @@ body {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 h1 {
@@ -112,28 +112,26 @@ header {
 
 nav {
   position: fixed;
-  right: 0;
+  right: -13.75em;
   top: 4.375em;
   background-color: #f0ede9;
   height: 100%;
   -ms-grid-column-align: end;
       justify-self: end;
   width: 13.75em;
-  -webkit-transform: translateX(13.75em);
-          transform: translateX(13.75em);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .showNav {
-  -webkit-transform: translateX(0em);
-          transform: translateX(0em);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: translateX(-13.75em);
+          transform: translateX(-13.75em);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .menu {
@@ -178,6 +176,8 @@ nav {
             transform: unset;
     width: unset;
     height: unset;
+    -webkit-transition: none;
+    transition: none;
   }
   .menuButton {
     display: none;
@@ -189,8 +189,21 @@ nav {
     display: inline;
     font-size: 14px;
   }
+  .menu li a:hover {
+    background-color: unset;
+    color: #dead65;
+  }
   .menu .menu-separator {
     display: unset;
   }
+}
+
+footer {
+  background-color: #f0ede9;
+}
+
+.textFooter {
+  font-weight: 200;
+  font-size: 0.75em;
 }
 /*# sourceMappingURL=nos-activites.css.map */
