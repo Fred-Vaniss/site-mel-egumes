@@ -103,7 +103,7 @@
 
 	label{
 		position: absolute;
-		left: em(5); top: em(5);
+		left: em(5); top: em(8);
 		padding: em(5) em(5) 0 em(5);
 
 		color: #b2b2b2;
@@ -114,12 +114,21 @@
 	}
 
 	input{
+		font-size: em(16);
+		font-family: 'Montserrat', sans-serif;
+
 		height: em(40);
 		padding-left: em(10);
 	}
 
 	textarea{
-		padding: em(7)
+		font-size: em(16);
+		font-family: 'Montserrat', sans-serif;
+
+		padding: em(7);
+		height: em(150);
+
+		resize: vertical;
 	}
 
 	input, textarea{
@@ -139,7 +148,7 @@
 			outline: none;
 			+label{
 				color: black;
-				transform: translateY(em(-22));
+				transform: translateY(em(-24));
 				background-color: white;
 				font-size: em(12);
 
@@ -150,7 +159,7 @@
 		}
 		&:valid + label{
 			color: black;
-			transform: translateY(em(-22));
+			transform: translateY(em(-24));
 			font-size: em(12);
 			background-color: white;
 
