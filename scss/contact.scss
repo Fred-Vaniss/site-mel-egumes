@@ -154,4 +154,28 @@
 	}
 }
 
+.submit{
+	font-size: em(24);
+	font-family: 'Montserrat', sans-serif;
+	font-variant: small-caps;
+	color: white;
+
+	border: none;
+	background-color: #dead65;
+	box-shadow: 0 em(4,24) 0 #a57c62;
+
+	padding: em(15,24) em(25,24);
+	border-radius: em(10,24);
+
+	&:hover{
+		background-color: #ffc875;
+		box-shadow: 0 em(4,24) 0 #ca9675;
+	}
+
+	&:active{
+		background-color: #a57c62;
+		box-shadow: 0 em(4,24) 0 #8b5a3b; 
+	}
+}
+
 @import 'footer';

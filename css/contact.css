@@ -385,6 +385,31 @@ nav {
   background-color: white;
 }
 
+.submit {
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-variant: small-caps;
+  color: white;
+  border: none;
+  background-color: #dead65;
+  -webkit-box-shadow: 0 0.16667em 0 #a57c62;
+          box-shadow: 0 0.16667em 0 #a57c62;
+  padding: 0.625em 1.04167em;
+  border-radius: 0.41667em;
+}
+
+.submit:hover {
+  background-color: #ffc875;
+  -webkit-box-shadow: 0 0.16667em 0 #ca9675;
+          box-shadow: 0 0.16667em 0 #ca9675;
+}
+
+.submit:active {
+  background-color: #a57c62;
+  -webkit-box-shadow: 0 0.16667em 0 #8b5a3b;
+          box-shadow: 0 0.16667em 0 #8b5a3b;
+}
+
 footer {
   -webkit-box-shadow: 0 -1px 2px #0000003d;
           box-shadow: 0 -1px 2px #0000003d;
