@@ -71,11 +71,14 @@ article{
 		padding: em(15);
 		border-radius: 50%;
 
-		height: 80px; width: 80px;
+		height: em(80); width: em(80);
 
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		img{
+			width: em(40);
+		}
 	}
 	h3{
 		font-size: em(18);

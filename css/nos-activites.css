@@ -29,6 +29,10 @@ body {
   height: 500px;
 }
 
+.invisible {
+  display: none;
+}
+
 header {
   position: fixed;
   top: 0;

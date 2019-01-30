@@ -83,6 +83,10 @@ body {
   height: 500px;
 }
 
+.invisible {
+  display: none;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -339,8 +343,8 @@ article .picto {
   background-color: #dead65;
   padding: 0.9375em;
   border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  height: 5em;
+  width: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,6 +353,10 @@ article .picto {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+article .picto img {
+  width: 2.5em;
 }
 
 article h3 {
