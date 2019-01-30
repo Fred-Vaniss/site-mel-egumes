@@ -257,7 +257,7 @@ nav {
   font-variant: small-caps;
   font-weight: 500;
   color: white;
-  font-size: 1.5em;
+  font-size: 2.1875em;
 }
 
 .flexIntro {
@@ -346,7 +346,7 @@ nav {
 .field label {
   position: absolute;
   left: 0.3125em;
-  top: 0.3125em;
+  top: 0.5em;
   padding: 0.3125em 0.3125em 0 0.3125em;
   color: #b2b2b2;
   -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
@@ -356,12 +356,18 @@ nav {
 }
 
 .field input {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
   height: 2.5em;
   padding-left: 0.625em;
 }
 
 .field textarea {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
   padding: 0.4375em;
+  height: 14.125em;
+  resize: vertical;
 }
 
 .field input, .field textarea {
@@ -385,8 +391,8 @@ nav {
 
 .field input:focus + label, .field textarea:focus + label {
   color: black;
-  -webkit-transform: translateY(-1.375em);
-          transform: translateY(-1.375em);
+  -webkit-transform: translateY(-1.5em);
+          transform: translateY(-1.5em);
   background-color: white;
   font-size: 0.75em;
   -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
@@ -397,8 +403,8 @@ nav {
 
 .field input:valid + label, .field textarea:valid + label {
   color: black;
-  -webkit-transform: translateY(-1.375em);
-          transform: translateY(-1.375em);
+  -webkit-transform: translateY(-1.5em);
+          transform: translateY(-1.5em);
   font-size: 0.75em;
   background-color: white;
   -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
@@ -417,7 +423,7 @@ nav {
   -webkit-box-shadow: 0 0.16667em 0 #a57c62;
           box-shadow: 0 0.16667em 0 #a57c62;
   padding: 0.625em 1.04167em;
-  border-radius: 0.41667em;
+  border-radius: 0.20833em;
 }
 
 .submit:hover {
@@ -442,6 +448,8 @@ nav {
 .msgCont {
   background-color: #f0ede9;
   padding: 0.9375em 0;
+  -webkit-transform: translateY(-3.75em);
+          transform: translateY(-3.75em);
 }
 
 .msgCont p {
@@ -455,6 +463,51 @@ nav {
 .msgCont a {
   color: #dead65;
   text-decoration: none;
+}
+
+.msgCont a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 737px) {
+  .intro {
+    height: 22.5em;
+  }
+  .intro h2 {
+    font-size: 5.25em;
+  }
+  .formContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.75em;
+    margin-bottom: 1.375em;
+  }
+  .fieldsGroup {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .field:last-child {
+    margin-bottom: 0;
+  }
+  .field, .message, .message textarea {
+    height: 100%;
+  }
+  .submit {
+    padding: 0.20833em 0.625em;
+  }
+  .mapBg {
+    height: 33.75em;
+  }
+  .msgCont {
+    max-width: 47.5em;
+    padding: 3.125em 4.6875em;
+  }
+  .msgCont p {
+    font-size: 1.5em;
+  }
 }
 
 footer {

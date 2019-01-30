@@ -71,30 +71,32 @@
         <div class="wrapper">
             <h3>Ecrivez-nous</h3>
             <form action="">
-				<div class="fieldsGroup">
-					<div class="field">
-						<input type="text" name="lName" id="lName" required>
-		                <label for="lName">Nom</label>
-					</div>
-	                <div class="field">
-						<input type="text" name="fName" id="fName" required>
-						<label for="fName">Prénom</label>
-					</div>
-	                <div class="field">
-						<input type="email" name="mail" id="mail" required>
-						<label for="mail">E-mail</label>
-					</div>
-	                <div class="field">
-						<input type="text" name="adress" id="adress" required>
-						<label for="adress">Adresse</label>
-					</div>
-				</div>
-                <div class="fieldsGroup">
-					<div class="field">
-						<textarea name="message" id="message" cols="30" rows="10" required></textarea>
-						<label for="message">Message </label>
-					</div>
-				</div>
+				<div class="formContainer">
+                    <div class="fieldsGroup">
+                    	<div class="field">
+                    		<input type="text" name="lName" id="lName" required>
+                            <label for="lName">Nom</label>
+                    	</div>
+                        <div class="field">
+                    		<input type="text" name="fName" id="fName" required>
+                    		<label for="fName">Prénom</label>
+                    	</div>
+                        <div class="field">
+                    		<input type="email" name="mail" id="mail" required>
+                    		<label for="mail">E-mail</label>
+                    	</div>
+                        <div class="field">
+                    		<input type="text" name="adress" id="adress" required>
+                    		<label for="adress">Adresse</label>
+                    	</div>
+                    </div>
+                     <div class="fieldsGroup">
+                    	<div class="field message">
+                    		<textarea name="message" id="message" required></textarea>
+                    		<label for="message">Message </label>
+                    	</div>
+                    </div>
+                </div>
                 <button class="submit" type="submit">Envoyer</button>
             </form>
         </div>

@@ -22,7 +22,7 @@
 		font-variant: small-caps;
 		font-weight: 500;
 		color: white;
-		font-size: em(24);
+		font-size: em(35);
 	}
 }
 
@@ -126,7 +126,7 @@
 		font-family: 'Montserrat', sans-serif;
 
 		padding: em(7);
-		height: em(150);
+		height: em(226);
 
 		resize: vertical;
 	}
@@ -189,7 +189,7 @@
 	box-shadow: 0 em(4,24) 0 #a57c62;
 
 	padding: em(15,24) em(25,24);
-	border-radius: em(10,24);
+	border-radius: em(5,24);
 
 	&:hover{
 		background-color: #ffc875;
@@ -221,6 +221,9 @@
 	background-color: #f0ede9;
 
 	padding: em(15) 0;
+
+	transform: translateY(em(-60));
+
 	p{
 		text-align: center;
 		&:first-child{
@@ -230,6 +233,73 @@
 	a{
 		color: #dead65;
 		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+// ==============================================================
+// Version PC
+// ==============================================================
+
+@media screen and (min-width: 737px){
+	// ==============================================================
+	// Titre avec fond parallaxe
+	// ==============================================================
+	.intro{
+		height: em(360);
+		h2{
+			font-size: em(84);
+		}
+	}
+
+	// ==============================================================
+	// Formulaire de contact
+	// ==============================================================
+
+	.formContainer{
+		display: grid;
+
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: em(12);
+
+		margin-bottom: em(22);
+	}
+	.fieldsGroup{
+		flex: 1;
+	}
+
+	.field:last-child{
+		margin-bottom: 0;
+	}
+
+	.field, .message, .message textarea {
+		height: 100%;
+	}
+
+	.submit{
+		padding: em(5,24) em(15,24);
+	}
+
+	// ==============================================================
+	// Fond avec la carte dessinée
+	// ==============================================================
+
+	.mapBg{
+		height: em(540);
+	}
+
+	// ==============================================================
+	// Message en dessous de la carte
+	// ==============================================================
+
+	.msgCont{
+		max-width: em(760);
+		padding: em(50) em(75);
+		p{
+			font-size: em(24);
+		}
 	}
 }
 
