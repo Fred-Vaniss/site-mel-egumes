@@ -82,6 +82,8 @@
 // ==============================================================
 
 .form{
+	padding-bottom: em(60) ;
+
 	h3{
 		font-family: 'Oleo Script', cursive;
 		text-align: center;
@@ -103,7 +105,9 @@
 
 		color: #b2b2b2;
 
-		transition: transform 0.1s;
+		transition: 
+			transform 0.1s,
+			font-size 0.1s;
 	}
 
 	input{
@@ -134,14 +138,22 @@
 				color: black;
 				transform: translateY(em(-22));
 				background-color: white;
+				font-size: em(12);
 
-				transition: transform 0.1s;
+				transition: 
+					transform 0.1s,
+					font-size 0.1s;
 			}
 		}
 		&:valid + label{
 			color: black;
 			transform: translateY(em(-22));
+			font-size: em(12);
 			background-color: white;
+
+			transition: 
+				transform 0.1s,
+				font-size 0.1s;
 		}
 		// &:invalid{
 		// 	border-color: red;
@@ -175,6 +187,37 @@
 	&:active{
 		background-color: #a57c62;
 		box-shadow: 0 em(4,24) 0 #8b5a3b; 
+	}
+}
+
+// ==============================================================
+// Fond avec la carte dessinée
+// ==============================================================
+
+.mapBg{
+	height: em(200);
+	background-image: url(../img/contact/bg_2.jpg);
+	background-position-x: center;
+	background-size: cover;
+}
+
+// ==============================================================
+// Message en dessous de la carte
+// ==============================================================
+
+.msgCont{
+	background-color: #f0ede9;
+
+	padding: em(15) 0;
+	p{
+		text-align: center;
+		&:first-child{
+			margin-bottom: 1em;
+		}
+	}
+	a{
+		color: #dead65;
+		text-decoration: none;
 	}
 }
 

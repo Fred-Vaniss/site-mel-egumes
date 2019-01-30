@@ -315,6 +315,10 @@ nav {
   font-weight: 300;
 }
 
+.form {
+  padding-bottom: 3.75em;
+}
+
 .form h3 {
   font-family: 'Oleo Script', cursive;
   text-align: center;
@@ -333,10 +337,10 @@ nav {
   top: 0.3125em;
   padding: 0.3125em 0.3125em 0 0.3125em;
   color: #b2b2b2;
-  -webkit-transition: -webkit-transform 0.1s;
-  transition: -webkit-transform 0.1s;
-  transition: transform 0.1s;
-  transition: transform 0.1s, -webkit-transform 0.1s;
+  -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
 }
 
 .field input {
@@ -372,17 +376,23 @@ nav {
   -webkit-transform: translateY(-1.375em);
           transform: translateY(-1.375em);
   background-color: white;
-  -webkit-transition: -webkit-transform 0.1s;
-  transition: -webkit-transform 0.1s;
-  transition: transform 0.1s;
-  transition: transform 0.1s, -webkit-transform 0.1s;
+  font-size: 0.75em;
+  -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
 }
 
 .field input:valid + label, .field textarea:valid + label {
   color: black;
   -webkit-transform: translateY(-1.375em);
           transform: translateY(-1.375em);
+  font-size: 0.75em;
   background-color: white;
+  -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
 }
 
 .submit {
@@ -408,6 +418,31 @@ nav {
   background-color: #a57c62;
   -webkit-box-shadow: 0 0.16667em 0 #8b5a3b;
           box-shadow: 0 0.16667em 0 #8b5a3b;
+}
+
+.mapBg {
+  height: 12.5em;
+  background-image: url(../img/contact/bg_2.jpg);
+  background-position-x: center;
+  background-size: cover;
+}
+
+.msgCont {
+  background-color: #f0ede9;
+  padding: 0.9375em 0;
+}
+
+.msgCont p {
+  text-align: center;
+}
+
+.msgCont p:first-child {
+  margin-bottom: 1em;
+}
+
+.msgCont a {
+  color: #dead65;
+  text-decoration: none;
 }
 
 footer {
