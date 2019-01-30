@@ -169,6 +169,7 @@ nav {
   }
   .menu li {
     display: inline;
+    font-weight: 400;
   }
   .menu li a {
     display: inline;
