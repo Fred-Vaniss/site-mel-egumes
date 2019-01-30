@@ -46,13 +46,14 @@ header{
 		border: none;
 		font-size: 38px;
 		background-color: transparent;
+		padding: 0;
 	}
 }
 
 // Conteneur du menu
 nav{
 	position: fixed; 
-	right: em(-220); top: em(70);
+	right: calc( -100vw + 7.5em); top: em(70);
 	z-index: 1;
 
 	background-color: #f0ede9;
@@ -61,12 +62,14 @@ nav{
 
 	justify-self: end;
 	
-	width: em(220);
+	// width: em(220);
+	width: calc(100vw - 7.5em);
+
 	transition: transform 0.5s;
 }
 
 .showNav{
-	transform: translateX(em(-220));
+	transform: translateX(calc( -100vw + 7.5em));
 	transition: transform 0.5s;
 }
 
@@ -87,7 +90,7 @@ nav{
 			display: inline-block;
 			width: 100%;
 			font-size: em(26);
-			padding: em(12,26) em(12,26);
+			padding: em(12,26) em(25,26) em(12,26) 0;
 			&:hover{
 				background-color: #dead65;
 			}
@@ -98,6 +101,7 @@ nav{
 	}
 }
 
+// Réduir la taille de la police du menu latéral pour le mode portrait
 @media screen and (max-height: 350px){
 	nav{
 		width: em(170);
@@ -108,7 +112,19 @@ nav{
 	}
 }
 
-@media screen and (min-width: 737px){
+// Restreindre l'espace utilisé pour le menu latéral pour les écrans plus large
+@media screen and (min-width: 415px){
+	nav{
+		right: em(-220);
+		width: em(220);
+	}
+	.showNav{
+		transform: translateX(em(-220));
+	}
+
+}
+
+@media screen and (min-width: 769px){
 	header{
 		height: em(100);
 	}

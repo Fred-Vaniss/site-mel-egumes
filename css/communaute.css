@@ -81,11 +81,12 @@ header {
   border: none;
   font-size: 38px;
   background-color: transparent;
+  padding: 0;
 }
 
 nav {
   position: fixed;
-  right: -13.75em;
+  right: calc( -100vw + 7.5em);
   top: 4.375em;
   z-index: 1;
   background-color: #f0ede9;
@@ -93,7 +94,7 @@ nav {
   font-variant: small-caps;
   -ms-grid-column-align: end;
       justify-self: end;
-  width: 13.75em;
+  width: calc(100vw - 7.5em);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -101,8 +102,8 @@ nav {
 }
 
 .showNav {
-  -webkit-transform: translateX(-13.75em);
-          transform: translateX(-13.75em);
+  -webkit-transform: translateX(calc( -100vw + 7.5em));
+          transform: translateX(calc( -100vw + 7.5em));
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -127,7 +128,7 @@ nav {
   display: inline-block;
   width: 100%;
   font-size: 1.625em;
-  padding: 0.46154em 0.46154em;
+  padding: 0.46154em 0.96154em 0.46154em 0;
 }
 
 .menu li a:hover {
@@ -148,7 +149,18 @@ nav {
   }
 }
 
-@media screen and (min-width: 737px) {
+@media screen and (min-width: 415px) {
+  nav {
+    right: -13.75em;
+    width: 13.75em;
+  }
+  .showNav {
+    -webkit-transform: translateX(-13.75em);
+            transform: translateX(-13.75em);
+  }
+}
+
+@media screen and (min-width: 769px) {
   header {
     height: 6.25em;
   }

@@ -36,14 +36,13 @@
 // ==============================================================
 
 .coords{
-	padding: em(60) 0;
+	padding: em(120) 0;
 }
 
 .flexCoords{
 	display: flex;
-	// flex-direction: column;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
 	
 
 	article{
@@ -85,7 +84,7 @@
 // ==============================================================
 
 .form{
-	padding-bottom: em(60) ;
+	padding-bottom: em(120) ;
 
 	h3{
 		font-family: 'Oleo Script', cursive;
@@ -220,7 +219,7 @@
 .msgCont{
 	background-color: #f0ede9;
 
-	padding: em(15) 0;
+	padding: em(50) 0;
 
 	transform: translateY(em(-60));
 
@@ -243,17 +242,27 @@
 // Version PC
 // ==============================================================
 
-@media screen and (min-width: 737px){
+@media screen and (min-width: 725px){
 	// ==============================================================
 	// Titre avec fond parallaxe
 	// ==============================================================
 	.intro{
 		margin-top: em(100);
-		height: calc(100vh - 23em);
+		height: calc(100vh - 27em);
 		// height: em(315);
 		h2{
 			font-size: em(84);
 		}
+	}
+
+	// ==============================================================
+	// Coordonées du potager
+	// ==============================================================
+
+	.flexCoords{
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 
 	// ==============================================================
