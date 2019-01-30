@@ -95,6 +95,10 @@ header {
           box-shadow: 0 1px 2px #0000003d;
 }
 
+.firstSection {
+  margin-top: 4.375em;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +222,9 @@ nav {
   header {
     height: 6.25em;
   }
+  .firstSection {
+    margin-top: 6.25em;
+  }
   .logoCont {
     width: 10em;
   }
@@ -238,6 +245,7 @@ nav {
     font-weight: 400;
   }
   .menu li a {
+    padding: 0.3125em;
     display: inline;
     font-size: 14px;
   }
@@ -257,7 +265,6 @@ nav {
 }
 
 .intro {
-  margin-top: 4.375em;
   padding-bottom: 1.25em;
   height: 12.5em;
   background-size: cover;
@@ -498,7 +505,6 @@ article p {
 
 @media screen and (min-width: 725px) {
   .intro {
-    margin-top: 6.25em;
     height: calc(100vh - 27em);
   }
   .intro h2 {

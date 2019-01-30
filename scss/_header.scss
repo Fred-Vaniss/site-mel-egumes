@@ -11,7 +11,11 @@ header{
 
 	background-color: #f0ede9;
 	box-shadow: 0 1px 2px #0000003d;
+}
 
+//Ajout d'un espacement pour la première section qui précède le header
+.firstSection{
+	margin-top: em(70)
 }
 
 // Conteneur du Header
@@ -124,9 +128,13 @@ nav{
 
 }
 
+// Mode bureau
 @media screen and (min-width: 769px){
 	header{
 		height: em(100);
+	}
+	.firstSection{
+		margin-top: em(100)
 	}
 	.logoCont{
 		width: em(160);
@@ -147,7 +155,8 @@ nav{
 		li{
 			display: inline;
 			font-weight: 400;
-			a{
+			a{	
+				padding: em(5);
 				display: inline;
 				font-size: 14px;
 			}
