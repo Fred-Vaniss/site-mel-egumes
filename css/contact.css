@@ -181,7 +181,7 @@ nav {
   display: inline-block;
   width: 100%;
   font-size: 1.625em;
-  padding: 0.57692em 0.57692em;
+  padding: 0.46154em 0.46154em;
 }
 
 .menu li a:hover {
@@ -192,7 +192,17 @@ nav {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-height: 350px) {
+  nav {
+    width: 10.625em;
+  }
+  .menu li a {
+    font-size: 1.125em;
+    padding: 0.66667em 0.66667em;
+  }
+}
+
+@media screen and (min-width: 737px) {
   header {
     height: 6.25em;
   }
@@ -286,7 +296,8 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   min-height: 11.875em;
-  max-width: 18.4375em;
+  max-width: 13.75em;
+  text-align: center;
 }
 
 .flexCoords article .picto {
@@ -313,6 +324,7 @@ nav {
 
 .flexCoords article p {
   font-weight: 300;
+  padding-bottom: 0.625em;
 }
 
 .form {

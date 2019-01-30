@@ -54,7 +54,9 @@
 		align-items: center;
 
 		min-height: em(190);
-		max-width: em(295);
+		max-width: em(220);
+
+		text-align: center;
 		.picto{
 			background-color: #dead65;
 			padding: em(15);
@@ -73,6 +75,7 @@
 		}
 		p{
 			font-weight: 300;
+			padding-bottom: em(10);
 		}
 	}
 }
