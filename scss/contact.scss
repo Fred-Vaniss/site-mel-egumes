@@ -248,7 +248,9 @@
 	// Titre avec fond parallaxe
 	// ==============================================================
 	.intro{
-		height: em(360);
+		margin-top: em(100);
+		height: calc(100vh - 23em);
+		// height: em(315);
 		h2{
 			font-size: em(84);
 		}

@@ -470,7 +470,8 @@ nav {
 
 @media screen and (min-width: 737px) {
   .intro {
-    height: 22.5em;
+    margin-top: 6.25em;
+    height: calc(100vh - 23em);
   }
   .intro h2 {
     font-size: 5.25em;
