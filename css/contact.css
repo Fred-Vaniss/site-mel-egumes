@@ -248,7 +248,6 @@ nav {
   margin-top: 4.375em;
   padding-bottom: 1.25em;
   height: 12.5em;
-  background-image: url(../img/contact/bg_1.jpg);
   background-size: cover;
   background-position-y: center;
 }
@@ -441,7 +440,6 @@ nav {
 
 .mapBg {
   height: 12.5em;
-  background-image: url(../img/contact/bg_2.jpg);
   background-position-x: center;
   background-size: cover;
 }
