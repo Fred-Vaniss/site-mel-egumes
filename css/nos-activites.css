@@ -78,6 +78,10 @@ header {
   background-color: #dead65;
 }
 
+.bannerSvg {
+  display: none;
+}
+
 .logomel {
   height: 85%;
   -ms-grid-column-align: end;
@@ -105,15 +109,18 @@ nav {
   width: calc(100vw - 7.5em);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .showNav {
   -webkit-transform: translateX(calc( -100vw + 7.5em));
+      -ms-transform: translateX(calc( -100vw + 7.5em));
           transform: translateX(calc( -100vw + 7.5em));
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
@@ -164,6 +171,7 @@ nav {
   }
   .showNav {
     -webkit-transform: translateX(-13.75em);
+        -ms-transform: translateX(-13.75em);
             transform: translateX(-13.75em);
   }
 }
@@ -172,19 +180,31 @@ nav {
   header {
     height: 6.25em;
   }
+  .header {
+    padding-left: 1.5em;
+  }
   .firstSection {
     margin-top: 6.25em;
   }
   .logoCont {
     width: 10em;
+    position: relative;
+  }
+  .bannerSvg {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3.125em;
   }
   nav {
     position: static;
     -webkit-transform: unset;
+        -ms-transform: unset;
             transform: unset;
     width: unset;
     height: unset;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
   .menuButton {
@@ -208,8 +228,10 @@ nav {
   }
   .showNav {
     -webkit-transform: none;
+        -ms-transform: none;
             transform: none;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
 }

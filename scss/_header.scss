@@ -37,6 +37,11 @@ header{
     background-color: #dead65;
 }
 
+// Bas du fond du logo (forme de bannière SVG, invisible en mode mobile)
+.bannerSvg{
+	display: none;
+}
+
 // Image du logo
 .logomel{
 	height: 85%;
@@ -133,11 +138,20 @@ nav{
 	header{
 		height: em(100);
 	}
+	.header{
+		padding-left: em(24);
+	}
 	.firstSection{
 		margin-top: em(100)
 	}
 	.logoCont{
 		width: em(160);
+		position: relative;
+	}
+	.bannerSvg{
+		display: block;
+		position: absolute;
+		left:0; bottom: em(-50);
 	}
 	nav{
 		position: static;
@@ -173,4 +187,6 @@ nav{
 		transform: none;
 		transition: none;
 	}
+
+
 }
