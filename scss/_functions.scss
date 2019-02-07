@@ -10,5 +10,8 @@ $browser-perc-context: 1200;
     @return ($pixels/$context)*100+0%;
 }
 
+$theme-accueil: #872f39;
+$theme-accueil-border: darken($theme-accueil, 20%);
+
 $theme-contact: #dead65;
-$theme-contact-border: darken(#dead65, 20%);
+$theme-contact-border: darken($theme-contact, 20%);

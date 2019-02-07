@@ -80,6 +80,7 @@ header {
 
 .bannerSvg {
   display: none;
+  fill: #dead65;
 }
 
 .logomel {
@@ -246,10 +247,30 @@ nav {
   }
 }
 
-.intro {
-  background-image: url(../img/img_wireframe.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.logoCont {
+  background-color: #872f39;
+}
+
+.bannerSvg {
+  fill: #872f39;
+}
+
+.menu li a:hover {
+  background-color: #872f39;
+}
+
+.menu .currentNav {
+  background-color: #872f39;
+}
+
+@media screen and (min-width: 769px) {
+  .menu li a:hover {
+    background-color: unset;
+    color: #872f39;
+  }
+  .menu .currentNav {
+    color: #872f39;
+  }
 }
 
 .imgintro {

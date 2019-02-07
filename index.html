@@ -19,7 +19,7 @@
             <div class="logoCont">
                 <img class="logomel" src="img/logo_melegumes.svg" alt="Logo Mél'égumes">
                 <svg class="bannerSvg" height="50" width="160">
-                    <polygon points="0,0 0,25 80,5 160,25 160,0" style="fill:#dead65" />
+                    <polygon points="0,0 0,25 80,5 160,25 160,0"/>
                 </svg>
             </div>
             <!-- Menu -->
@@ -40,13 +40,60 @@
     </header>
 
     <!-- Intro sur grande image -->
-    <section class="intro firstSection">
+    <section class="intro firstSection parallax-window" data-parallax="scroll" data-image-src="img/accueil/bg1.jpg">
         <div class="wrapper">
-            <div class="imgintro">
-                <div class="introtext">
-                    <h1>Lorem ipsum!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinci</p>
-                </div>
+            <div class="introtext">
+                <h2>Eat good, feel good!</h2>
+                <p>Avec nos paniers de légumes naturels et de saison.</p>
+                <button>Commander votre panier</button>
+            </div>          
+        </div>
+    </section>
+
+    <!-- Raconte moi des salades -->
+    <section class="salades">
+        <div class="wrapper">
+            <h2>Raconte moi des salades</h2>
+            <p>
+                C’est lors d’un séjour au Canada que je me lance dans l’apprentissage de la culture de légumes et l’agriculture urbaine.
+    
+                <br>De retour en Belgique, je décide de monter le projet Mel’égumes, sur lequel je travaille actuellement avec mon employé : Peeter.
+    
+                <br>Mél’égumes, c’est un projet qui se veut écologique et social...
+            </p>
+            <img src="img/accueil/img1.jpg" alt="Mélanie et Peter" width="100px">
+        </div>
+    </section>
+
+    <!-- La permaculture -->
+    <section class="permaculture">
+        <div class="wrapper">
+            <h2>La permaculture c'est quoi?</h2>
+            <p>La permaculture n'est pas simplement une méthode de culture de légume proprement parlé mais une philosophie. C'est une manière différente d'habiter la terre, qui bouleverse autant la culture des légumes que notre rapport à l'autre. Cela s'inscrit dans un processus à long terme. C'est un retour à des choses traditionnelle, à des méthodes. Pour conclure: il y a trois principes dans la permaculture : primo, prendre soins de la nature (sol, foret, l'eau et l'air) , secundo, prendre soins de l'humain ( sois-même, la communauté et les générations futurs) et tertio, créer l'abondance et redistribuer le surplus.</p>
+        </div>
+    </section>
+
+    <!-- Fond parallaxe et citation -->
+    <section class="citation">
+        <div class="wrapper">
+            <h2 class="invisible">Citation</h2>
+            <p>« La permaculture est plus qu’une méthode de culture, c’est une philosophie »</p>
+        </div>
+    </section>
+
+    <!-- Nous proposons à la vente...  -->
+    <section class="propositions">
+        <div class="wrapper">
+            <div>
+                <img src="img/accueil/panier.png" alt="">
+            </div>
+            <div>
+                <p>Nous proposons à la vente le fruit de notre travail. Des légumes cultivés sur place, disponible en fonction de la saison et du temps. Vous pouvez venir récolter sur place ou commander et emporter.</p>
+                <button>Commander votre panier</button>
+            </div>
+            <div>
+                <p>Nous proposons aussi un projet de réinsertion sociale ainsi que des formations pour les éducateurs et des activités ludiques pour les plus jeunes.</p>
+                <button>Plus d'infos</button>
             </div>
         </div>
     </section>
@@ -59,6 +106,8 @@
         </div>
     </footer>
 
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="vendor/parallax.min.js"></script>
 </body>
 
 </html>

@@ -80,6 +80,7 @@ header {
 
 .bannerSvg {
   display: none;
+  fill: #dead65;
 }
 
 .logomel {

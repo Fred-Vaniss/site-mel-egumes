@@ -2,10 +2,47 @@
 @import "header";
 @import "functions";
 
+// ==============================================================
+// Couleur du header
+// ==============================================================
+
+.logoCont{
+    background-color: $theme-accueil;
+}
+
+.bannerSvg{
+    fill: $theme-accueil;
+}
+
+.menu {
+    li a:hover{
+        background-color: $theme-accueil;
+    }
+
+    .currentNav{
+        background-color: $theme-accueil;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .menu{
+        li a:hover{
+            background-color: unset;
+            color: $theme-accueil;
+        }
+        .currentNav{
+            color: $theme-accueil;
+        }
+    }
+}
+
+// ==============================================================
+// Intro
+// ==============================================================
+
 .intro{
-    background-image: url(../img/img_wireframe.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+
 }
 
 .imgintro{
