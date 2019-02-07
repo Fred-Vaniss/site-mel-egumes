@@ -108,6 +108,10 @@ nav{
 	.menu-separator{
 		display: none;
 	}
+	.currentNav{
+		background-color: #dead65;
+		font-weight: 500;
+	}
 }
 
 // Réduir la taille de la police du menu latéral pour le mode portrait
@@ -181,6 +185,11 @@ nav{
 		}
 		.menu-separator{
 			display: unset;
+		}
+		.currentNav{
+			background-color: unset;
+			color: #dead65;
+			text-decoration: underline;
 		}
 	}
 	.showNav{

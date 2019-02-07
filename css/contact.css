@@ -208,6 +208,11 @@ nav {
   display: none;
 }
 
+.menu .currentNav {
+  background-color: #dead65;
+  font-weight: 500;
+}
+
 @media screen and (max-height: 350px) {
   nav {
     width: 10.625em;
@@ -279,6 +284,11 @@ nav {
   }
   .menu .menu-separator {
     display: unset;
+  }
+  .menu .currentNav {
+    background-color: unset;
+    color: #dead65;
+    text-decoration: underline;
   }
   .showNav {
     -webkit-transform: none;
