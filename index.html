@@ -28,7 +28,7 @@
             </div>
             <nav id = "menu">
                 <ul class="menu">
-                    <li><a href="index.html">Accueil </a> <span class="menu-separator">|</span></li>
+                    <li><a href="index.html" class="currentNav">Accueil </a> <span class="menu-separator">|</span></li>
                     <li><a href="nos-produits.html">Nos produits </a> <span class="menu-separator">|</span></li>
                     <li><a href="nos-activites.html">Nos activités </a> <span class="menu-separator">|</span></li>
                     <li><a href="communaute.html">Communauté </a> <span class="menu-separator">|</span></li>
@@ -53,15 +53,13 @@
     <!-- Raconte moi des salades -->
     <section class="salades">
         <div class="wrapper">
-            <h2>Raconte moi des salades</h2>
-            <p>
-                C’est lors d’un séjour au Canada que je me lance dans l’apprentissage de la culture de légumes et l’agriculture urbaine.
-    
-                <br>De retour en Belgique, je décide de monter le projet Mel’égumes, sur lequel je travaille actuellement avec mon employé : Peeter.
-    
-                <br>Mél’égumes, c’est un projet qui se veut écologique et social...
-            </p>
-            <img src="img/accueil/img1.jpg" alt="Mélanie et Peter" width="100px">
+            <h2>Raconte-moi des <strong>salades</strong></h2>
+            <p>C’est lors d’un séjour au Canada que je me lance dans l’apprentissage de la culture de légumes et l’agriculture urbaine.</p>
+            <p>De retour en Belgique, je décide de monter le projet Mel’égumes, sur lequel je travaille actuellement avec mon employé : Peeter.</p>
+            <p>Mél’égumes, c’est un projet qui se veut écologique et social...</p>
+            <div class="image">
+                <img src="img/accueil/img1.jpg" alt="Mélanie et Peter" width="100px">
+            </div>
         </div>
     </section>
 
@@ -74,26 +72,28 @@
     </section>
 
     <!-- Fond parallaxe et citation -->
-    <section class="citation">
+    <section class="citation parallax-window" data-parallax="scroll" data-image-src="img/accueil/bg2.jpg">
         <div class="wrapper">
-            <h2 class="invisible">Citation</h2>
-            <p>« La permaculture est plus qu’une méthode de culture, c’est une philosophie »</p>
+            <h2 class="invisible">Citation (titre invisible pour le W3C)</h2>
+            <p>« La permaculture est plus <br> qu’une méthode de culture, <br> <strong>c’est une philosophie</strong> »</p>
         </div>
     </section>
 
     <!-- Nous proposons à la vente...  -->
     <section class="propositions">
         <div class="wrapper">
-            <div>
-                <img src="img/accueil/panier.png" alt="">
-            </div>
-            <div>
+            <div class="prop1">
                 <p>Nous proposons à la vente le fruit de notre travail. Des légumes cultivés sur place, disponible en fonction de la saison et du temps. Vous pouvez venir récolter sur place ou commander et emporter.</p>
-                <button>Commander votre panier</button>
+                <a href="#" class="commPanier">Commander <br> votre panier</a>
             </div>
-            <div>
+            <div class="prop2">
+                <div class="image">
+                    <img src="img/accueil/panier.png" alt="" width="100px">
+                </div>
+            </div>
+            <div class="prop3">
                 <p>Nous proposons aussi un projet de réinsertion sociale ainsi que des formations pour les éducateurs et des activités ludiques pour les plus jeunes.</p>
-                <button>Plus d'infos</button>
+                <a href="#" class="plusInfo"><span>Plus d'infos</span></a>
             </div>
         </div>
     </section>

@@ -15,14 +15,10 @@
 }
 
 .menu {
-    li a:hover{
-        background-color: $theme-accueil;
+    li a:hover, .currentNav{
+		background-color: $theme-accueil;
+		color: white;
     }
-
-    .currentNav{
-        background-color: $theme-accueil;
-    }
-
 }
 
 @media screen and (min-width: 769px){
@@ -32,6 +28,7 @@
             color: $theme-accueil;
         }
         .currentNav{
+			background-color: unset;
             color: $theme-accueil;
         }
     }
@@ -42,118 +39,153 @@
 // ==============================================================
 
 .intro{
-
+    height: calc(100vh - 4.375em);
 }
 
-.imgintro{
-    height: 90vh;
-    overflow: hidden;
-
-    position: relative;
-    img{ // Attribut temporaire pour le Wireframe
-        height: 100%;
-        width: 100%;
+.introtext{
+	position: absolute;
+	width: em(312);
+	bottom: 20%;
+	right: em(24);
+	color: white;
+	text-align: right;
+    h2{
+		font-size: em(36);
+		margin-bottom: em(10,36);
+		font-family: 'Oleo Script', cursive;
     }
-
-    .introtext{
-        position: absolute;
-        top:30%;
-        right: 100px;
-        width: 480px;
-
-        h1{
-            margin-bottom: 10px;
-        }
-
-        p{
-            margin: 0;
-        }
-    }
+    p{
+		font-weight: 700;
+		margin: 0;
+		font-variant: small-caps;
+		margin-bottom: em(10);
+	}
+	button{
+		font-size: 1em;
+		text-transform: uppercase;
+		font-weight: 700;
+		height: em(55); width: em(150);
+		background-color: rgba(238, 235, 230, 0.712);
+		border: none;
+	}
 }
 
-.article1{
-    margin-top: 90px;
-    margin-bottom: 45px;
+// ==============================================================
+// Raconte moi des salades
+// ==============================================================
 
-    .artcl{
-        position: relative;
-        .gridTxts{
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-    
-            display: grid;
-            grid-template-columns: 510px 175px 1fr;
-            grid-template-rows: 100px 1fr;
-    
-            grid-template-areas:    ".    title   title"
-                                    ".    .       para";
-    
-            h2{
-                margin: 15px 0 0 0;
-                grid-area: title;
-            }
-    
-            p{
-                margin: 0;
-                display: block;
-                grid-area: para;
-            }
-        }
-    }
+
+
+.salades{
+	padding: em(60) 0;
+	h2{
+		font-size: em(36);
+		font-family: 'Montserrat', sans-serif;
+		font-variant: small-caps;
+		font-weight: 300;
+	}
 }
 
-.zoneImg{
-    width: 567px;
-    height: 392px;
-    // float: left;
-    img{ // Attribut temporaire pour le Wireframe
-        height: 100%;
-        width: 100%;
-    }
+.image{
+	width: 100%;
+	img{
+		width: 100%;
+	}
 }
 
-.article2{
-    margin-top: 45px;
+// ==============================================================
+// La permaculture
+// ==============================================================
 
-    .artcl{
-        position: relative;
+.permaculture{
+	padding: em(60) 0;
 
-        .imgRight{
-             float: right;
-        }
+	background-image: url("../img/accueil/section_pattern.png")
+}
 
-        .gridTxts{
-            position: absolute;
+// ==============================================================
+// Citation
+// ==============================================================
 
-            display: grid;
-            grid-template-columns: 570px 120px 1fr;
-            grid-template-rows: 100px 1fr;
+.citation{
+	height: em(200);
+	padding-top: em(30);
+	position: relative;
+	p{
+		position: absolute;
+		bottom: em(-73);
+		left:0;
 
-            grid-template-areas:    "title   title   ."
-                                    "para    .       .";
+		color: white;
+		font-variant: small-caps;
+		text-align: center;
 
-            h2{
-                margin: 15px 0 0 0;
-                grid-area: title;
-            }
+		width: 100%;
 
-            p{
-                margin: 0;
-                display: block;
-                grid-area: para;
+		background-color: rgba(black,.6);
+		padding: em(15,30);
+		margin: 0;
+	}
+}
 
-                text-align: right;
-            }
+// ==============================================================
+// Nous vous proposons...
+// ==============================================================
 
-        }
-    }
-    .artcl:after {
-        display: block;
-        content: "";
-        clear: both;
-    }
+.propositions{
+	padding: em(120) 0 em(60) 0;
+}
+.commPanier, .plusInfo{
+	font-size: em(24);
+	font-weight: 300;
+	text-transform: uppercase;
+
+	text-decoration: none;
+	text-align: center;
+
+	display: inline-block;
+	width: 100%; height: 88px; 
+	vertical-align: middle;
+	padding: em(8);
+
+	span{
+		vertical-align: middle;
+		display: inline-block;
+		line-height: 2.5;
+	}
+}
+
+.commPanier{
+	color: white;
+	background-color: $theme-accueil;
+
+	&:hover{
+		background-color: lighten($theme-accueil, 10%);
+	}
+
+	&:active{
+		background-color: darken($theme-accueil, 10%);
+	}
+}
+
+.plusInfo{
+	color: $theme-accueil;
+	background-color: white;
+	border: 4px solid $theme-accueil;
+
+	&:hover{
+		border-color: lighten($theme-accueil, 10%);
+		color: lighten($theme-accueil, 10%);
+	}
+
+	&:active{
+		border-color: darken($theme-accueil, 10%);
+		color: darken($theme-accueil, 10%);
+	}
+}
+
+.prop1, .prop2{
+	margin-bottom: em(60);
 }
 
 @import 'footer';

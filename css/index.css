@@ -255,12 +255,9 @@ nav {
   fill: #872f39;
 }
 
-.menu li a:hover {
+.menu li a:hover, .menu .currentNav {
   background-color: #872f39;
-}
-
-.menu .currentNav {
-  background-color: #872f39;
+  color: white;
 }
 
 @media screen and (min-width: 769px) {
@@ -269,129 +266,144 @@ nav {
     color: #872f39;
   }
   .menu .currentNav {
+    background-color: unset;
     color: #872f39;
   }
 }
 
-.imgintro {
-  height: 90vh;
-  overflow: hidden;
-  position: relative;
+.intro {
+  height: calc(100vh - 4.375em);
 }
 
-.imgintro img {
-  height: 100%;
-  width: 100%;
-}
-
-.imgintro .introtext {
+.introtext {
   position: absolute;
-  top: 30%;
-  right: 100px;
-  width: 480px;
-}
-
-.imgintro .introtext h1 {
-  margin-bottom: 10px;
-}
-
-.imgintro .introtext p {
-  margin: 0;
-}
-
-.article1 {
-  margin-top: 90px;
-  margin-bottom: 45px;
-}
-
-.article1 .artcl {
-  position: relative;
-}
-
-.article1 .artcl .gridTxts {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 510px 175px 1fr;
-      grid-template-columns: 510px 175px 1fr;
-  -ms-grid-rows: 100px 1fr;
-      grid-template-rows: 100px 1fr;
-      grid-template-areas: ".    title   title" ".    .       para";
-}
-
-.article1 .artcl .gridTxts h2 {
-  margin: 15px 0 0 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: title;
-}
-
-.article1 .artcl .gridTxts p {
-  margin: 0;
-  display: block;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: para;
-}
-
-.zoneImg {
-  width: 567px;
-  height: 392px;
-}
-
-.zoneImg img {
-  height: 100%;
-  width: 100%;
-}
-
-.article2 {
-  margin-top: 45px;
-}
-
-.article2 .artcl {
-  position: relative;
-}
-
-.article2 .artcl .imgRight {
-  float: right;
-}
-
-.article2 .artcl .gridTxts {
-  position: absolute;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 570px 120px 1fr;
-      grid-template-columns: 570px 120px 1fr;
-  -ms-grid-rows: 100px 1fr;
-      grid-template-rows: 100px 1fr;
-      grid-template-areas: "title   title   ." "para    .       .";
-}
-
-.article2 .artcl .gridTxts h2 {
-  margin: 15px 0 0 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: title;
-}
-
-.article2 .artcl .gridTxts p {
-  margin: 0;
-  display: block;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: para;
+  width: 19.5em;
+  bottom: 20%;
+  right: 1.5em;
+  color: white;
   text-align: right;
 }
 
-.article2 .artcl:after {
-  display: block;
-  content: "";
-  clear: both;
+.introtext h2 {
+  font-size: 2.25em;
+  margin-bottom: 0.27778em;
+  font-family: 'Oleo Script', cursive;
+}
+
+.introtext p {
+  font-weight: 700;
+  margin: 0;
+  font-variant: small-caps;
+  margin-bottom: 0.625em;
+}
+
+.introtext button {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 3.4375em;
+  width: 9.375em;
+  background-color: rgba(238, 235, 230, 0.712);
+  border: none;
+}
+
+.salades {
+  padding: 3.75em 0;
+}
+
+.salades h2 {
+  font-size: 2.25em;
+  font-family: 'Montserrat', sans-serif;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.permaculture {
+  padding: 3.75em 0;
+  background-image: url("../img/accueil/section_pattern.png");
+}
+
+.citation {
+  height: 12.5em;
+  padding-top: 1.875em;
+  position: relative;
+}
+
+.citation p {
+  position: absolute;
+  bottom: -4.5625em;
+  left: 0;
+  color: white;
+  font-variant: small-caps;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5em;
+  margin: 0;
+}
+
+.propositions {
+  padding: 7.5em 0 3.75em 0;
+}
+
+.commPanier, .plusInfo {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 88px;
+  vertical-align: middle;
+  padding: 0.5em;
+}
+
+.commPanier span, .plusInfo span {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 2.5;
+}
+
+.commPanier {
+  color: white;
+  background-color: #872f39;
+}
+
+.commPanier:hover {
+  background-color: #ad3c49;
+}
+
+.commPanier:active {
+  background-color: #612229;
+}
+
+.plusInfo {
+  color: #872f39;
+  background-color: white;
+  border: 4px solid #872f39;
+}
+
+.plusInfo:hover {
+  border-color: #ad3c49;
+  color: #ad3c49;
+}
+
+.plusInfo:active {
+  border-color: #612229;
+  color: #612229;
+}
+
+.prop1, .prop2 {
+  margin-bottom: 3.75em;
 }
 
 footer {
