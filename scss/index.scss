@@ -39,7 +39,10 @@
 // ==============================================================
 
 .intro{
-    height: calc(100vh - 4.375em);
+	height: calc(100vh - 4.375em);
+	.wrapper{
+		position: relative; 
+	}
 }
 
 .introtext{
@@ -60,13 +63,17 @@
 		font-variant: small-caps;
 		margin-bottom: em(10);
 	}
-	button{
+	a{
 		font-size: 1em;
+		display: inline-block;
 		text-transform: uppercase;
 		font-weight: 700;
-		height: em(55); width: em(150);
+		// height: em(55); width: em(150);
 		background-color: rgba(238, 235, 230, 0.712);
 		border: none;
+		padding: em(15) em(40);
+		color: black;
+		text-decoration: none;
 	}
 }
 
@@ -100,7 +107,12 @@
 .permaculture{
 	padding: em(60) 0;
 
-	background-image: url("../img/accueil/section_pattern.png")
+	background-image: url("../img/accueil/section_pattern.png");
+
+	h2{
+		font-variant: small-caps;
+		font-weight: 300;
+	} 
 }
 
 // ==============================================================
@@ -111,20 +123,25 @@
 	height: em(200);
 	padding-top: em(30);
 	position: relative;
-	p{
+	.paragraphsBox{
 		position: absolute;
 		bottom: em(-73);
 		left:0;
+
+
+		width: 100%;
 
 		color: white;
 		font-variant: small-caps;
 		text-align: center;
 
-		width: 100%;
-
 		background-color: rgba(black,.6);
 		padding: em(15,30);
 		margin: 0;
+		p{
+			margin: 0;
+			font-variant: small-caps;
+		}
 	}
 }
 
@@ -186,6 +203,78 @@
 
 .prop1, .prop2{
 	margin-bottom: em(60);
+}
+
+// ==============================================================
+// Version PC
+// ==============================================================
+
+@media screen and (min-width: 725px){
+	.introtext{
+		width: unset;
+		h2{
+			font-size: em(56);
+		}
+		p{
+			font-size: em(18); 
+		}
+
+	}
+
+	.salades{
+		h2{
+			text-align: right;
+		}
+		.flexBox{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-around;
+			
+			.paragraphsBox, .image{
+				width: em(360); 
+				// flex: 1;
+				margin: 0 em(10);
+			}
+		}
+	}
+
+	.permaculture{
+		h2{
+			text-align-last: left;
+		}
+		.paragraphsBox{
+			width: em(600);
+		}
+	}
+
+	.permaculture, .salades{
+		h2{
+			font-size: em(84);
+			line-height: 0.8em;
+		}
+	}
+
+	.citation{
+		height: em(623);
+		.paragraphsBox{
+			position: unset;
+
+			// display: inline-block;
+
+			width: unset;
+
+			float: right; 
+
+			position: relative;
+			top: em(50);
+
+			text-align-last: left;
+			h2{
+				font-size: em(24);
+			}
+		}
+	}
+
 }
 
 @import 'footer';
