@@ -9,3 +9,6 @@ $browser-perc-context: 1200;
 @function perc($pixels, $context: $browser-perc-context) {
     @return ($pixels/$context)*100+0%;
 }
+
+$theme-contact: #dead65;
+$theme-contact-border: darken(#dead65, 20%);

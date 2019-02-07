@@ -337,11 +337,11 @@ nav {
 }
 
 .flexCoords a:hover > .coord .picto {
-  background-color: #ffc875;
+  background-color: #e7c38f;
 }
 
 .flexCoords a:active > .coord .picto {
-  background-color: #8b5a3b;
+  background-color: #d5973b;
 }
 
 article {
@@ -443,7 +443,7 @@ article p {
 }
 
 .field input:hover, .field textarea:hover {
-  border-color: #a57c62;
+  border-color: #b67c27;
 }
 
 .field input:hover + label, .field textarea:hover + label {
@@ -490,22 +490,22 @@ article p {
   color: white;
   border: none;
   background-color: #dead65;
-  -webkit-box-shadow: 0 0.16667em 0 #a57c62;
-          box-shadow: 0 0.16667em 0 #a57c62;
+  -webkit-box-shadow: 0 0.16667em 0 #b67c27;
+          box-shadow: 0 0.16667em 0 #b67c27;
   padding: 0.625em 1.04167em;
   border-radius: 0.20833em;
 }
 
 .submit:hover {
-  background-color: #ffc875;
-  -webkit-box-shadow: 0 0.16667em 0 #ca9675;
-          box-shadow: 0 0.16667em 0 #ca9675;
+  background-color: #e7c38f;
+  -webkit-box-shadow: 0 0.16667em 0 #d5973b;
+          box-shadow: 0 0.16667em 0 #d5973b;
 }
 
 .submit:active {
-  background-color: #a57c62;
-  -webkit-box-shadow: 0 0.16667em 0 #8b5a3b;
-          box-shadow: 0 0.16667em 0 #8b5a3b;
+  background-color: #d5973b;
+  -webkit-box-shadow: 0 0.16667em 0 #8c5f1e;
+          box-shadow: 0 0.16667em 0 #8c5f1e;
 }
 
 .mapBg {
