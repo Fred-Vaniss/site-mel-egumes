@@ -197,8 +197,8 @@ nav {
   color: #000;
   display: inline-block;
   width: 100%;
-  font-size: 1.625em;
-  padding: 0.46154em 0.96154em 0.46154em 0;
+  font-size: 1.25em;
+  padding: 0.6em 1.25em 0.6em 0;
 }
 
 .menu li a:hover {
@@ -305,6 +305,7 @@ h2 {
 }
 
 p {
+  font-size: 1.125em;
   margin: 1.25em 0;
   line-height: 1.5em;
 }
@@ -398,7 +399,7 @@ strong {
 }
 
 .salades h2 {
-  font-size: 2.25em;
+  font-size: 2.625em;
   line-height: 0.8em;
   font-family: 'Montserrat', sans-serif;
   font-variant: small-caps;
@@ -420,7 +421,7 @@ strong {
 }
 
 .permaculture h2 {
-  font-size: 2.25em;
+  font-size: 2.625em;
   line-height: 0.8em;
   font-variant: small-caps;
   font-weight: 300;
@@ -434,7 +435,7 @@ strong {
 
 .citation .paragraphsBox {
   position: absolute;
-  bottom: -4.5625em;
+  bottom: -5.5em;
   left: 0;
   width: 100%;
   font-variant: small-caps;
@@ -524,6 +525,9 @@ strong {
 }
 
 @media screen and (min-width: 725px) {
+  p {
+    font-size: 1em;
+  }
   .contFeuilles {
     height: 100%;
     width: 100%;

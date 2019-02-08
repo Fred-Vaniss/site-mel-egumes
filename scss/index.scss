@@ -8,6 +8,7 @@ h2{
 }
 
 p{
+	font-size: em(18);
 	margin: em(20) 0;
 	line-height: 1.5em;
 }
@@ -111,7 +112,7 @@ strong{
 .salades{
 	padding: em(60) 0;
 	h2{
-		font-size: em(36);
+		font-size: em(42);
 		line-height: 0.8em;
 		font-family: 'Montserrat', sans-serif;
 		font-variant: small-caps;
@@ -137,7 +138,7 @@ strong{
 	background-image: url("../img/accueil/section_pattern.png");
 
 	h2{
-		font-size: em(36);
+		font-size: em(42);
 		line-height: 0.8em;
 		font-variant: small-caps;
 		font-weight: 300;
@@ -154,7 +155,7 @@ strong{
 	position: relative;
 	.paragraphsBox{
 		position: absolute;
-		bottom: em(-73);
+		bottom: em(-110,20);
 		left:0;
 
 		width: 100%;
@@ -248,6 +249,10 @@ strong{
 // ==============================================================
 
 @media screen and (min-width: 725px){
+	p{
+		font-size: 1em;
+	}
+
 	.contFeuilles{
 		height: 100%; width:100%;
 		position: relative;
@@ -346,6 +351,7 @@ strong{
 
 			color: white;
 			background-color: rgba(black,.6);
+			
 			p{
 				font-size: em(35,20);
 			}
