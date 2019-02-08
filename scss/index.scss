@@ -15,6 +15,10 @@ strong{
 	font-weight: 500;
 }
 
+.feuilles{
+	display: none;
+}
+
 // ==============================================================
 // Couleur du header
 // ==============================================================
@@ -244,6 +248,34 @@ strong{
 // ==============================================================
 
 @media screen and (min-width: 725px){
+	.contFeuilles{
+		float: left;
+		height: 100%; width:100%;
+		position: relative;
+
+		&::after{
+			clear: both;
+			content: "";
+		}
+	}
+	.feuilles{
+		display: unset;
+		position: absolute;
+		
+	}
+
+	.salades .feuilles{
+		top: em(215);
+		left: 47%;
+		z-index: -1;
+	}
+
+	.permaculture .feuilles{
+		top: em(-200);
+		left: 70%;
+		z-index: 0;
+	}
+
 	.introtext{
 		width: unset;
 		bottom: 30%;
@@ -257,6 +289,7 @@ strong{
 	}
 
 	.salades{
+		position: relative;
 		h2{
 			text-align: right;
 		}

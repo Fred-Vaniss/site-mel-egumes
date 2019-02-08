@@ -312,6 +312,10 @@ strong {
   font-weight: 500;
 }
 
+.feuilles {
+  display: none;
+}
+
 .logoCont {
   background-color: #872f39;
 }
@@ -518,6 +522,30 @@ strong {
 }
 
 @media screen and (min-width: 725px) {
+  .contFeuilles {
+    float: left;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .contFeuilles::after {
+    clear: both;
+    content: "";
+  }
+  .feuilles {
+    display: unset;
+    position: absolute;
+  }
+  .salades .feuilles {
+    top: 13.4375em;
+    left: 47%;
+    z-index: -1;
+  }
+  .permaculture .feuilles {
+    top: -12.5em;
+    left: 70%;
+    z-index: 0;
+  }
   .introtext {
     width: unset;
     bottom: 30%;
@@ -527,6 +555,9 @@ strong {
   }
   .introtext p {
     font-size: 1.125em;
+  }
+  .salades {
+    position: relative;
   }
   .salades h2 {
     text-align: right;
