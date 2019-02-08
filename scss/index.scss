@@ -9,6 +9,7 @@ h2{
 
 p{
 	margin: em(20) 0;
+	line-height: 1.5em;
 }
 
 strong{
@@ -177,6 +178,14 @@ strong{
 
 .propositions{
 	padding: em(120) 0 em(60) 0;
+	.flexBox{
+		display:flex;
+		flex-flow: column;
+		align-items: center;
+		.image{
+			max-width: em(400);
+		}
+	}
 }
 .commPanier, .plusInfo{
 	font-size: em(24);
@@ -234,34 +243,18 @@ strong{
 	margin-bottom: em(60);
 }
 
-.prop1, .prop3{
-	p, a{
-		flex: initial;
-	}
-	display: flex;
-	flex-direction: column;
-	// justify-content: center;
-}
-
 // ==============================================================
 // Version PC
 // ==============================================================
 
 @media screen and (min-width: 725px){
 	.contFeuilles{
-		float: left;
 		height: 100%; width:100%;
 		position: relative;
-
-		&::after{
-			clear: both;
-			content: "";
-		}
 	}
 	.feuilles{
 		display: unset;
 		position: absolute;
-		
 	}
 
 	.salades .feuilles{
@@ -272,8 +265,14 @@ strong{
 
 	.permaculture .feuilles{
 		top: em(-200);
-		left: 70%;
-		z-index: 0;
+		left: 0;
+		z-index: 2;
+	}
+	
+
+	.propositions .feuilles{
+		top: em(-150);
+		left: 35%;
 	}
 
 	.introtext{
@@ -312,6 +311,18 @@ strong{
 		.paragraphsBox{
 			width: em(600);
 		}
+		.flexbox{
+			display: flex;
+			justify-content: space-between;
+			.paragraphsBox{
+				flex:4;
+			}
+			.contFeuilles{
+				flex: 1;
+				height: 100px;
+				width: unset;
+			}
+		}
 	}
 
 	.permaculture, .salades{
@@ -346,14 +357,30 @@ strong{
 			display: flex;
 			flex-direction: row-reverse;
 			justify-content: space-around;
+			.image{
+				min-width: unset;
+			}
 		}
-		.prop1, .prop2, .prop3{ 
-			width: em(360);
+	}
+	.prop1, .prop2, .prop3{ 
+		width: em(360);
+	}
+
+	.prop1, .prop3{
+		p, a{
+			flex: initial;
 		}
+		display: flex;
+		flex-direction: column;
+	}
+
+	.prop1{
+		align-items: flex-end;
 	}
 
 	.commPanier, .plusInfo{
-		width: unset;
+		display: inline-block;
+		width: em(250,24);
 		padding: em(15), em(40);
 	}
 
