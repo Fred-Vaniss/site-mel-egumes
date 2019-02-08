@@ -104,21 +104,24 @@ nav {
   z-index: 1;
   background-color: #f0ede9;
   height: 100%;
-  font-variant: small-caps;
+  text-transform: uppercase;
   -ms-grid-column-align: end;
       justify-self: end;
   width: calc(100vw - 7.5em);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .showNav {
   -webkit-transform: translateX(calc( -100vw + 7.5em));
+      -ms-transform: translateX(calc( -100vw + 7.5em));
           transform: translateX(calc( -100vw + 7.5em));
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
@@ -174,6 +177,7 @@ nav {
   }
   .showNav {
     -webkit-transform: translateX(-13.75em);
+        -ms-transform: translateX(-13.75em);
             transform: translateX(-13.75em);
   }
 }
@@ -201,10 +205,12 @@ nav {
   nav {
     position: static;
     -webkit-transform: unset;
+        -ms-transform: unset;
             transform: unset;
     width: unset;
     height: unset;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
   .menuButton {
@@ -217,7 +223,7 @@ nav {
   .menu li a {
     padding: 0.3125em;
     display: inline;
-    font-size: 14px;
+    font-size: 0.75em;
   }
   .menu li a:hover {
     background-color: unset;
@@ -229,12 +235,13 @@ nav {
   .menu .currentNav {
     background-color: unset;
     color: #dead65;
-    text-decoration: underline;
   }
   .showNav {
     -webkit-transform: none;
+        -ms-transform: none;
             transform: none;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
 }
@@ -421,7 +428,6 @@ nav {
 footer {
   -webkit-box-shadow: 0 -1px 2px #0000003d;
           box-shadow: 0 -1px 2px #0000003d;
-  height: 75px;
   margin-top: 50px;
   background-color: #f0ede9;
   padding-top: 1.875em;
@@ -432,5 +438,19 @@ footer {
   text-align: center;
   font-weight: 200;
   font-size: 0.75em;
+}
+
+.footButton {
+  font-size: 1.875em;
+  margin: 0.3125em 0 0.625em 0;
+  text-align: center;
+}
+
+.footButton a {
+  color: black;
+}
+
+.footButton a:hover {
+  color: #dead65;
 }
 /*# sourceMappingURL=nos-produits.css.map */

@@ -1,6 +1,6 @@
 footer{
     box-shadow: 0 -1px 2px #0000003d;
-    height: 75px;
+    // height: 75px;
 
     margin-top: 50px; 
 
@@ -15,4 +15,16 @@ footer{
 
     font-weight: 200;
     font-size: em(12);
+}
+
+.footButton{
+    font-size: em(30);
+    margin: em(5) 0 em(10) 0;
+    text-align: center;
+    a{
+        color: black;
+        &:hover{
+            color: #dead65
+        }
+    }
 }
