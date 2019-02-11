@@ -11,6 +11,7 @@ p{
 	font-size: em(18);
 	margin: em(20) 0;
 	line-height: 1.5em;
+	text-align: justify;
 }
 
 strong{
@@ -169,6 +170,7 @@ strong{
 		p{
 			margin: 0;
 			font-variant: small-caps;
+			text-align: center;
 		}
 	}
 }
@@ -264,7 +266,7 @@ strong{
 
 	.salades .feuilles{
 		top: em(215);
-		left: 47%;
+		left: 51%;
 		z-index: -1;
 	}
 
@@ -301,10 +303,17 @@ strong{
 		.flexBox{
 			display: flex;
 			flex-direction: row-reverse;
-			justify-content: space-around;
+			justify-content: space-between;
+			
+			.image{
+				width: em(450); 
+			}
+
+			.paragraphsBox{
+				width: em(372);
+			}
 			
 			.paragraphsBox, .image{
-				width: em(360); 
 				margin: 0 em(10);
 			}
 		}

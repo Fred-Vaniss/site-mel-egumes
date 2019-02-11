@@ -164,15 +164,18 @@ nav {
   width: calc(100vw - 7.5em);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .showNav {
   -webkit-transform: translateX(calc( -100vw + 7.5em));
+      -ms-transform: translateX(calc( -100vw + 7.5em));
           transform: translateX(calc( -100vw + 7.5em));
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
@@ -228,6 +231,7 @@ nav {
   }
   .showNav {
     -webkit-transform: translateX(-13.75em);
+        -ms-transform: translateX(-13.75em);
             transform: translateX(-13.75em);
   }
 }
@@ -255,10 +259,12 @@ nav {
   nav {
     position: static;
     -webkit-transform: unset;
+        -ms-transform: unset;
             transform: unset;
     width: unset;
     height: unset;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
   .menuButton {
@@ -286,8 +292,10 @@ nav {
   }
   .showNav {
     -webkit-transform: none;
+        -ms-transform: none;
             transform: none;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
 }
@@ -300,6 +308,7 @@ p {
   font-size: 1.125em;
   margin: 1.25em 0;
   line-height: 1.5em;
+  text-align: justify;
 }
 
 strong {
@@ -440,6 +449,7 @@ strong {
 .citation .paragraphsBox p {
   margin: 0;
   font-variant: small-caps;
+  text-align: center;
 }
 
 .propositions {
@@ -531,7 +541,7 @@ strong {
   }
   .salades .feuilles {
     top: 13.4375em;
-    left: 47%;
+    left: 51%;
     z-index: -1;
   }
   .permaculture .feuilles {
@@ -567,11 +577,17 @@ strong {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .salades .flexBox .image {
+    width: 28.125em;
+  }
+  .salades .flexBox .paragraphsBox {
+    width: 23.25em;
   }
   .salades .flexBox .paragraphsBox, .salades .flexBox .image {
-    width: 22.5em;
     margin: 0 0.625em;
   }
   .permaculture h2 {
