@@ -6,7 +6,21 @@ footer{
 
     background-color: #f0ede9;
 
-    padding-top: em(30);
+    padding: em(15) 0;
+
+    .wrapper{
+        display: flex;
+        // flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    p{
+        display: inline-block;
+        margin: 0;
+    }
 }
 
 .textFooter{
@@ -18,13 +32,25 @@ footer{
 }
 
 .footButton{
-    font-size: em(30);
-    margin: em(5) 0 em(10) 0;
+    font-size: em(24);
     text-align: center;
     a{
         color: black;
+        margin-left: em(5);
         &:hover{
             color: #dead65
+        }
+    }
+}
+
+@media screen and (max-width: 390px){
+    .textFooter{
+        font-size: em(10);
+    }
+    .footButton{
+        font-size: em(16);
+        a{
+            margin-left: em(8);
         }
     }
 }

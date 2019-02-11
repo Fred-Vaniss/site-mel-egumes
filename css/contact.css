@@ -605,7 +605,26 @@ footer {
           box-shadow: 0 -1px 2px #0000003d;
   margin-top: 50px;
   background-color: #f0ede9;
-  padding-top: 1.875em;
+  padding: 0.9375em 0;
+}
+
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0;
 }
 
 .textFooter {
@@ -616,16 +635,28 @@ footer {
 }
 
 .footButton {
-  font-size: 1.875em;
-  margin: 0.3125em 0 0.625em 0;
+  font-size: 1.5em;
   text-align: center;
 }
 
 .footButton a {
   color: black;
+  margin-left: 0.3125em;
 }
 
 .footButton a:hover {
   color: #dead65;
+}
+
+@media screen and (max-width: 390px) {
+  .textFooter {
+    font-size: 0.625em;
+  }
+  .footButton {
+    font-size: 1em;
+  }
+  .footButton a {
+    margin-left: 0.5em;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
