@@ -643,14 +643,15 @@ strong {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .propositions .flexBox .image {
     min-width: unset;
   }
   .prop1, .prop2, .prop3 {
-    width: 22.5em;
+    width: 25em;
   }
   .prop1, .prop3 {
     display: -webkit-box;
