@@ -685,7 +685,7 @@ footer p {
 
 .footButton a {
   color: black;
-  margin-left: 0.3125em;
+  margin-left: 0.4375em;
 }
 
 .footButton a:hover {
@@ -700,7 +700,7 @@ footer p {
     font-size: 1em;
   }
   .footButton a {
-    margin-left: 0.5em;
+    margin-left: 0.625em;
   }
 }
 /*# sourceMappingURL=contact.css.map */
