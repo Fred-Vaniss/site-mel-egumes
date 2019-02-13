@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mél'égumes - Nos produits</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nos-produits.css">
 </head>
 
@@ -35,115 +36,103 @@
         </div>
         <script src="js/menu.js"></script>
     </header>
-    
-    <section class="calendrier">
-        <div class="wrapper calBg">
-            <!-- Boutton fermer -->
-            <div id="nav">
-                <input id="fermer" type="image" src="img/img_wireframe_round.png" alt="Fermer la saison" width="100px" onclick="closeSeason(event)">
-                <div id="boutSuiv" class="icosaison" onclick="switchSeason(event, nextNbr)"> <img id="suivant" src="" alt="Saison suivante" height="80px"></div>
-                <div id="boutPrec" class="icosaison" onclick="switchSeason(event, prevNbr)"> <img id="precedent" src="" alt="Saison précédente" height="80px"></div>
-            </div>
 
-            <!-- Page avec la sélection des saisons -->
-            <div id="pageSaisons">
-                <div class="descr">
-                    <h3>Calendrier des saisons</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                        nostrud exerci tation</p>
-                </div>
-                
-                <div class="listeSaisons">
-                    <div class="saison" id="sais1" onclick="showSeason(event, 'saison1', 0)" >
-                        <div class="icosaison prin">
-                            <img class="imgsaison" src="img/saisons/printemps.svg" alt="" height="80px">
-                        </div>
-                        <p>Printemps</p>
-                    </div>
-                    <div class="saison" id="sais2" onclick="showSeason(event, 'saison2', 1)" >
-                        <div class="icosaison ete">
-                            <img class="imgsaison" src="img/saisons/ete.svg" alt="" height="80px">
-                        </div>                        
-                        <p>Eté</p>
-                    </div>
-                    <div class="saison" id="sais3" onclick="showSeason(event, 'saison3', 2)" >
-                        <div class="icosaison aut">
-                            <img class="imgsaison" src="img/saisons/automne.svg" alt="" height="80px">
-                        </div>                         
-                        <p>Automne</p>
-                    </div>
-                    <div class="saison" id="sais4" onclick="showSeason(event, 'saison4', 3)" >
-                        <div class="icosaison hiv">
-                            <img class="imgsaison" src="img/saisons/hiver.svg" alt="" height="80px">
-                        </div>                          
-                        <p>Hiver</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallerie de la saison 1 (Printemps) -->
-            <div class="listeLegs" id="saison1">
-                <div class="legume" id="leg11">
-                    <div class="contImgLeg">
-                        <img src="img/img_wireframe.png" alt="">
-                    </div>
-                    <p>Lorem Ipsum 1-1</p>
-                </div>
-                <div class="legume" id="leg12">
-                    <div class="contImgLeg">
-                        <img src="img/img_wireframe.png" alt="">
-                    </div>
-                    <p>Lorem Ipsum 1-2</p>
-                </div>
-                <div class="legume" id="leg13">
-                    <div class="contImgLeg">
-                        <img src="img/img_wireframe.png" alt="">
-                    </div>
-                    <p>Lorem Ipsum 1-3</p>
-                </div>
-                <div class="legume" id="leg14">
-                    <div class="contImgLeg">
-                        <img src="img/img_wireframe.png" alt="">
-                    </div>
-                    <p>Lorem Ipsum 1-4</p>
-                </div>
-                <div class="legume" id="leg15">
-                    <div class="contImgLeg">
-                        <img src="img/img_wireframe.png" alt="">
-                    </div>
-                    <p>Lorem Ipsum 1-5</p>
-                </div>
-                <div class="legume" id="leg16">
-                    <div class="contImgLeg">
-                        <img src="img/img_wireframe.png" alt="">
-                    </div>
-                    <p>Lorem Ipsum  1-6</p>
-                </div>
-                <div class="legume" id="leg17">
-                    <div class="contImgLeg">
-                        <img src="img/img_wireframe.png" alt="">
-                    </div>
-                    <p>Lorem Ipsum  1-7</p>
-                </div>
-                <div class="legume" id="leg18">
-                    <div class="contImgLeg">
-                        <img src="img/img_wireframe.png" alt="">
-                    </div>
-                    <p>Lorem Ipsum  1-8</p>
-                </div>
-            </div>
-            <div class="listeLegs" id="saison2">
-                <h1>Page légumes été (en construction)</h1>
-            </div>
-            <div class="listeLegs" id="saison3">
-                <h1>Page légumes automne (en construction)</h1>
-            </div>
-            <div class="listeLegs" id="saison4">
-                <h1>Page légumes hiver (en construction)</h1>
-            </div>
+    <section class="intro firstSection">
+        <div class="wrapper">
+            <h2>Nos produits <strong>frais</strong></h2>
         </div>
     </section>
+
+    <section class="introSuite">
+        <div class="wrapper">
+            <p>Choisissez parmi une large sélection de légumes frais cultivé de chez Mél'égumes</p>
+            <img src="img/nos_produits/market.svg" alt="Market">
+        </div>
+    </section>
+
+    <section class="paniers">
+        <div class="wrapper">
+            <article class="panier">
+                <h3>Panier de base</h3>
+                <p>Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques. </p>
+                <p class="panPers">1-2 personnes</p>
+                <p class="panPrix">25€</p>
+            </article>
+            <article class="panier">
+                <h3>Panier découverte</h3>
+                <p>Celui-ci est parfait pour découvrir ou re-découvrir la saveur d’un bon légume cultivé sainement et avec amour. <br>Ce panier contient un assortiment de 5 sortes de légumes de saison.</p>
+                <p class="panPers">2 personnes</p>
+                <p class="panPrix">20€</p>
+            </article>
+            <article class="panier">
+                <h3>Panier gourmand</h3>
+                <p>Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques. <br> En plus grande quantité que le panier de base. </p>
+                <p class="panPers">2 gourmands ou 3 personnes</p>
+                <p class="panPrix">30€</p>
+            </article>
+            <article class="panier">
+                <h3>Panier familial</h3>
+                <p>Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques. <br> Celui-ci apportera la variété dont votre petite famille a besoin. </p>
+                <p class="panPers">3-4 personnes</p>
+                <p class="panPrix">35€</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="formules">
+        <div class="wrapper">
+            <h2>Nos formules</h2>
+            <article>
+                <div class="imgCont">
+                    <img src="img/nos_produits/formule_1.svg" alt="Formule 1" height="67px">
+                </div>
+                <p>Choisissez parmi l’un des paniers composés de Mélanie</p>
+            </article>
+            <article>
+                <div class="imgCont">
+                    <img src="img/nos_produits/formule_2.svg" alt="Formule 2" height="67px">
+                </div>
+                <p>Personnalisez votre panier</p>
+            </article>
+            <article>
+                <div class="imgCont">
+                    <img src="img/nos_produits/formule_3.svg" alt="Formule 3" height="67px">
+                </div>
+                <p>Venez sur place composer votre propre panier</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="commande">
+        <div class="wrapper">
+            <h2>Mon panier</h2>
+            <form action="post">
+                <div class="checkboxes">
+                    <input type="checkbox" name="base" id="base">
+                    <label for="base">Panier de base</label> <br>
+                    <input type="checkbox" name="decou" id="decou">
+                    <label for="decou">Panier découverte</label><br>
+                    <input type="checkbox" name="gourm" id="gourm">
+                    <label for="gourm">Panier gourmand</label><br>
+                    <input type="checkbox" name="famil" id="famil">
+                    <label for="famil">Paier familial</label><br>
+                    <input type="checkbox" name="perso" id="perso">
+                    <label for="perso">Panier personalisé</label>
+                </div>
+                <div class="msgBox">
+                    <h3>Message</h3>
+                    <p>Le message s’auto-remplira au fur et à mesure que vous cochez vos choix, ajoutez dans le message les quantités que vous souhaitez ainsi que les légumes que vous souhaitez dans votre panier personalisé.</p>
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                </div>
+                <button>Envoyer ma commande</button>
+            </form>
+            <p class="remarque">Vos paniers sont à venir chercher au potager. Le paiement de vos paniers s’effectue sur place.</p>
+        </div>
+    </section>
+
+    <!-- <section class="calendrier">
+        <h2>Notre sélection de légumes de toute l'année</h2>
+    </section> -->
 
     <footer>
         <div class="wrapper">
