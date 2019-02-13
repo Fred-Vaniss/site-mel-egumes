@@ -1,6 +1,8 @@
+@import "css-reset";
 @import "html";
 @import "header";
 @import "functions";
+
 
 h2{
     font-size: em(40);
@@ -11,6 +13,43 @@ h2{
         font-weight: 500;
     }
 }
+
+
+// ==============================================================
+// Couleur du header
+// ==============================================================
+
+.logoCont{
+    background-color: $theme-produits;
+}
+
+.bannerSvg{
+    fill: $theme-produits;
+}
+
+.menu {
+    li a:hover, .currentNav{
+		background-color: $theme-produits;
+		color: white;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .menu{
+        li a:hover{
+            background-color: unset;
+            color: $theme-produits;
+        }
+        .currentNav{
+			background-color: unset;
+            color: $theme-produits;
+        }
+    }
+}
+
+// ==============================================================
+// Intro
+// ==============================================================
 
 .intro{
     height: em(200);
@@ -25,13 +64,62 @@ h2{
 }
 
 .introSuite{
+    z-index: 4;
     text-align: center;
     p{
-        font-size: em(18);
+        font-size: em(20);
         font-variant: small-caps;
+        margin: em(15,20);
     }
     img{
         width: em(135); height: em(135);
+        z-index: 10;
+    }
+}
+
+// ==============================================================
+// Paniers
+// ==============================================================
+
+.paniers{
+    z-index: -1;
+    position: relative;
+    top: em(-25);
+
+    background-color: #f9f7f4;
+    padding-top: em(40);
+    background-image: url(../img/nos_produits/circle_cut_1.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    .panier{
+        margin-bottom: em(50);
+    }
+
+    h3{
+        font-size: em(32);
+        font-variant: small-caps;
+        font-weight: 300;
+
+        margin-bottom: em(10,32);
+    }
+
+    .panDesc{
+        margin-bottom: em(20);
+    }
+
+    .panPers{
+        margin-bottom: em(15);
+    }
+
+    .panPrix{
+        margin-top: em(2,26);
+        font-size: em(26);
+        font-weight: 500;
+    }
+
+    .panPers, .panPrix{
+        color: #a69a54;
     }
 }
 

@@ -1,6 +1,60 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -258,6 +312,30 @@ h2 strong {
   font-weight: 500;
 }
 
+.logoCont {
+  background-color: #a69a54;
+}
+
+.bannerSvg {
+  fill: #a69a54;
+}
+
+.menu li a:hover, .menu .currentNav {
+  background-color: #a69a54;
+  color: white;
+}
+
+@media screen and (min-width: 769px) {
+  .menu li a:hover {
+    background-color: unset;
+    color: #a69a54;
+  }
+  .menu .currentNav {
+    background-color: unset;
+    color: #a69a54;
+  }
+}
+
 .intro {
   height: 12.5em;
 }
@@ -273,17 +351,60 @@ h2 strong {
 }
 
 .introSuite {
+  z-index: 4;
   text-align: center;
 }
 
 .introSuite p {
-  font-size: 1.125em;
+  font-size: 1.25em;
   font-variant: small-caps;
+  margin: 0.75em;
 }
 
 .introSuite img {
   width: 8.4375em;
   height: 8.4375em;
+  z-index: 10;
+}
+
+.paniers {
+  z-index: -1;
+  position: relative;
+  top: -1.5625em;
+  background-color: #f9f7f4;
+  padding-top: 2.5em;
+  background-image: url(../img/nos_produits/circle_cut_1.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.paniers .panier {
+  margin-bottom: 3.125em;
+}
+
+.paniers h3 {
+  font-size: 2em;
+  font-variant: small-caps;
+  font-weight: 300;
+  margin-bottom: 0.3125em;
+}
+
+.paniers .panDesc {
+  margin-bottom: 1.25em;
+}
+
+.paniers .panPers {
+  margin-bottom: 0.9375em;
+}
+
+.paniers .panPrix {
+  margin-top: 0.07692em;
+  font-size: 1.625em;
+  font-weight: 500;
+}
+
+.paniers .panPers, .paniers .panPrix {
+  color: #a69a54;
 }
 
 footer {
