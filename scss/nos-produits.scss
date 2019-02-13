@@ -2,158 +2,37 @@
 @import "header";
 @import "functions";
 
-
-.calBg{
-    border: 1px solid #000;
-    padding: 0 15px;
-    height: 704px;
-}
-
-
-// Page des saisons
-#pageSaisons{
-    // display:none;
-    display:grid;
-    grid-template-columns: 1fr 648px;
-
-    animation: fadeEffect 1s;
-
-    h3{
-        margin: 5px 0;
+h2{
+    font-size: em(40);
+    font-variant: small-caps;
+    font-weight: 300;
+    line-height: 0.9em;
+    strong{
+        font-weight: 500;
     }
 }
 
-.listeSaisons{
-    display: flex;
-    justify-content: space-between;
+.intro{
+    height: em(200);
+    .wrapper{ 
+        position: relative;
+    }
+    h2{
+        position: absolute;
+        bottom: em(5,40);
+        color: white;
+    }
 }
 
-.icosaison{
-    border: 1px solid #000;
-    border-radius: 50%;
-    height: 115px;
-    width: 115px;
-    z-index: 10;
-
-    align-items: center;
-    justify-self: center;
-    justify-content: center;
-
-    display: flex;
-}
-
-.imgsaison{
-    align-self: center;
-    justify-self: center;
-    color: white;
-}
-
-
-.prin{
-    background-color: green;
-}
-
-.ete{
-    background-color: #f89334; 
-}
-
-.aut{
-    background-color: #c1372d;
-}
-
-.hiv{
-    background-color: #3da2d0;
-}
-
-
-.saison{
-    border: 1px solid #000;
-    height: 680px;
-    width: 144px;
-
-    display:grid;
-    grid-template-rows: 160px 1fr;
-
-    cursor: pointer;
-
-
+.introSuite{
+    text-align: center;
     p{
-        text-align: center;
-        align-self: end;
-        font-size: 24px;
-        font-weight: bold;
+        font-size: em(18);
+        font-variant: small-caps;
     }
-}
-
-#sais4{
-    background-image: url(../img/saisons/bg_hiver.jpg);
-    background-position-x: center;
-    background-size: cover;
-}
-
-#nav{
-    display: none;
-    position: relative;
-
-    animation: fadeEffect 1s;
-
-    #fermer{
-        position: absolute;
-        right: -67px;
-        top: -50px;
-    }
-    #boutSuiv{
-        position: absolute;
-        right: -72px;
-        top: 290px;
-        cursor: pointer;
-    }
-    #boutPrec{
-        position: absolute;
-        left: -72px;
-        top: 290px;
-        cursor: pointer;
-    }
-}
-
-// Cacher les pages non affichées
-#saison1, #saison2, #saison3, #saison4{
-    display: none;
-}
-
-// Page de la liste des légumes
-.listeLegs{
-    margin-top: 30px;
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 30px;
-
-    animation: fadeEffect 1s;
-
-    .legume{
-        justify-self: center;
-
-        p{
-            margin: 5px 0;
-            text-align: center;
-        }
-    }
-}
-
-.contImgLeg{
-    height: 264px;
-    width: 264px;
     img{
-        height: 100%;
-        width: 100%;
+        width: em(135); height: em(135);
     }
 }
-
-@keyframes fadeEffect{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 
 @import 'footer';

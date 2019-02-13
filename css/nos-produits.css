@@ -247,183 +247,43 @@ nav {
   }
 }
 
-.calBg {
-  border: 1px solid #000;
-  padding: 0 15px;
-  height: 704px;
+h2 {
+  font-size: 2.5em;
+  font-variant: small-caps;
+  font-weight: 300;
+  line-height: 0.9em;
 }
 
-#pageSaisons {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 648px;
-      grid-template-columns: 1fr 648px;
-  -webkit-animation: fadeEffect 1s;
-          animation: fadeEffect 1s;
+h2 strong {
+  font-weight: 500;
 }
 
-#pageSaisons h3 {
-  margin: 5px 0;
+.intro {
+  height: 12.5em;
 }
 
-.listeSaisons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.intro .wrapper {
+  position: relative;
 }
 
-.icosaison {
-  border: 1px solid #000;
-  border-radius: 50%;
-  height: 115px;
-  width: 115px;
-  z-index: 10;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.imgsaison {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+.intro h2 {
+  position: absolute;
+  bottom: 0.125em;
   color: white;
 }
 
-.prin {
-  background-color: green;
-}
-
-.ete {
-  background-color: #f89334;
-}
-
-.aut {
-  background-color: #c1372d;
-}
-
-.hiv {
-  background-color: #3da2d0;
-}
-
-.saison {
-  border: 1px solid #000;
-  height: 680px;
-  width: 144px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 160px 1fr;
-      grid-template-rows: 160px 1fr;
-  cursor: pointer;
-}
-
-.saison p {
-  text-align: center;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-#sais4 {
-  background-image: url(../img/saisons/bg_hiver.jpg);
-  background-position-x: center;
-  background-size: cover;
-}
-
-#nav {
-  display: none;
-  position: relative;
-  -webkit-animation: fadeEffect 1s;
-          animation: fadeEffect 1s;
-}
-
-#nav #fermer {
-  position: absolute;
-  right: -67px;
-  top: -50px;
-}
-
-#nav #boutSuiv {
-  position: absolute;
-  right: -72px;
-  top: 290px;
-  cursor: pointer;
-}
-
-#nav #boutPrec {
-  position: absolute;
-  left: -72px;
-  top: 290px;
-  cursor: pointer;
-}
-
-#saison1, #saison2, #saison3, #saison4 {
-  display: none;
-}
-
-.listeLegs {
-  margin-top: 30px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  grid-row-gap: 30px;
-  -webkit-animation: fadeEffect 1s;
-          animation: fadeEffect 1s;
-}
-
-.listeLegs .legume {
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.listeLegs .legume p {
-  margin: 5px 0;
+.introSuite {
   text-align: center;
 }
 
-.contImgLeg {
-  height: 264px;
-  width: 264px;
+.introSuite p {
+  font-size: 1.125em;
+  font-variant: small-caps;
 }
 
-.contImgLeg img {
-  height: 100%;
-  width: 100%;
-}
-
-@-webkit-keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.introSuite img {
+  width: 8.4375em;
+  height: 8.4375em;
 }
 
 footer {
