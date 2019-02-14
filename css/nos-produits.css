@@ -373,7 +373,7 @@ h2 strong {
   top: -1.5625em;
   background-color: #f9f7f4;
   padding-top: 2.5em;
-  background-image: url(../img/nos_produits/circle_cut_1.png);
+  background-image: url(../img/nos_produits/section-cut-1-sml.png);
   background-repeat: no-repeat;
   background-position-x: center;
 }
@@ -405,6 +405,46 @@ h2 strong {
 
 .paniers .panPers, .paniers .panPrix {
   color: #a69a54;
+}
+
+.formules {
+  padding: 0.9375em 0;
+}
+
+.formules h2 {
+  margin-bottom: 1.2em;
+}
+
+.formules article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.875em 0;
+}
+
+.formules article .imgCont {
+  height: 4.25em;
+  width: 3.75em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 0.625em;
+}
+
+.formules article .imgCont img {
+  width: 100%;
 }
 
 footer {

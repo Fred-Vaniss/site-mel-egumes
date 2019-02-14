@@ -88,7 +88,7 @@ h2{
 
     background-color: #f9f7f4;
     padding-top: em(40);
-    background-image: url(../img/nos_produits/circle_cut_1.png);
+    background-image: url(../img/nos_produits/section-cut-1-sml.png);
     background-repeat: no-repeat;
     background-position-x: center;
 
@@ -122,5 +122,35 @@ h2{
         color: #a69a54;
     }
 }
+
+// ==============================================================
+// Paniers
+// ==============================================================
+
+.formules{
+    padding: em(15) 0;
+    h2{
+        margin-bottom: 1.2em;
+    }
+    article{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: em(30) 0;
+        .imgCont{
+            height: em(68);
+            width: em(60);
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            margin-right: em(10);
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
 
 @import 'footer';
