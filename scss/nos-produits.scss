@@ -3,6 +3,9 @@
 @import "header";
 @import "functions";
 
+p{
+    line-height: 1.4em;
+}
 
 h2{
     font-size: em(40);
@@ -58,7 +61,7 @@ h2{
     }
     h2{
         position: absolute;
-        bottom: em(5,40);
+        bottom: em(20,40);
         color: white;
     }
 }
@@ -182,6 +185,7 @@ h2{
     label{
         font-variant: small-caps;
         font-size: em(18);
+        padding: em(10,18) 0;
     }
 
     h3{
@@ -235,10 +239,14 @@ h2{
 // ==============================================================
 
 .selection{
+    padding: em(40) 0;
     .wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    h2{
+        margin-bottom: .6em;
     }
 }
 
@@ -252,23 +260,31 @@ h2{
 
     cursor: pointer;
 
+    transition: opacity .5s;
+
     &:hover > .hoverCont{
         visibility: visible;
+        opacity: 1;
+        transition: opacity .5s;
     }
 
     .hoverCont{
         position: absolute;
-        top: 0; left: 0;
-        height: 100%; width: 100%;
+        bottom: 0; left: 0;
+        height: em(40); 
+        width: 100%;
 
-        visibility: hidden;
-
-        background-color: #ffffff81;
+        background-color: #ffffffc2;
 
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+
+        font-variant: small-caps;
 
         .imgCont{
+            display: none;
             width: em(50); height: em(50);
         }
     }
@@ -277,23 +293,47 @@ h2{
         width: em(50);
     }
 
+    p{
+        font-size: em(24);
+    }
 
 }
 
 #aut{
-    background-color: coral;
+    background-image: url(../img/nos_produits/saisons/automne_bg.jpg);
+    background-size: cover;
 }
 
 #hiv{
-    background-color: lightsteelblue;
+    background-image: url(../img/nos_produits/saisons/hiver_bg.jpg);
+    background-size: cover;
 }
 
 #pri{
-    background-color: green;
+    background-image: url(../img/nos_produits/saisons/printemps_bg.jpg);
+    background-size: cover;
 }
 
 #ete{
-    background-color: yellow;
+    background-image: url(../img/nos_produits/saisons/ete_bg.jpg);
+    background-size: cover;
+}
+
+@media screen and (min-width: 725px){
+    .selSaison{
+
+        .hoverCont{
+            height: 100%;
+    
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility .5s, opacity .5s;
+    
+            .imgCont{
+                display: unset;
+            }
+        }
+    }
 }
 
 

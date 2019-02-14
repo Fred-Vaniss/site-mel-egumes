@@ -301,6 +301,10 @@ nav {
   }
 }
 
+p {
+  line-height: 1.4em;
+}
+
 h2 {
   font-size: 2.5em;
   font-variant: small-caps;
@@ -346,7 +350,7 @@ h2 strong {
 
 .intro h2 {
   position: absolute;
-  bottom: 0.125em;
+  bottom: 0.5em;
   color: white;
 }
 
@@ -475,6 +479,7 @@ h2 strong {
 .commande label {
   font-variant: small-caps;
   font-size: 1.125em;
+  padding: 0.55556em 0;
 }
 
 .commande h3 {
@@ -522,6 +527,10 @@ h2 strong {
           box-shadow: 0 0.22222em 0 #403c21;
 }
 
+.selection {
+  padding: 2.5em 0;
+}
+
 .selection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,6 +542,10 @@ h2 strong {
           justify-content: space-between;
 }
 
+.selection h2 {
+  margin-bottom: .6em;
+}
+
 .selSaison {
   background-color: lightsteelblue;
   width: 47%;
@@ -540,29 +553,44 @@ h2 strong {
   position: relative;
   margin-bottom: 1.25em;
   cursor: pointer;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .selSaison:hover > .hoverCont {
   visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .selSaison .hoverCont {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
+  height: 2.5em;
   width: 100%;
-  visibility: hidden;
-  background-color: #ffffff81;
+  background-color: #ffffffc2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-variant: small-caps;
 }
 
 .selSaison .hoverCont .imgCont {
+  display: none;
   width: 3.125em;
   height: 3.125em;
 }
@@ -571,20 +599,42 @@ h2 strong {
   width: 3.125em;
 }
 
+.selSaison p {
+  font-size: 1.5em;
+}
+
 #aut {
-  background-color: coral;
+  background-image: url(../img/nos_produits/saisons/automne_bg.jpg);
+  background-size: cover;
 }
 
 #hiv {
-  background-color: lightsteelblue;
+  background-image: url(../img/nos_produits/saisons/hiver_bg.jpg);
+  background-size: cover;
 }
 
 #pri {
-  background-color: green;
+  background-image: url(../img/nos_produits/saisons/printemps_bg.jpg);
+  background-size: cover;
 }
 
 #ete {
-  background-color: yellow;
+  background-image: url(../img/nos_produits/saisons/ete_bg.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: 725px) {
+  .selSaison .hoverCont {
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility .5s, opacity .5s;
+    -o-transition: visibility .5s, opacity .5s;
+    transition: visibility .5s, opacity .5s;
+  }
+  .selSaison .hoverCont .imgCont {
+    display: unset;
+  }
 }
 
 footer {
