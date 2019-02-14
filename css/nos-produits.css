@@ -447,6 +447,10 @@ h2 strong {
   width: 100%;
 }
 
+.formules article .para {
+  width: 100%;
+}
+
 .commande {
   background-color: #efece8;
   padding-top: 4.375em;
@@ -516,6 +520,71 @@ h2 strong {
   background-color: #847b43;
   -webkit-box-shadow: 0 0.22222em 0 #403c21;
           box-shadow: 0 0.22222em 0 #403c21;
+}
+
+.selection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.selSaison {
+  background-color: lightsteelblue;
+  width: 47%;
+  padding-top: 47%;
+  position: relative;
+  margin-bottom: 1.25em;
+  cursor: pointer;
+}
+
+.selSaison:hover > .hoverCont {
+  visibility: visible;
+}
+
+.selSaison .hoverCont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  background-color: #ffffff81;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.selSaison .hoverCont .imgCont {
+  width: 3.125em;
+  height: 3.125em;
+}
+
+.selSaison img {
+  width: 3.125em;
+}
+
+#aut {
+  background-color: coral;
+}
+
+#hiv {
+  background-color: lightsteelblue;
+}
+
+#pri {
+  background-color: green;
+}
+
+#ete {
+  background-color: yellow;
 }
 
 footer {

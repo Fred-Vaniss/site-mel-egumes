@@ -149,6 +149,9 @@ h2{
                 width: 100%;
             }
         }
+        .para{
+            width: 100%;
+        }
     }
 }
 
@@ -225,6 +228,72 @@ h2{
 		box-shadow: 0 em(4,18) 0 darken($theme-produits-border,10%); 
 	}
     }
+}
+
+// ==============================================================
+// Sélection de légumes
+// ==============================================================
+
+.selection{
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.selSaison{
+    background-color: lightsteelblue;
+    width: 47%;
+    padding-top: 47%;
+
+    position: relative;
+    margin-bottom: em(20);
+
+    cursor: pointer;
+
+    &:hover > .hoverCont{
+        visibility: visible;
+    }
+
+    .hoverCont{
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%; width: 100%;
+
+        visibility: hidden;
+
+        background-color: #ffffff81;
+
+        display: flex;
+        justify-content: center;
+
+        .imgCont{
+            width: em(50); height: em(50);
+        }
+    }
+
+    img{
+        width: em(50);
+    }
+
+
+}
+
+#aut{
+    background-color: coral;
+}
+
+#hiv{
+    background-color: lightsteelblue;
+}
+
+#pri{
+    background-color: green;
+}
+
+#ete{
+    background-color: yellow;
 }
 
 
