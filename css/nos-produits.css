@@ -408,7 +408,7 @@ h2 strong {
 }
 
 .formules {
-  padding: 0.9375em 0;
+  padding: 2.5em 0;
 }
 
 .formules h2 {
@@ -445,6 +445,77 @@ h2 strong {
 
 .formules article .imgCont img {
   width: 100%;
+}
+
+.commande {
+  background-color: #efece8;
+  padding-top: 4.375em;
+  padding-bottom: 0.625em;
+  background-image: url(../img/nos_produits/section-cut-2.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.commande div {
+  margin-bottom: 2em;
+}
+
+.commande h2 {
+  margin-bottom: 0.6em;
+}
+
+.commande input {
+  margin-bottom: 2em;
+}
+
+.commande label {
+  font-variant: small-caps;
+  font-size: 1.125em;
+}
+
+.commande h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.6em;
+}
+
+.commande p {
+  font-size: 0.75em;
+  margin-bottom: 2em;
+}
+
+.commande textarea {
+  width: 100%;
+  resize: none;
+}
+
+.commande .buttBox {
+  text-align: center;
+}
+
+.commande button {
+  font-size: 1.125em;
+  font-family: 'Montserrat', sans-serif;
+  font-variant: small-caps;
+  color: white;
+  border: none;
+  background-color: #a69a54;
+  -webkit-box-shadow: 0 0.22222em 0 #625b32;
+          box-shadow: 0 0.22222em 0 #625b32;
+  padding: 0.66667em 1.11111em;
+  border-radius: 0.27778em;
+  margin: 0 auto;
+}
+
+.commande button:hover {
+  background-color: #b9af74;
+  -webkit-box-shadow: 0 0.22222em 0 #847b43;
+          box-shadow: 0 0.22222em 0 #847b43;
+}
+
+.commande button:active {
+  background-color: #847b43;
+  -webkit-box-shadow: 0 0.22222em 0 #403c21;
+          box-shadow: 0 0.22222em 0 #403c21;
 }
 
 footer {

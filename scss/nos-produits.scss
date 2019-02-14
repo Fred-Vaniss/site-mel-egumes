@@ -128,7 +128,7 @@ h2{
 // ==============================================================
 
 .formules{
-    padding: em(15) 0;
+    padding: em(40) 0;
     h2{
         margin-bottom: 1.2em;
     }
@@ -149,6 +149,81 @@ h2{
                 width: 100%;
             }
         }
+    }
+}
+
+// ==============================================================
+// Formulaire de commande
+// ==============================================================
+
+.commande{
+    background-color: #efece8;
+    padding-top: em(70);
+    padding-bottom: em(10);
+    background-image: url(../img/nos_produits/section-cut-2.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    div{
+        margin-bottom: 2em;
+    }
+
+    h2{
+        margin-bottom: 0.6em;
+    }
+
+    input{
+        margin-bottom: 2em;
+    }
+
+    label{
+        font-variant: small-caps;
+        font-size: em(18);
+    }
+
+    h3{
+        font-size: em(24);
+        margin-bottom: 0.6em;
+    }
+
+    p{
+        font-size: em(12);
+        margin-bottom: 2em;
+    }
+
+    textarea{
+        width: 100%;
+        resize: none;
+    }
+
+    .buttBox{
+        text-align: center;
+    }
+
+    button{
+        font-size: em(18);
+	    font-family: 'Montserrat', sans-serif;
+	    font-variant: small-caps;
+	    color: white;
+
+	    border: none;
+	    background-color: $theme-produits;
+	    box-shadow: 0 em(4,18) 0 $theme-produits-border;
+
+	    padding: em(12,18) em(20,18);
+        border-radius: em(5,18);
+        
+        margin: 0 auto;
+
+	&:hover{
+		background-color: lighten($theme-produits,10%);
+		box-shadow: 0 em(4,18) 0 lighten($theme-produits-border,10%);
+	}
+
+	&:active{
+		background-color: darken($theme-produits,10%);
+		box-shadow: 0 em(4,18) 0 darken($theme-produits-border,10%); 
+	}
     }
 }
 
