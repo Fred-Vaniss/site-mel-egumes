@@ -416,6 +416,32 @@ h2{
     }
 
     // ==============================================================
+    // Formules
+    // ==============================================================
+
+    .formules{
+        .formuCont{
+            display: flex;
+        }
+        h2{
+            font-size: em(55);
+        }
+        article{
+            flex-direction: column;
+            justify-content: unset;
+            .imgCont{
+                height: em(150);
+                width: em(125);
+                margin-right: 0;
+                margin-bottom: 1em;
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+
+    // ==============================================================
     // Paniers
     // ==============================================================
 
