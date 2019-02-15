@@ -531,7 +531,7 @@ h2 strong {
   padding: 2.5em 0;
 }
 
-.selection .wrapper {
+.selection .boutSaisons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,6 +621,71 @@ h2 strong {
 #ete {
   background-image: url(../img/nos_produits/saisons/ete_bg.jpg);
   background-size: cover;
+}
+
+#listLegs {
+  background-color: #efece8;
+  background-image: url(../img/nos_produits/section-cut-2.png);
+  background-repeat: no-repeat;
+  background-position-x: 25%;
+  padding: 6.25em 1.5em 1.25em 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.legume {
+  width: 47%;
+  padding-top: 47%;
+  position: relative;
+  margin-bottom: 1em;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.legumeCont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.imgCont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imgCont img {
+  width: 100%;
+}
+
+.nomCont {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 3.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 725px) {

@@ -235,12 +235,12 @@ h2{
 }
 
 // ==============================================================
-// Sélection de légumes
+// Sélection de saison
 // ==============================================================
 
 .selection{
     padding: em(40) 0;
-    .wrapper{
+    .boutSaisons{ 
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -317,6 +317,68 @@ h2{
 #ete{
     background-image: url(../img/nos_produits/saisons/ete_bg.jpg);
     background-size: cover;
+}
+
+// ==============================================================
+// Liste des légumes sur une saison
+// ==============================================================
+
+#listLegs{
+    background-color: #efece8;
+    background-image: url(../img/nos_produits/section-cut-2.png);
+    background-repeat: no-repeat;
+    background-position-x: 25%;
+
+    padding: em(100) em(24) em(20) em(24);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.legume{
+    width: 47%;
+    padding-top: 47%;
+    position: relative;
+
+    margin-bottom: 1em;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+}
+
+.legumeCont{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.imgCont{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.nomCont{
+    position: absolute;
+    bottom: 0; left: 0;
+
+    background-color: #fff;
+
+    text-align: center;
+
+    width: 100%;
+    height: 3.2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 725px){
