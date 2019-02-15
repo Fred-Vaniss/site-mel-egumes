@@ -748,6 +748,36 @@ h2 strong {
   .formules p {
     text-align: center;
   }
+  .commande div {
+    margin-bottom: 0;
+  }
+  .commande form {
+    position: relative;
+    border: 3px solid white;
+    border-radius: 1.25em;
+    padding: 1.5625em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .commande textarea {
+    height: 16.875em;
+  }
+  .commande .checkboxes, .commande .msgBox {
+    width: 47%;
+  }
+  .commande .buttBox {
+    position: absolute;
+    left: 1.5625em;
+    bottom: 1.5625em;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
   .paniers {
     position: static;
     top: 0;

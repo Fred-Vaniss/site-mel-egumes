@@ -442,6 +442,40 @@ h2{
     }
 
     // ==============================================================
+    // Formulaire de commande
+    // ==============================================================
+    
+    .commande{
+        div{
+            margin-bottom: 0;
+        }
+        form{
+            position: relative;
+
+            border: 3px solid white;
+            border-radius: em(20);
+            padding: em(25);
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        textarea{
+            height: em(270);
+        }
+
+        .checkboxes, .msgBox{
+            width: 47%;
+        }
+
+        .buttBox{
+            position: absolute;
+            left: em(25); bottom: em(25);
+            justify-self: right;
+        }
+    }
+
+    // ==============================================================
     // Paniers
     // ==============================================================
 
