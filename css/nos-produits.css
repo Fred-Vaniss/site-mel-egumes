@@ -723,7 +723,21 @@ h2 strong {
     height: 25em;
   }
   .paniers {
+    position: static;
     top: 0;
+    padding-top: 7.8125em;
+  }
+  .paniers .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .paniers .panier {
+    max-width: 23.4375em;
   }
   .selSaison .hoverCont {
     height: 100%;

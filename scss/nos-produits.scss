@@ -124,7 +124,7 @@ h2{
 }
 
 // ==============================================================
-// Paniers
+// Formules
 // ==============================================================
 
 .formules{
@@ -421,7 +421,20 @@ h2{
 
 
     .paniers{
+        position: static;
         top: 0;
+
+        padding-top: em(125);
+
+        .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .panier{
+            max-width: em(375);
+        }
     }
 
     .selSaison{
