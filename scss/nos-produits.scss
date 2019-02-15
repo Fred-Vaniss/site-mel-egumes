@@ -75,7 +75,7 @@ h2{
         margin: em(15,20);
     }
     img{
-        width: em(135); height: em(135);
+        width: em(160); height: em(160);
         z-index: 10;
     }
 }
@@ -87,13 +87,10 @@ h2{
 .paniers{
     z-index: -1;
     position: relative;
-    top: em(-25);
+    top: em(-40);
 
     background-color: #f9f7f4;
     padding-top: em(40);
-    background-image: url(../img/nos_produits/section-cut-1-sml.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
 
     .panier{
         margin-bottom: em(50);
@@ -381,7 +378,52 @@ h2{
     align-items: center;
 }
 
+// ==============================================================
+// Version bureau
+// ==============================================================
+
 @media screen and (min-width: 725px){
+
+    // ==============================================================
+    // Intro
+    // ==============================================================
+
+    .intro{
+        height: em(400);
+        h2{
+            font-size: em(82);
+            width: em(620,82)
+        }
+    }
+
+    .introSuite .wrapper{
+        display: flex;
+        height: em(250);
+        .separateur{
+            width: 45%;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            font-size: em(30);
+            text-align: left;
+        }
+        img{
+            width: em(400); height: em(400);
+        }
+    }
+
+    // ==============================================================
+    // Paniers
+    // ==============================================================
+
+
+    .paniers{
+        top: 0;
+    }
+
     .selSaison{
 
         .hoverCont{

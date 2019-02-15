@@ -366,20 +366,17 @@ h2 strong {
 }
 
 .introSuite img {
-  width: 8.4375em;
-  height: 8.4375em;
+  width: 10em;
+  height: 10em;
   z-index: 10;
 }
 
 .paniers {
   z-index: -1;
   position: relative;
-  top: -1.5625em;
+  top: -2.5em;
   background-color: #f9f7f4;
   padding-top: 2.5em;
-  background-image: url(../img/nos_produits/section-cut-1-sml.png);
-  background-repeat: no-repeat;
-  background-position-x: center;
 }
 
 .paniers .panier {
@@ -689,6 +686,45 @@ h2 strong {
 }
 
 @media screen and (min-width: 725px) {
+  .intro {
+    height: 25em;
+  }
+  .intro h2 {
+    font-size: 5.125em;
+    width: 7.56098em;
+  }
+  .introSuite .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15.625em;
+  }
+  .introSuite .wrapper .separateur {
+    width: 45%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .introSuite .wrapper p {
+    font-size: 1.875em;
+    text-align: left;
+  }
+  .introSuite .wrapper img {
+    width: 25em;
+    height: 25em;
+  }
+  .paniers {
+    top: 0;
+  }
   .selSaison .hoverCont {
     height: 100%;
     visibility: hidden;
