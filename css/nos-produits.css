@@ -584,6 +584,7 @@ h2 strong {
       -ms-flex-align: center;
           align-items: center;
   font-variant: small-caps;
+  font-weight: 300;
 }
 
 .selSaison .hoverCont .imgCont {
@@ -686,6 +687,9 @@ h2 strong {
 }
 
 @media screen and (min-width: 725px) {
+  h2 {
+    font-size: 3.4375em;
+  }
   .intro {
     height: 25em;
   }
@@ -726,9 +730,6 @@ h2 strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .formules h2 {
-    font-size: 3.4375em;
   }
   .formules article {
     -webkit-box-orient: vertical;
@@ -778,6 +779,9 @@ h2 strong {
     -ms-grid-column-align: right;
         justify-self: right;
   }
+  .commande .remarque {
+    margin-top: 0.625em;
+  }
   .paniers {
     position: static;
     top: 0;
@@ -795,8 +799,13 @@ h2 strong {
   .paniers .panier {
     max-width: 23.4375em;
   }
+  .selSaison {
+    width: 24%;
+    padding-top: 24%;
+  }
   .selSaison .hoverCont {
     height: 100%;
+    font-size: 1.375em;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: visibility .5s, opacity .5s;
@@ -805,6 +814,18 @@ h2 strong {
   }
   .selSaison .hoverCont .imgCont {
     display: unset;
+    width: 4.54545em;
+    height: 4.54545em;
+  }
+  #listLegs {
+    max-width: 57em;
+    margin: 0 auto;
+    padding: 6.25em 4.375em 2.5em 4.375em;
+    border-radius: 0 0 1.875em 1.875em;
+  }
+  .legume {
+    width: 32%;
+    padding-top: 32%;
   }
 }
 

@@ -279,6 +279,7 @@ h2{
         align-items: center;
 
         font-variant: small-caps;
+        font-weight: 300;
 
         .imgCont{
             display: none;
@@ -384,6 +385,10 @@ h2{
 
 @media screen and (min-width: 725px){
 
+    h2{
+        font-size: em(55);
+    }
+
     // ==============================================================
     // Intro
     // ==============================================================
@@ -422,9 +427,6 @@ h2{
     .formules{
         .formuCont{
             display: flex;
-        }
-        h2{
-            font-size: em(55);
         }
         article{
             flex-direction: column;
@@ -473,6 +475,10 @@ h2{
             left: em(25); bottom: em(25);
             justify-self: right;
         }
+
+        .remarque{
+            margin-top: em(10);
+        }
     }
 
     // ==============================================================
@@ -497,10 +503,18 @@ h2{
         }
     }
 
+    // ==============================================================
+    // Sélection saisons
+    // ==============================================================
+
     .selSaison{
+        width: 24%;
+        padding-top: 24%;
 
         .hoverCont{
             height: 100%;
+
+            font-size: em(22);
     
             visibility: hidden;
             opacity: 0;
@@ -508,9 +522,32 @@ h2{
     
             .imgCont{
                 display: unset;
+                width: em(100,22); height: em(100,22);
             }
         }
     }
+
+    // ==============================================================
+    // Liste des légumes sur une saison
+    // ==============================================================
+
+    #listLegs{
+        max-width: em(912);
+        margin: 0 auto;
+        padding: em(100) em(70) em(40) em(70);
+
+        border-radius: 0 0 em(30) em(30);
+    }
+
+    .legume{
+        width: 32%;
+        padding-top: 32%;
+    }
+
+    // ==============================================================
+    // Liste des légumes sur une saison
+    // ==============================================================
+    
 }
 
 
