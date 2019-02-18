@@ -563,35 +563,39 @@ article p {
           box-shadow: 0 0.16667em 0 #8c5f1e;
 }
 
+.contactMsg {
+  background-color: #f0ede9;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.contactMsg .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactMsg .retrouvez p {
+  font-size: 1.25em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.contactMsg .socButtons img {
+  margin: 1em .5em;
+}
+
 .mapBg {
   height: 12.5em;
   background-position-x: center;
   background-size: cover;
-}
-
-.msgCont {
-  background-color: #f0ede9;
-  padding: 3.125em 0;
-  -webkit-transform: translateY(-3.75em);
-      -ms-transform: translateY(-3.75em);
-          transform: translateY(-3.75em);
-}
-
-.msgCont p {
-  text-align: center;
-}
-
-.msgCont p:first-child {
-  margin-bottom: 1em;
-}
-
-.msgCont a {
-  color: #dead65;
-  text-decoration: none;
-}
-
-.msgCont a:hover {
-  text-decoration: underline;
 }
 
 @media screen and (min-width: 725px) {
