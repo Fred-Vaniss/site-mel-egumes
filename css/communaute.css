@@ -1,6 +1,60 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -245,6 +299,84 @@ nav {
     -o-transition: none;
     transition: none;
   }
+}
+
+.logoCont {
+  background-color: #872f39;
+}
+
+.bannerSvg {
+  fill: #872f39;
+}
+
+.menu li a:hover, .menu .currentNav {
+  background-color: #872f39;
+  color: white;
+}
+
+@media screen and (min-width: 769px) {
+  .menu li a:hover {
+    background-color: unset;
+    color: #872f39;
+  }
+  .menu .currentNav {
+    background-color: unset;
+    color: #872f39;
+  }
+}
+
+h2 {
+  font-variant: small-caps;
+  font-size: 2em;
+  margin-bottom: .8em;
+}
+
+p {
+  margin-bottom: .8em;
+}
+
+img {
+  width: 100%;
+}
+
+.imgCont {
+  min-width: 100%;
+}
+
+.intro {
+  padding-top: 1.25em;
+  height: 13.75em;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+}
+
+.histoire {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.imageFond {
+  height: 15em;
+}
+
+.assiette {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  background-color: #f2efed;
+}
+
+.recompense {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.recompense .svgCont {
+  width: 4.6875em;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1.25em;
 }
 
 footer {

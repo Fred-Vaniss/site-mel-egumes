@@ -1,7 +1,100 @@
+@import "css-reset";
 @import "html";
 @import "header";
 @import "functions";
 
+// ==============================================================
+// Couleur du header
+// ==============================================================
 
+.logoCont{
+    background-color: $theme-accueil;
+}
+
+.bannerSvg{
+    fill: $theme-accueil;
+}
+
+.menu {
+    li a:hover, .currentNav{
+		background-color: $theme-accueil;
+		color: white;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .menu{
+        li a:hover{
+            background-color: unset;
+            color: $theme-accueil;
+        }
+        .currentNav{
+			background-color: unset;
+            color: $theme-accueil;
+        }
+    }
+}
+
+// ==============================================================
+// Propriété général
+// ==============================================================
+
+
+h2{
+	font-variant: small-caps;
+	font-size: em(32);
+
+	margin-bottom: .8em;
+}
+
+p{
+	margin-bottom: .8em;
+}
+
+img{
+	width: 100%;
+}
+
+
+
+.imgCont{
+	min-width: 100%;
+}
+
+.intro{
+	padding-top: em(20);
+	height: em(220);
+	
+	h2{
+		font-size: em(40);
+	}
+}
+
+.histoire{
+	padding-top: em(40);
+	padding-bottom: em(40);
+}
+
+.imageFond{
+	height: em(240)
+}
+
+.assiette{
+	padding-top: em(40);
+	padding-bottom: em(40);
+	background-color: #f2efed;
+}
+
+.recompense{
+	padding-top: em(40);
+	padding-bottom: em(40);
+
+	.svgCont{
+		width: em(75);
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: em(20);
+	}
+}
 
 @import 'footer';
