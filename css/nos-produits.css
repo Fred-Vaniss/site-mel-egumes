@@ -410,6 +410,7 @@ h2 strong {
 
 .formules {
   padding: 2.5em 0;
+  color: white;
 }
 
 .formules h2 {
@@ -454,14 +455,30 @@ h2 strong {
 
 .commande {
   background-color: #efece8;
-  padding-top: 4.375em;
+  padding-top: 0.625em;
   padding-bottom: 0.625em;
-  background-image: url(../img/nos_produits/section-cut-2.png);
   background-repeat: no-repeat;
   background-position-x: center;
 }
 
-.commande div {
+.commande .fleche {
+  font-size: 5em;
+  color: #a69a54;
+  margin: 0;
+  text-align: center;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.commande .fleche .fas {
+  display: block;
+  height: 0.925em;
+  -webkit-transform: translateY(0.0375em);
+      -ms-transform: translateY(0.0375em);
+          transform: translateY(0.0375em);
+}
+
+.commande .checkboxes, .commande .msgBox, .commande .buttBox {
   margin-bottom: 2em;
 }
 
@@ -530,7 +547,6 @@ h2 strong {
 
 .field {
   position: relative;
-  margin-bottom: 1.375em;
 }
 
 .field label {
@@ -839,7 +855,7 @@ h2 strong {
   .formules p {
     text-align: center;
   }
-  .commande div {
+  .commande .checkboxes, .commande .msgBox, .commande .buttBox {
     margin-bottom: 0;
   }
   .commande form {

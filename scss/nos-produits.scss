@@ -129,6 +129,8 @@ h2{
 
 .formules{
     padding: em(40) 0;
+    color: white;
+
     h2{
         margin-bottom: 1.2em;
     }
@@ -161,13 +163,25 @@ h2{
 
 .commande{
     background-color: #efece8;
-    padding-top: em(70);
+    padding-top: em(10);
     padding-bottom: em(10);
-    background-image: url(../img/nos_produits/section-cut-2.png);
     background-repeat: no-repeat;
     background-position-x: center;
 
-    div{
+    .fleche{
+        font-size: em(80);
+        color: $theme-produits;
+        margin: 0;
+        text-align: center;
+        animation-iteration-count: infinite;
+        .fas{
+            display: block;
+            height: em(74,80);
+            transform: translateY(em(3,80))
+        }
+    }
+
+    .checkboxes, .msgBox, .buttBox{
         margin-bottom: 2em;
     }
 
@@ -231,6 +245,8 @@ h2{
     }
 }
 
+
+
 .fieldsGroup{
     margin-top: 2em;
 }
@@ -238,7 +254,7 @@ h2{
 .field{
 	position: relative;
 
-	margin-bottom: em(22);
+	// margin-bottom: em(22);
 
 	label{
         font-size: em(16);
@@ -533,9 +549,10 @@ h2{
     // ==============================================================
     
     .commande{
-        div{
+        .checkboxes, .msgBox, .buttBox{
             margin-bottom: 0;
         }
+
         form{
             position: relative;
 
