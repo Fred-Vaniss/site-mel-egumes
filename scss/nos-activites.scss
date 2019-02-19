@@ -3,6 +3,26 @@
 @import "header";
 @import "functions";
 
+p{
+    line-height: 1.4em;
+}
+
+h2{
+	font-size: em(40);
+    font-variant: small-caps;
+    font-weight: 300;
+    line-height: 0.9em;
+}
+
+strong{
+	font-weight: 500;
+}
+
+
+h3{
+
+}
+
 
 // ==============================================================
 // Couleur du header
@@ -36,38 +56,34 @@
     }
 }
 
-//////////////////////////////////
+// ==============================================================
+// Intro
+// ==============================================================
 
-h2{
-	margin-bottom: 0.3em;
+.intro{
+	height: calc(100vh - 4.375em);
+	.wrapper{
+		position: relative; 
+	}
+	h2{
+        position: absolute;
+        bottom: em(20,40);
+        color: white;
+    }
 }
 
-p{
-	font-size: em(18);
-	margin: em(20) 0;
-	line-height: 1.5em;
-	text-align: justify;
-}
+// ==============================================================
+// Partageons notre savoir
+// ==============================================================
 
-strong{
-	font-weight: 500;
+.imgCont{
+	width: 80px;
 }
 
 
 
-.introtext {
-	position: absolute;
-	width: 19.5em;
-	bottom: 20%;
-	right: 1.5em;
-	color: white;
-	text-align: right;
-	h2 {
-		font-size: 3.75em;
-		margin-bottom: 0;
-		font-family: 'Oleo Script', cursive;
-  	}
-}
+
+
 
 
 @media screen and (min-width: 769px){
