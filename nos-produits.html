@@ -133,11 +133,26 @@
                     <label for="famil">Panier familial</label><br>
                     <input type="checkbox" name="perso" id="perso">
                     <label for="perso">Panier personalisé</label>
-                </div>
+                    <div class="fieldsGroup">
+                        <div class="field">
+                                <input type="text" name="lName" id="lName" required>
+                                <label for="lName">Nom et prénom</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="lName" id="lName" required>
+                                <label for="lName">E-mail</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="lName" id="lName" required>
+                                <label for="lName">Téléphone</label>
+                            </div>
+                        </div>
+                    </div>
                 <div class="msgBox">
                     <h3>Message</h3>
                     <p>Le message s’auto-remplira au fur et à mesure que vous cochez vos choix, ajoutez dans le message les quantités que vous souhaitez ainsi que les légumes que vous souhaitez dans votre panier personalisé.</p>
-                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                    <div class="field">
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>                    </div>
                 </div>
                 <div class="buttBox">
                     <button>Envoyer ma commande</button>
@@ -145,6 +160,7 @@
             </form>
             <p class="remarque">Vos paniers sont à venir chercher au potager. Le paiement de vos paniers s’effectue sur place.</p>
         </div>
+        <script src="js/formulaire.js"></script>
     </section>
 
     <section class="selection">

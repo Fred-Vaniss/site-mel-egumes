@@ -175,7 +175,7 @@ h2{
         margin-bottom: 0.6em;
     }
 
-    input{
+    input[type="checkbox"]{
         margin-bottom: 2em;
     }
 
@@ -220,7 +220,7 @@ h2{
         margin: 0 auto;
 
 	&:hover{
-		background-color: lighten($theme-produits,10%);
+		background-color: lighten($theme-produits,20%);
 		box-shadow: 0 em(4,18) 0 lighten($theme-produits-border,10%);
 	}
 
@@ -229,6 +229,91 @@ h2{
 		box-shadow: 0 em(4,18) 0 darken($theme-produits-border,10%); 
 	}
     }
+}
+
+.fieldsGroup{
+    margin-top: 2em;
+}
+
+.field{
+	position: relative;
+
+	margin-bottom: em(22);
+
+	label{
+        font-size: em(16);
+        font-variant: normal;
+		position: absolute;
+		left: em(5); top: em(8);
+		padding: em(5) em(5) 0 em(5);
+
+		color: #b2b2b2;
+
+		transition: 
+			transform 0.1s,
+			font-size 0.1s;
+	}
+
+	input, textarea{
+		width: 100%;
+		border: em(2) solid #b2b2b2;
+		border-radius: em(4);
+        box-shadow: none;
+        background-color: #efece8;
+
+		&:hover{
+			border-color: $theme-produits;
+			+label{
+				color: black;
+			}
+		}
+
+		&:focus{
+			border-color: $theme-produits;
+			outline: none;
+			+label{
+				color: black;
+				transform: translateY(em(-24));
+				background-color: #efece8;
+				font-size: em(12);
+
+				transition: 
+					transform 0.1s,
+					font-size 0.1s;
+			}
+		}
+		&:valid + label{
+			color: black;
+			transform: translateY(em(-24));
+			font-size: em(12);
+			background-color: #efece8;
+
+			transition: 
+				transform 0.1s,
+				font-size 0.1s;
+		}
+    }
+    
+    input[type="text"]{
+		font-size: em(16);
+		font-family: 'Montserrat', sans-serif;
+
+		height: em(40);
+        padding-left: em(10);
+        
+        margin-bottom: em(15);
+	}
+
+	textarea{
+		font-size: em(16);
+        // font-family: 'Montserrat', sans-serif;
+        background-color: #fff;
+
+		padding: em(7);
+		height: em(226);
+
+		resize: vertical;
+	}
 }
 
 // ==============================================================
@@ -463,7 +548,7 @@ h2{
             justify-content: space-between;
         }
         textarea{
-            height: em(270);
+            height: em(330);
         }
 
         .checkboxes, .msgBox{
@@ -471,8 +556,7 @@ h2{
         }
 
         .buttBox{
-            position: absolute;
-            left: em(25); bottom: em(25);
+            margin-top: 1em;
             justify-self: right;
         }
 

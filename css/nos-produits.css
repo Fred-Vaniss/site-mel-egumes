@@ -469,7 +469,7 @@ h2 strong {
   margin-bottom: 0.6em;
 }
 
-.commande input {
+.commande input[type="checkbox"] {
   margin-bottom: 2em;
 }
 
@@ -513,7 +513,7 @@ h2 strong {
 }
 
 .commande button:hover {
-  background-color: #b9af74;
+  background-color: #cac296;
   -webkit-box-shadow: 0 0.22222em 0 #847b43;
           box-shadow: 0 0.22222em 0 #847b43;
 }
@@ -522,6 +522,96 @@ h2 strong {
   background-color: #847b43;
   -webkit-box-shadow: 0 0.22222em 0 #403c21;
           box-shadow: 0 0.22222em 0 #403c21;
+}
+
+.fieldsGroup {
+  margin-top: 2em;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 1.375em;
+}
+
+.field label {
+  font-size: 1em;
+  font-variant: normal;
+  position: absolute;
+  left: 0.3125em;
+  top: 0.5em;
+  padding: 0.3125em 0.3125em 0 0.3125em;
+  color: #b2b2b2;
+  -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: font-size 0.1s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
+}
+
+.field input, .field textarea {
+  width: 100%;
+  border: 0.125em solid #b2b2b2;
+  border-radius: 0.25em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #efece8;
+}
+
+.field input:hover, .field textarea:hover {
+  border-color: #a69a54;
+}
+
+.field input:hover + label, .field textarea:hover + label {
+  color: black;
+}
+
+.field input:focus, .field textarea:focus {
+  border-color: #a69a54;
+  outline: none;
+}
+
+.field input:focus + label, .field textarea:focus + label {
+  color: black;
+  -webkit-transform: translateY(-1.5em);
+      -ms-transform: translateY(-1.5em);
+          transform: translateY(-1.5em);
+  background-color: #efece8;
+  font-size: 0.75em;
+  -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: font-size 0.1s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
+}
+
+.field input:valid + label, .field textarea:valid + label {
+  color: black;
+  -webkit-transform: translateY(-1.5em);
+      -ms-transform: translateY(-1.5em);
+          transform: translateY(-1.5em);
+  font-size: 0.75em;
+  background-color: #efece8;
+  -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
+  transition: font-size 0.1s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s;
+  transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
+}
+
+.field input[type="text"] {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  height: 2.5em;
+  padding-left: 0.625em;
+  margin-bottom: 0.9375em;
+}
+
+.field textarea {
+  font-size: 1em;
+  background-color: #fff;
+  padding: 0.4375em;
+  height: 14.125em;
+  resize: vertical;
 }
 
 .selection {
@@ -767,15 +857,13 @@ h2 strong {
             justify-content: space-between;
   }
   .commande textarea {
-    height: 16.875em;
+    height: 20.625em;
   }
   .commande .checkboxes, .commande .msgBox {
     width: 47%;
   }
   .commande .buttBox {
-    position: absolute;
-    left: 1.5625em;
-    bottom: 1.5625em;
+    margin-top: 1em;
     -ms-grid-column-align: right;
         justify-self: right;
   }
