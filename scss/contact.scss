@@ -235,11 +235,30 @@ article{
 	.retrouvez p{
 		font-size: em(20);
 		font-variant: small-caps;
+		font-weight: 600;
 		text-align: center;
+
+		margin-bottom: 1em;
 	}
-	.socButtons img{
-		margin: 1em .5em;
+	.socButtons {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 1.5em;
+		a{
+			margin-right: 1em;
+		}
+		.picto{
+			width: em(75);
+			&:hover{
+				animation: butHover 0.5s;
+			}
+		}
+
+		img{
+			width: 100%;
+		}
 	}
+	
 }
 
 // ==============================================================
@@ -309,23 +328,37 @@ article{
 	}
 
 	// ==============================================================
+	// Message au dessus de la carte
+	// ==============================================================
+
+	.contactMsg{
+		.retrouvez p{
+			margin-bottom: 0;
+		}
+
+		.flex{
+			flex-direction: row;
+			justify-content: center;
+
+			margin-bottom: 1.5em;
+
+			.retrouvez{
+				margin-right: 1em;
+			}
+		}
+
+		.socButtons{
+			margin-bottom: 0;
+
+		}
+	}
+
+	// ==============================================================
 	// Fond avec la carte dessinée
 	// ==============================================================
 
 	.mapBg{
 		height: em(540);
-	}
-
-	// ==============================================================
-	// Message en dessous de la carte
-	// ==============================================================
-
-	.msgCont{
-		max-width: em(760);
-		padding: em(50) em(75);
-		p{
-			font-size: em(24);
-		}
 	}
 }
 
