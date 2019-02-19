@@ -1,7 +1,80 @@
+@import "css-reset";
 @import "html";
 @import "header";
 @import "functions";
 
+
+// ==============================================================
+// Couleur du header
+// ==============================================================
+
+.logoCont{
+    background-color: $theme-activites;
+}
+
+.bannerSvg{
+    fill: $theme-activites;
+}
+
+.menu {
+    li a:hover, .currentNav{
+		background-color: $theme-activites;
+		color: white;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .menu{
+        li a:hover{
+            background-color: unset;
+            color: $theme-activites;
+        }
+        .currentNav{
+			background-color: unset;
+            color: $theme-activites;
+        }
+    }
+}
+
+//////////////////////////////////
+
+h2{
+	margin-bottom: 0.3em;
+}
+
+p{
+	font-size: em(18);
+	margin: em(20) 0;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+strong{
+	font-weight: 500;
+}
+
+
+
+.introtext {
+	position: absolute;
+	width: 19.5em;
+	bottom: 20%;
+	right: 1.5em;
+	color: white;
+	text-align: right;
+	h2 {
+		font-size: 3.75em;
+		margin-bottom: 0;
+		font-family: 'Oleo Script', cursive;
+  	}
+}
+
+
+@media screen and (min-width: 769px){
+	.intro{
+		height: calc(100vh - 4.375em)
+	}
+}
 
 
 @import 'footer';
