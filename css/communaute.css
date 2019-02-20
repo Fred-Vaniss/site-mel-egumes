@@ -60,6 +60,7 @@ html {
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -237,7 +238,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 801px) {
   header {
     height: 6.25em;
   }
