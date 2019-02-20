@@ -162,14 +162,13 @@
             </form>
             <p class="remarque">Vos paniers sont à venir chercher au potager. Le paiement de vos paniers s’effectue sur place.</p>
         </div>
-        <script src="js/formulaire.js"></script>
     </section>
 
     <section class="selection">
         <div class="wrapper">
             <h2>Notre sélection de légumes de toute l'année</h2>
             <div class="boutSaisons">
-                <div class="selSaison pri">
+                <div class="selSaison pri" onclick="showSeason('pri')">
                     <div class="hoverCont">
                         <div class="imgCont">
                             <img src="img/nos_produits/saisons/printemps.png" alt="">
@@ -177,7 +176,7 @@
                         <p>Printemps</p>
                     </div>
                 </div>
-                <div class="selSaison ete">
+                <div class="selSaison ete" onclick="showSeason('ete')">
                     <div class="hoverCont">
                         <div class="imgCont">
                             <img src="img/nos_produits/saisons/ete.png" alt="">
@@ -185,7 +184,7 @@
                         <p>Été</p>
                     </div>
                 </div>
-                <div class="selSaison aut">
+                <div class="selSaison aut" onclick="showSeason('aut')">
                     <div class="hoverCont">
                         <div class="imgCont">
                             <img src="img/nos_produits/saisons/automne.png" alt="">
@@ -193,7 +192,7 @@
                         <p>Automne</p>
                     </div>
                 </div>
-                <div class="selSaison hiv">
+                <div class="selSaison hiv" onclick="showSeason('hiv')">
                     <div class="hoverCont">
                         <div class="imgCont">
                             <img src="img/nos_produits/saisons/hiver.png" alt="">
@@ -211,52 +210,55 @@
         <div class="listLegs" id="pri">
             <h3>Printemps</h3>
             <div class="listLegsWrapper">
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux</p>
+                <p class="closeBtn" onclick="showSeason('pri')"><i class="far fa-times-circle"></i></p>
+                <div class="legsFlex">
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux de printemps</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux_rouge.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux rouge</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux_rouge.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux rouge</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux_de_bruxelles.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux de bruxelles</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux_de_bruxelles.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux de bruxelles</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\carottes.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Carottes</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\carottes.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Carottes</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\betteraves.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Betteraves</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\betteraves.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Betteraves</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -267,52 +269,55 @@
         <div class="listLegs" id="ete">
             <h3>Été</h3>
             <div class="listLegsWrapper">
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux</p>
+                <p class="closeBtn" onclick="showSeason('ete')"><i class="far fa-times-circle"></i></p>
+                <div class="legsFlex">
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux d'été</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux_rouge.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux rouge</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux_rouge.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux rouge</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux_de_bruxelles.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux de bruxelles</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux_de_bruxelles.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux de bruxelles</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\carottes.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Carottes</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\carottes.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Carottes</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\betteraves.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Betteraves</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\betteraves.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Betteraves</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -323,52 +328,55 @@
         <div class="listLegs" id="aut">
             <h3>Automne</h3>
             <div class="listLegsWrapper">
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux</p>
+                <p class="closeBtn" onclick="showSeason('aut')"><i class="far fa-times-circle"></i></p>
+                <div class="legsFlex">
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux d'automne</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux_rouge.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux rouge</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux_rouge.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux rouge</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux_de_bruxelles.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux de bruxelles</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux_de_bruxelles.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux de bruxelles</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\carottes.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Carottes</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\carottes.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Carottes</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\betteraves.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Betteraves</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\betteraves.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Betteraves</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -379,52 +387,55 @@
         <div class="listLegs" id="hiv">
             <h3>Hiver</h3>
             <div class="listLegsWrapper">
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux</p>
+                <p class="closeBtn" onclick="showSeason('hiv')"><i class="far fa-times-circle"></i></p>
+                <div class="legsFlex">
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux d'hiver</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux_rouge.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux rouge</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux_rouge.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux rouge</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\choux_de_bruxelles.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Choux de bruxelles</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\choux_de_bruxelles.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Choux de bruxelles</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\carottes.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Carottes</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\carottes.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Carottes</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="legume">
-                    <div class="legumeCont">
-                        <div class="imgCont">
-                            <img src="img\nos_produits\legumes\betteraves.jpg" alt="">
-                            <div class="nomCont">
-                                <p>Betteraves</p>
+                    <div class="legume">
+                        <div class="legumeCont">
+                            <div class="imgCont">
+                                <img src="img\nos_produits\legumes\betteraves.jpg" alt="">
+                                <div class="nomCont">
+                                    <p>Betteraves</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -440,9 +451,11 @@
         </div>
     </footer>
 
-    <script src="js/calendrier.js"></script>
     <script src="vendor/jquery-3.3.1.min.js"></script>
     <script src="vendor/parallax.min.js"></script>
+
+    <script src="js/formulaire.js"></script>
+    <script src="js/selectionLegs.js"></script>
 </body>
 
 </html>

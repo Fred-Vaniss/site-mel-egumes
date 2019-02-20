@@ -670,7 +670,15 @@ h2 strong {
   transition: opacity .5s;
 }
 
-.selSaison .hoverCont {
+.selSaison img {
+  width: 3.125em;
+}
+
+.selSaison p {
+  font-size: 1.5em;
+}
+
+.hoverCont {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -694,18 +702,10 @@ h2 strong {
   font-weight: 300;
 }
 
-.selSaison .hoverCont .imgCont {
+.hoverCont .imgCont {
   display: none;
   width: 3.125em;
   height: 3.125em;
-}
-
-.selSaison img {
-  width: 3.125em;
-}
-
-.selSaison p {
-  font-size: 1.5em;
 }
 
 .aut {
@@ -750,7 +750,10 @@ h2 strong {
 
 .listLegsWrapper {
   background-color: #efece8;
-  padding: 4.375em 1.5em 1.25em 1.5em;
+  padding: 0em 1.5em 1.25em 1.5em;
+}
+
+.legsFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,24 +764,29 @@ h2 strong {
           justify-content: space-between;
 }
 
+.closeBtn {
+  font-size: 3.125em;
+  text-align: right;
+}
+
 .hidden {
   display: none;
 }
 
-#pri {
-  background-position-x: 22%;
+#pri .listLegsWrapper {
+  background-position-x: 9%;
 }
 
-#ete {
-  background-position-x: 78%;
+#ete .listLegsWrapper {
+  background-position-x: 36%;
 }
 
-#aut {
-  background-position-x: 22%;
+#aut .listLegsWrapper {
+  background-position-x: 64%;
 }
 
-#hiv {
-  background-position-x: 78%;
+#hiv .listLegsWrapper {
+  background-position-x: 91%;
 }
 
 .legume {
@@ -944,8 +952,9 @@ h2 strong {
   .selSaison {
     width: 24%;
     padding-top: 24%;
+    cursor: pointer;
   }
-  .selSaison .hoverCont {
+  .hoverCont {
     height: 100%;
     font-size: 1.375em;
     visibility: hidden;
@@ -954,16 +963,24 @@ h2 strong {
     -o-transition: visibility .5s, opacity .5s;
     transition: visibility .5s, opacity .5s;
   }
-  .selSaison .hoverCont .imgCont {
+  .hoverCont .imgCont {
     display: unset;
     width: 4.54545em;
     height: 4.54545em;
+  }
+  .selected {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
   }
   .listLegs {
     position: static;
     background-color: transparent;
     overflow-y: unset;
     padding-bottom: 0;
+    height: auto;
   }
   .listLegs h3 {
     display: none;
@@ -973,6 +990,11 @@ h2 strong {
     margin: 0 auto;
     padding: 4.6875em 4.375em 2.5em 4.375em;
     border-radius: 0 0 1.875em 1.875em;
+    background-image: url(../img/nos_produits/section-cut-2.png);
+    background-repeat: no-repeat;
+  }
+  .closeBtn {
+    display: none;
   }
   .legume {
     width: 32%;

@@ -366,28 +366,6 @@ h2{
         transition: opacity .5s;
     }
 
-    .hoverCont{
-        position: absolute;
-        bottom: 0; left: 0;
-        height: em(40); 
-        width: 100%;
-
-        background-color: #ffffffc2;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        font-variant: small-caps;
-        font-weight: 300;
-
-        .imgCont{
-            display: none;
-            width: em(50); height: em(50);
-        }
-    }
-
     img{
         width: em(50);
     }
@@ -396,6 +374,28 @@ h2{
         font-size: em(24);
     }
 
+}
+
+.hoverCont{
+    position: absolute;
+    bottom: 0; left: 0;
+    height: em(40); 
+    width: 100%;
+
+    background-color: #ffffffc2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-variant: small-caps;
+    font-weight: 300;
+
+    .imgCont{
+        display: none;
+        width: em(50); height: em(50);
+    }
 }
 
 .aut{
@@ -445,34 +445,39 @@ h2{
 
 .listLegsWrapper{
     background-color: #efece8;
-    // background-image: url(../img/nos_produits/section-cut-2.png);
-    // background-repeat: no-repeat;
 
-    padding: em(70) em(24) em(20) em(24);
+    padding: em(0) em(24) em(20) em(24);
+}
 
+.legsFlex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.closeBtn{
+    font-size: em(50);
+    text-align: right;
 }
 
 .hidden{
     display: none;
 }
 
-#pri{
-    background-position-x: 22%;
+#pri .listLegsWrapper{
+    background-position-x: 9%;
 }
 
-#ete{
-    background-position-x: 78%;
+#ete .listLegsWrapper{
+    background-position-x: 36%;
 }
 
-#aut{
-    background-position-x: 22%;
+#aut .listLegsWrapper{
+    background-position-x: 64%;
 }
 
-#hiv{
-    background-position-x: 78%;
+#hiv .listLegsWrapper{
+    background-position-x: 91%;
 }
 
 .legume{
@@ -651,21 +656,28 @@ h2{
     .selSaison{
         width: 24%;
         padding-top: 24%;
+        cursor: pointer;
+    }
 
-        .hoverCont{
-            height: 100%;
+    .hoverCont{
+        height: 100%;
 
-            font-size: em(22);
-    
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility .5s, opacity .5s;
-    
-            .imgCont{
-                display: unset;
-                width: em(100,22); height: em(100,22);
-            }
+        font-size: em(22);
+
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility .5s, opacity .5s;
+
+        .imgCont{
+            display: unset;
+            width: em(100,22); height: em(100,22);
         }
+    }
+
+    .selected{
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .5s;
     }
 
     // ==============================================================
@@ -676,6 +688,7 @@ h2{
         background-color: transparent;
         overflow-y: unset;
         padding-bottom: 0;
+        height: auto;
         h3{
             display: none;
         }
@@ -687,6 +700,13 @@ h2{
         padding: em(75) em(70) em(40) em(70);
 
         border-radius: 0 0 em(30) em(30);
+
+        background-image: url(../img/nos_produits/section-cut-2.png);
+        background-repeat: no-repeat;
+    }
+
+    .closeBtn{
+        display: none;
     }
 
     .legume{

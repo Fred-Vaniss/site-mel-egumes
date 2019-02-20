@@ -1,6 +1,6 @@
 console.clear()
 let log = console.log
-let $ = document.querySelector.bind(document);
+
 let $$ = document.querySelectorAll.bind(document);
 
 let chkbxField = $$("input[type='checkbox']");
