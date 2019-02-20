@@ -16,6 +16,7 @@
 - [ ] Footer: couleur du logo facebook et instagram
 - [ ] Déplacer la flèche bondissante dans la page d'accueil
 - [ ] Redispositionner la liste des paniers dans un grid
+- [ ] Déplacer le petit message de commande à l'intérieur du cadre du formulaire
 
 ## Contact
 - [ ] Adresse sur deux lignes
