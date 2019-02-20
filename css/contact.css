@@ -583,7 +583,7 @@ article p {
 }
 
 .contactMsg .retrouvez p {
-  font-size: 1.25em;
+  font-size: 1.875em;
   font-variant: small-caps;
   font-weight: 600;
   text-align: center;
@@ -614,6 +614,17 @@ article p {
 
 .contactMsg .socButtons img {
   width: 100%;
+}
+
+.contactMsg p {
+  font-size: 1.4375em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.contactMsg p span {
+  color: #dead65;
+  font-weight: 700;
 }
 
 .mapBg {
@@ -662,7 +673,7 @@ article p {
     padding: 0.20833em 0.625em;
   }
   .contactMsg .retrouvez p {
-    margin-bottom: 0;
+    margin-bottom: 1.5em;
   }
   .contactMsg .flex {
     -webkit-box-orient: horizontal;

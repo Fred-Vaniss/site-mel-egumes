@@ -233,7 +233,7 @@ article{
 		align-items: center;
 	}
 	.retrouvez p{
-		font-size: em(20);
+		font-size: em(30);
 		font-variant: small-caps;
 		font-weight: 600;
 		text-align: center;
@@ -258,7 +258,16 @@ article{
 			width: 100%;
 		}
 	}
-	
+
+	p{
+		font-size: em(23);
+		text-align: center;
+		margin-top: 1.5em;
+		span{
+			color: $theme-contact;
+			font-weight: 700;
+		}
+	}
 }
 
 // ==============================================================
@@ -333,7 +342,7 @@ article{
 
 	.contactMsg{
 		.retrouvez p{
-			margin-bottom: 0;
+			margin-bottom: 1.5em;
 		}
 
 		.flex{
