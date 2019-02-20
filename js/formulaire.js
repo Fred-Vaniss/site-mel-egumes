@@ -45,15 +45,8 @@ function messageCompletion(event){
     } else { 
         textArea.value = ""
     }
-
-    log(checkList)
-    log(checkedItem)
 }
-
-log(chkbxField)
 
 const arr = [['name', 'Bob'], ['age', 42], ['breakfast', 'eggs']];
 
 const mp = new Map(arr);
-
-log(mp);
