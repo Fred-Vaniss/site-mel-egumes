@@ -707,32 +707,49 @@ h2 strong {
   font-size: 1.5em;
 }
 
-#aut {
+.aut {
   background-image: url(../img/nos_produits/saisons/automne_bg.jpg);
   background-size: cover;
 }
 
-#hiv {
+.hiv {
   background-image: url(../img/nos_produits/saisons/hiver_bg.jpg);
   background-size: cover;
 }
 
-#pri {
+.pri {
   background-image: url(../img/nos_produits/saisons/printemps_bg.jpg);
   background-size: cover;
 }
 
-#ete {
+.ete {
   background-image: url(../img/nos_produits/saisons/ete_bg.jpg);
   background-size: cover;
 }
 
-#listLegs {
+.listLegs {
+  position: fixed;
+  top: 4.375em;
+  left: 0;
+  height: calc(100vh - 4.375em);
+  width: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 8em;
+  display: none;
+}
+
+.listLegs h3 {
+  color: white;
+  font-size: 3.125em;
+  text-align: center;
+  font-variant: small-caps;
+  margin: .5em 0;
+}
+
+.listLegsWrapper {
   background-color: #efece8;
-  background-image: url(../img/nos_produits/section-cut-2.png);
-  background-repeat: no-repeat;
-  background-position-x: 25%;
-  padding: 6.25em 1.5em 1.25em 1.5em;
+  padding: 4.375em 1.5em 1.25em 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,6 +758,26 @@ h2 strong {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+#pri {
+  background-position-x: 22%;
+}
+
+#ete {
+  background-position-x: 78%;
+}
+
+#aut {
+  background-position-x: 22%;
+}
+
+#hiv {
+  background-position-x: 78%;
 }
 
 .legume {
@@ -921,10 +958,19 @@ h2 strong {
     width: 4.54545em;
     height: 4.54545em;
   }
-  #listLegs {
+  .listLegs {
+    position: static;
+    background-color: transparent;
+    overflow-y: unset;
+    padding-bottom: 0;
+  }
+  .listLegs h3 {
+    display: none;
+  }
+  .listLegsWrapper {
     max-width: 57em;
     margin: 0 auto;
-    padding: 6.25em 4.375em 2.5em 4.375em;
+    padding: 4.6875em 4.375em 2.5em 4.375em;
     border-radius: 0 0 1.875em 1.875em;
   }
   .legume {
