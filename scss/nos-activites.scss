@@ -5,6 +5,8 @@
 
 p{
     line-height: 1.4em;
+    margin-bottom: 45px;
+    
 }
 
 h2{
@@ -12,6 +14,8 @@ h2{
     font-variant: small-caps;
     font-weight: 300;
     line-height: 0.9em;
+    margin-top:30px;
+    margin-bottom:30px;
 }
 
 strong{
@@ -19,9 +23,7 @@ strong{
 }
 
 
-h3{
 
-}
 
 
 // ==============================================================
@@ -69,16 +71,88 @@ h3{
         position: absolute;
         bottom: em(20,40);
         color: white;
+        margin-bottom: 97px;
     }
 }
+
+// ==============================================================
+// Un vrai projet de vie
+// ==============================================================
+
+
+
 
 // ==============================================================
 // Partageons notre savoir
 // ==============================================================
 
 .imgCont{
-	width: 80px;
+    width: 80px;
+    display: block;
+
+    margin: 46px auto 19px auto;
+    
 }
+
+.imgform{
+    width: 100px;
+    display: block;
+
+    margin: 46px auto 19px auto;
+}
+
+.ecoles{
+    margin-top: 100px;
+}
+
+
+h3{
+    font-family: 'Montserrat', medium;
+    text-align: center;
+    font-weight: 700;
+    font-size:em(20);
+    margin-bottom: 30px;
+}
+
+
+
+
+.contactRdv{
+    text-align: center;
+    font-size: em(18);
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    color: white;
+
+    border: none;
+    background-color: #4d837d;
+    box-shadow: 0 em(4,18) 0 $theme-activites-border;
+
+    padding: em(12,18) em(20,18);
+    border-radius: em(5,18);
+
+    margin-left: 230px;
+
+
+
+    &:hover{
+        background-color: lighten($theme-activites,10%);
+        box-shadow: 0 em(4,18) 0 lighten($theme-activites-border,10%);
+    }
+
+    &:active{
+        background-color: darken($theme-activites,10%);
+        box-shadow: 0 em(4,18) 0 darken($theme-activites-border,10%); 
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

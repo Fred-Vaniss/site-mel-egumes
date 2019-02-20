@@ -303,6 +303,7 @@ nav {
 
 p {
   line-height: 1.4em;
+  margin-bottom: 45px;
 }
 
 h2 {
@@ -310,6 +311,8 @@ h2 {
   font-variant: small-caps;
   font-weight: 300;
   line-height: 0.9em;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 strong {
@@ -352,10 +355,58 @@ strong {
   position: absolute;
   bottom: 0.5em;
   color: white;
+  margin-bottom: 97px;
 }
 
 .imgCont {
   width: 80px;
+  display: block;
+  margin: 46px auto 19px auto;
+}
+
+.imgform {
+  width: 100px;
+  display: block;
+  margin: 46px auto 19px auto;
+}
+
+.ecoles {
+  margin-top: 100px;
+}
+
+h3 {
+  font-family: 'Montserrat', medium;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin-bottom: 30px;
+}
+
+.contactRdv {
+  text-align: center;
+  font-size: 1.125em;
+  font-family: 'Montserrat', sans-serif;
+  font-variant: small-caps;
+  color: white;
+  border: none;
+  background-color: #4d837d;
+  -webkit-box-shadow: 0 0.22222em 0 #274340;
+          box-shadow: 0 0.22222em 0 #274340;
+  padding: 0.66667em 1.11111em;
+  border-radius: 0.27778em;
+  margin-left: 230px;
+}
+
+.contactRdv:hover {
+  background-color: #61a29b;
+  -webkit-box-shadow: 0 0.22222em 0 #3a635e;
+          box-shadow: 0 0.22222em 0 #3a635e;
+}
+
+.contactRdv:active {
+  background-color: #3a635e;
+  -webkit-box-shadow: 0 0.22222em 0 #142321;
+          box-shadow: 0 0.22222em 0 #142321;
 }
 
 @media screen and (min-width: 769px) {
