@@ -80,7 +80,39 @@ strong{
 // ==============================================================
 
 
+// ==============================================================
+// Gallerie d'images
+// ==============================================================
+.gallerie{
+    padding: 4em 0;
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
 
+.galSquare{
+    border: 1px solid #000;
+    width: 47%;
+    padding-top: 47%;
+    position: relative;
+
+    margin-bottom: em(20);
+
+    cursor:pointer;
+}
+
+.galCont{
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 100%; height: 100%;
+
+    img{
+        
+        width: 100%; height: 100%;
+    }
+}
 
 // ==============================================================
 // Partageons notre savoir
@@ -154,20 +186,6 @@ h3{
         box-shadow: 0 em(4,18) 0 darken($theme-activites-border,10%); 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 769px){
 	.intro{
