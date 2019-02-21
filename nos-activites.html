@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mél'égumes - Nos activités</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nos-activites.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
             <div class="logoCont">
                 <img class="logomel" src="img/logo_melegumes.svg" alt="Logo Mél'égumes">
                 <svg class="bannerSvg" height="50" width="160">
-                    <polygon points="0,0 0,25 80,5 160,25 160,0" style="fill:#dead65" />
+                    <polygon points="0,0 0,25 80,5 160,25 160,0" />
                 </svg>
             </div>
             <!-- Menu -->
@@ -25,7 +26,7 @@
                 <ul class="menu">
                     <li><a href="index.html">Accueil </a> <span class="menu-separator">|</span></li>
                     <li><a href="nos-produits.html">Nos produits </a> <span class="menu-separator">|</span></li>
-                    <li><a href="nos-activites.html">Nos activités </a> <span class="menu-separator">|</span></li>
+                    <li><a href="nos-activites.html" class="currentNav">Nos activités </a> <span class="menu-separator">|</span></li>
                     <li><a href="communaute.html">Communauté </a> <span class="menu-separator">|</span></li>
                     <li><a href="contact.html">Contact </a></li>
                 </ul>
@@ -40,7 +41,7 @@
     <section class="intro firstSection parallax-window" data-parallax="scroll" data-image-src="img/nos_activites/bg1.jpg">
         <div class="wrapper">
             <div class="introtext">
-                <h2>Ça se passe chez Mél'égumes</h2>
+                <h2>Ça se passe chez <strong>Mél'égumes</strong></h2>
             </div>          
         </div>
     </section>
@@ -99,36 +100,37 @@
     <section class="projet">
         <div class="wrapper">
             <h2><strong>partageons</strong><br> notre savoir...</h2>
-
+            <div class="flex">
                 <div class="savoir formation">
                     <div class="imgform">
-                      <img src="img/nos_activites/formation.svg"  alt="formations">
+                        <img src="img/nos_activites/formation.svg"  alt="formations">
                     </div>
-    
                     <h3>Les formations</h3>
                         <p>Nous avons récemment décidé de proposer des formations en permaculture. <br>
                         Si vous êtes étudiant à la recherche d’un stage ou stagiaire en ifapme et désireux d’apprendre le métier n’hésitez pas à nous contacter. Nous offrons également de courtes formations pour les éducateurs désireux d’intégrer des activités agricoles dans leur programme avec la mise en œuvre de techniques pédagogiques. 
                         </p>
-    
-                    <div class="buttonCont">
+        
+                    <div class="buttonCont mobile">
                         <a href="contact.html" class="contactRdv">Contactez-nous </a>
                     </div>
                 </div>
-
                 <div class="savoir ecoles">
                     <div class="imgCont">
-                        <img src="img/nos_activites/ecoles.svg" alt="écoles">
+                        <img src="img/nos_activites/ecoles.svg" alt="Ecoles">
                     </div>
-    
                     <h3>Les groupes scolaires</h3>
-                        <p>Un dossier pédagogique a été mis en place nous permettant d’accueillir ou d’aller à la rencontre des écoles, des groupes d’enfants afin de les sensibiliser à l’importance du vivant et à la façon de bien s’alimenter… tout en s’amusant évidemment! Vous pouvez dès maintenant nous contacter pour organiser une visite de groupe d’élèves et/ou participer à des activités ludiques.
-                        </p>
-    
-                    <div class="buttonCont">
+                        <p>Un dossier pédagogique a été mis en place nous permettant d’accueillir ou d’aller à la rencontre des écoles, des groupes d’enfants afin de les sensibiliser à l’importance du vivant et à la façon de bien s’alimenter… tout en s’amusant évidemment! Vous pouvez dès maintenant nous contacter pour organiser une visite de groupe d’élèves et/ou participer à des activités ludiques.                        </p>
+        
+                    <div class="buttonCont mobile">
                         <a href="contact.html" class="contactRdv">Contactez-nous </a>
                     </div>
                     
                 </div>
+            </div>
+            <div class="buttonCont desk">
+                <a href="contact.html" class="contactRdv">Contactez-nous </a>
+            </div>
+
         </div>
     </section>
 

@@ -446,6 +446,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-variant: small-caps;
   color: white;
+  text-decoration: none;
   border: none;
   background-color: #4d837d;
   -webkit-box-shadow: 0 0.22222em 0 #274340;
@@ -466,9 +467,73 @@ h3 {
           box-shadow: 0 0.22222em 0 #142321;
 }
 
+.desk {
+  display: none;
+}
+
 @media screen and (min-width: 769px) {
+  h2 {
+    font-size: 5em;
+    font-weight: 300;
+  }
   .intro {
-    height: calc(100vh - 4.375em);
+    height: 41.3125em;
+  }
+  .texteprojet {
+    width: 32em;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .texteprojet h2, .projet h2 {
+    font-weight: 100;
+  }
+  .texteprojet strong, .projet strong {
+    font-weight: 300;
+  }
+  .imgCont, .imgform {
+    margin: 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 6.25em;
+    -webkit-box-align: bottom;
+        -ms-flex-align: bottom;
+            align-items: bottom;
+  }
+  .imgform {
+    width: 7.5em;
+    padding-top: 0.9375em;
+  }
+  .imgform img {
+    width: 7.5em;
+  }
+  .galSquare {
+    width: 32%;
+    padding-top: 32%;
+  }
+  .flex {
+    margin-top: 4em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5em;
+  }
+  .ecoles {
+    margin-top: 0;
+  }
+  .mobile {
+    display: none;
+  }
+  .desk {
+    display: block;
+    margin: 2em auto;
+  }
+  .desk a {
+    padding: 0.66667em 1.94444em;
   }
 }
 

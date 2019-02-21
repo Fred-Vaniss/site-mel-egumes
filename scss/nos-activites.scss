@@ -166,6 +166,7 @@ h3{
     font-family: 'Montserrat', sans-serif;
     font-variant: small-caps;
     color: white;
+    text-decoration: none;
 
     border: none;
     background-color: #4d837d;
@@ -186,10 +187,85 @@ h3{
     }
 }
 
+.desk{
+    display: none;
+}
+
 @media screen and (min-width: 769px){
+
+    h2{
+        font-size: em(80);
+        font-weight: 300;
+    }
+
 	.intro{
-		height: calc(100vh - 4.375em)
-	}
+        height: em(661);
+    }
+    
+    .texteprojet{
+        width: em(512);
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    .texteprojet, .projet{
+        h2{
+            font-weight: 100;
+        }
+        strong{
+            font-weight: 300;
+        }
+    }
+
+    .imgCont, .imgform{
+        margin: 0 auto;
+        flex: 1;
+
+        height: em(100);
+
+        // display: flex;
+        align-items: bottom;
+    }
+
+    .imgform{
+        width: em(120);
+        padding-top: em(15);
+        img{
+            width: em(120);
+        }
+    }
+
+
+    .galSquare{
+        width: 32%; padding-top: 32%;
+    }
+
+    .flex{
+        margin-top: 4em;
+
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5em;
+    }
+
+    .ecoles{
+        margin-top: 0;
+
+        
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desk{
+        display: block;
+        margin: 2em auto;
+        a{
+            padding: em(12,18) em(35,18);
+        }
+    }
 }
 
 
