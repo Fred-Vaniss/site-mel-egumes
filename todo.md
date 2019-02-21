@@ -20,6 +20,7 @@
 
 ## Contact
 - [ ] Adresse sur deux lignes
+- [ ] Corriger les espacement entre les pictos des coordonées (intervertir les balises A et article)
 - [ ] Interligne phrase contact
 - [ ] Diminuer la taille de Facebook et Instagram
 
