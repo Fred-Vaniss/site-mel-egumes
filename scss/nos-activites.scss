@@ -1,7 +1,179 @@
+@import "css-reset";
 @import "html";
 @import "header";
 @import "functions";
 
+p{
+    line-height: 1.4em;
+    margin-bottom: 45px;
+    
+}
+
+h2{
+	font-size: em(40);
+    font-variant: small-caps;
+    font-weight: 300;
+    line-height: 0.9em;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+strong{
+	font-weight: 500;
+}
+
+
+
+
+
+// ==============================================================
+// Couleur du header
+// ==============================================================
+
+.logoCont{
+    background-color: $theme-activites;
+}
+
+.bannerSvg{
+    fill: $theme-activites;
+}
+
+.menu {
+    li a:hover, .currentNav{
+		background-color: $theme-activites;
+		color: white;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .menu{
+        li a:hover{
+            background-color: unset;
+            color: $theme-activites;
+        }
+        .currentNav{
+			background-color: unset;
+            color: $theme-activites;
+        }
+    }
+}
+
+// ==============================================================
+// Intro
+// ==============================================================
+
+.intro{
+	height: em(400);
+	.wrapper{
+		position: relative; 
+	}
+	h2{
+        position: absolute;
+        bottom: em(20,40);
+        color: white;
+        margin-bottom: 97px;
+    }
+}
+
+// ==============================================================
+// Un vrai projet de vie
+// ==============================================================
+
+
+
+
+// ==============================================================
+// Partageons notre savoir
+// ==============================================================
+
+.imgCont{
+    width: 80px;
+    display: block;
+
+    margin: 46px auto 19px auto;
+    
+}
+
+.imgform{
+    width: 100px;
+    display: block;
+
+    margin: 46px auto 19px auto;
+}
+
+.savoir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ecoles{
+    margin-top: 100px;
+}
+
+.buttonCont{
+    width: 175px;
+    flex-grow: 0;
+    align-self: flex-end;
+
+}
+
+
+h3{
+    font-family: 'Montserrat', medium;
+    text-align: center;
+    font-weight: 700;
+    font-size:em(20);
+    margin-bottom: 30px;
+}
+
+
+
+
+.contactRdv{
+    font-size: em(18);
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    color: white;
+
+    border: none;
+    background-color: #4d837d;
+    box-shadow: 0 em(4,18) 0 $theme-activites-border;
+
+    padding: em(12,18) em(20,18);
+    border-radius: em(5,18);
+
+
+    &:hover{
+        background-color: lighten($theme-activites,10%);
+        box-shadow: 0 em(4,18) 0 lighten($theme-activites-border,10%);
+    }
+
+    &:active{
+        background-color: darken($theme-activites,10%);
+        box-shadow: 0 em(4,18) 0 darken($theme-activites-border,10%); 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px){
+	.intro{
+		height: calc(100vh - 4.375em)
+	}
+}
 
 
 @import 'footer';
