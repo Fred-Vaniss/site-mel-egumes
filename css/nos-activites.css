@@ -344,7 +344,7 @@ strong {
 }
 
 .intro {
-  height: calc(100vh - 4.375em);
+  height: 25em;
 }
 
 .intro .wrapper {
@@ -370,8 +370,30 @@ strong {
   margin: 46px auto 19px auto;
 }
 
+.savoir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .ecoles {
   margin-top: 100px;
+}
+
+.buttonCont {
+  width: 175px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 h3 {
@@ -383,7 +405,6 @@ h3 {
 }
 
 .contactRdv {
-  text-align: center;
   font-size: 1.125em;
   font-family: 'Montserrat', sans-serif;
   font-variant: small-caps;
@@ -394,7 +415,6 @@ h3 {
           box-shadow: 0 0.22222em 0 #274340;
   padding: 0.66667em 1.11111em;
   border-radius: 0.27778em;
-  margin-left: 230px;
 }
 
 .contactRdv:hover {

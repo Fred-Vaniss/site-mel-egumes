@@ -63,7 +63,7 @@ strong{
 // ==============================================================
 
 .intro{
-	height: calc(100vh - 4.375em);
+	height: em(400);
 	.wrapper{
 		position: relative; 
 	}
@@ -101,8 +101,21 @@ strong{
     margin: 46px auto 19px auto;
 }
 
+.savoir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .ecoles{
     margin-top: 100px;
+}
+
+.buttonCont{
+    width: 175px;
+    flex-grow: 0;
+    align-self: flex-end;
+
 }
 
 
@@ -118,7 +131,6 @@ h3{
 
 
 .contactRdv{
-    text-align: center;
     font-size: em(18);
     font-family: 'Montserrat', sans-serif;
     font-variant: small-caps;
@@ -130,9 +142,6 @@ h3{
 
     padding: em(12,18) em(20,18);
     border-radius: em(5,18);
-
-    margin-left: 230px;
-
 
 
     &:hover{
