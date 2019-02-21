@@ -17,6 +17,11 @@
 - [ ] Déplacer la flèche bondissante dans la page d'accueil
 - [ ] Redispositionner la liste des paniers dans un grid
 - [ ] Déplacer le petit message de commande à l'intérieur du cadre du formulaire
+- [ ] Corriger l'association entre labels et formulaire
+
+## Nos activités
+- [ ] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
+- [ ] Le boutton "contactez nous" ne s'affiche pas correctement sur certaines machines
 
 ## Contact
 - [ ] Adresse sur deux lignes
