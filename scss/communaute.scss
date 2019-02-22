@@ -8,16 +8,16 @@
 // ==============================================================
 
 .logoCont{
-    background-color: $theme-accueil;
+    background-color: $theme-commu;
 }
 
 .bannerSvg{
-    fill: $theme-accueil;
+    fill: $theme-commu;
 }
 
 .menu {
     li a:hover, .currentNav{
-		background-color: $theme-accueil;
+		background-color: $theme-commu;
 		color: white;
     }
 }
@@ -26,11 +26,11 @@
     .menu{
         li a:hover{
             background-color: unset;
-            color: $theme-accueil;
+            color: $theme-commu;
         }
         .currentNav{
 			background-color: unset;
-            color: $theme-accueil;
+            color: $theme-commu;
         }
     }
 }
@@ -43,12 +43,20 @@
 h2{
 	font-variant: small-caps;
 	font-size: em(32);
+	font-weight: 300;
 
 	margin-bottom: .8em;
 }
 
+strong{
+	font-weight: 500;
+}
+
 p{
+	font-size: em(18);
 	margin-bottom: .8em;
+	line-height: 1.4em;
+	text-align: justify;
 }
 
 img{
@@ -94,6 +102,110 @@ img{
 		text-align: center;
 		margin: 0 auto;
 		margin-bottom: em(20);
+	}
+}
+
+// ==============================================================
+// Version bureau
+// ==============================================================
+
+@media screen and (min-width: 725px){
+	h2{
+		font-size: em(50);
+		font-weight: 100;
+	}
+	strong{
+		font-weight: 300;
+	}
+
+	.intro{
+		padding-top: em(200);
+		height: em(500);
+		h2{
+			font-size: em(85);
+		}
+	}
+
+	.imgCont{
+		min-width: unset;
+	}
+	.histoire {
+		.wrapper{
+			display: grid;
+			grid-column-gap: 1em;
+			grid-template-columns: 1fr 1fr;
+			grid-template-areas: "img txt";
+
+		}
+		.txtCont{
+			grid-area: txt;
+		}
+		.imgCont{
+			grid-area: img;
+			width: 100%;
+		}
+	}
+	.imageFond{
+		height: 70vh;
+		.wrapper{
+			position: relative;
+		}
+	}
+
+	.secWrapper{
+		position: absolute;
+		bottom: 0; left: 0;
+
+		background-color: rgba(#fff, .6);
+		width: em(605);
+		height: em(1150);
+		padding: 2em;
+	}
+
+	.bigSpace{
+		padding-bottom: 7em;
+	}
+
+	.assiette{
+		padding: 0;
+		height: em(720);
+		.wrapper{
+			position: relative;
+		}
+		.imgCont{
+			position: absolute;
+			right: 0; bottom: 4em;
+
+
+			width: em(680);
+		}
+	}
+
+	.recompense{
+		.wrapper{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: em(106) auto;
+			grid-column-gap: 1em;
+			grid-row-gap: 4em;
+
+			grid-template-areas: 
+				"svg	title"
+				"img	para";
+		}
+
+		.svgCont{
+			grid-area: svg;
+		}
+		h2{
+			grid-area: title;
+		}
+		.txtCont{
+			grid-area: para;
+		}
+		.imgCont{
+			grid-area: img;
+		}
 	}
 }
 

@@ -303,37 +303,45 @@ nav {
 }
 
 .logoCont {
-  background-color: #872f39;
+  background-color: #d2b79d;
 }
 
 .bannerSvg {
-  fill: #872f39;
+  fill: #d2b79d;
 }
 
 .menu li a:hover, .menu .currentNav {
-  background-color: #872f39;
+  background-color: #d2b79d;
   color: white;
 }
 
 @media screen and (min-width: 769px) {
   .menu li a:hover {
     background-color: unset;
-    color: #872f39;
+    color: #d2b79d;
   }
   .menu .currentNav {
     background-color: unset;
-    color: #872f39;
+    color: #d2b79d;
   }
 }
 
 h2 {
   font-variant: small-caps;
   font-size: 2em;
+  font-weight: 300;
   margin-bottom: .8em;
 }
 
+strong {
+  font-weight: 500;
+}
+
 p {
+  font-size: 1.125em;
   margin-bottom: .8em;
+  line-height: 1.4em;
+  text-align: justify;
 }
 
 img {
@@ -378,6 +386,107 @@ img {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 1.25em;
+}
+
+@media screen and (min-width: 725px) {
+  h2 {
+    font-size: 3.125em;
+    font-weight: 100;
+  }
+  strong {
+    font-weight: 300;
+  }
+  .intro {
+    padding-top: 12.5em;
+    height: 31.25em;
+  }
+  .intro h2 {
+    font-size: 5.3125em;
+  }
+  .imgCont {
+    min-width: unset;
+  }
+  .histoire .wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 1em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "img txt";
+  }
+  .histoire .txtCont {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: txt;
+  }
+  .histoire .imgCont {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img;
+    width: 100%;
+  }
+  .imageFond {
+    height: 70vh;
+  }
+  .imageFond .wrapper {
+    position: relative;
+  }
+  .secWrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 37.8125em;
+    height: 71.875em;
+    padding: 2em;
+  }
+  .bigSpace {
+    padding-bottom: 7em;
+  }
+  .assiette {
+    padding: 0;
+    height: 45em;
+  }
+  .assiette .wrapper {
+    position: relative;
+  }
+  .assiette .imgCont {
+    position: absolute;
+    right: 0;
+    bottom: 4em;
+    width: 42.5em;
+  }
+  .recompense .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 6.625em auto;
+        grid-template-rows: 6.625em auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 4em;
+        grid-template-areas: "svg	title" "img	para";
+  }
+  .recompense .svgCont {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: svg;
+  }
+  .recompense h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: title;
+  }
+  .recompense .txtCont {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: para;
+  }
+  .recompense .imgCont {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img;
+  }
 }
 
 footer {
