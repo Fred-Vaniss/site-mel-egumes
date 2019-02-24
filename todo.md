@@ -1,6 +1,7 @@
 # Corrections à faire
 
 ## Général
+- [ ] Mettre le lien du logo Mél'égumes pour ramener vers la page d'accueil
 - [ ] Vérifier la sémantique des pages (h1, h2, ...)
 - [ ] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
 
@@ -28,6 +29,7 @@
 - [ ] Corriger les espacement entre les pictos des coordonées (intervertir les balises A et article)
 - [ ] Interligne phrase contact
 - [ ] Diminuer la taille de Facebook et Instagram
+- [ ] Retirer l'espace blanc en bas
 
 ## Footer
 - [ ] Enlever le porder top.
