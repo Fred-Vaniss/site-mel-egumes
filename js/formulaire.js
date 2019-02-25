@@ -2,6 +2,7 @@ console.clear()
 let log = console.log
 
 let $$ = document.querySelectorAll.bind(document);
+let $ = document.querySelector.bind(document);
 
 let chkbxField = $$("input[type='checkbox']");
 let textArea = $("#msg");
