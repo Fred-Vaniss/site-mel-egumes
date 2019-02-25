@@ -1,7 +1,7 @@
 # Corrections à faire
 
 ## Général
-- [ ] Mettre le lien du logo Mél'égumes pour ramener vers la page d'accueil
+- [ ] Mettre un lien au logo Mél'égumes pour ramener vers la page d'accueil
 - [ ] Vérifier la sémantique des pages (h1, h2, ...)
 - [ ] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
 
@@ -9,6 +9,9 @@
 - [ ] Interligne entre le titre et le slogan
 - [ ] Interligne permaculture
 - [ ] Centrer le slogan permaculture
+- [ ] Forme des bouttons
+- [ ] Retour à la ligne Eat good, feel good.
+- [ ] Vérifier taille du texte de citation sur mobile
 
 ## Nos Produits
 - [x] Ajuster les positions et feuilles
@@ -19,6 +22,7 @@
 - [ ] Redispositionner la liste des paniers dans un grid
 - [ ] Déplacer le petit message de commande à l'intérieur du cadre du formulaire
 - [ ] Corriger l'association entre labels et formulaire
+- [ ] Changer la forme de la croix pour fermer la sélection des légumes en mobile (plus fin et moins impactant)
 
 ## Nos activités
 - [ ] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
@@ -32,6 +36,6 @@
 - [ ] Retirer l'espace blanc en bas
 
 ## Footer
-- [ ] Enlever le porder top.
+- [ ] Enlever le border top.
 - [ ] Vérifier les couleurs des logos pour chaque page
 - [ ] Ajouter le logo "copyright"
