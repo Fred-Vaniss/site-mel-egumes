@@ -13,7 +13,7 @@ function showSeason (target){
         $(id).slideUp();
         $(openedTabCl+' .hoverCont')[0].classList.remove("selected");
         openedTabId = null;
-        openedTabCl = null
+        openedTabCl = null;
         return;
     }
 
