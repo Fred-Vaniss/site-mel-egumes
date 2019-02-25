@@ -17,11 +17,7 @@
 	background-position-y: center;
 	
 	h2{
-		font-family: 'Montserrat', sans-serif;
-		font-variant: small-caps;
-		font-weight: 500;
 		color: white;
-		font-size: em(35);
 	}
 }
 
@@ -101,15 +97,7 @@ article{
 // ==============================================================
 
 .form{
-	padding-bottom: em(120) ;
-
-	h3{
-		font-family: 'Oleo Script', cursive;
-		text-align: center;
-		font-size: em(28);
-
-		padding-bottom: em(20,28);
-	}
+	padding-bottom: em(120) ;	
 }
 
 .field{

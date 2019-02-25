@@ -3,21 +3,6 @@
 @import "header";
 @import "functions";
 
-p{
-    line-height: 1.4em;
-}
-
-h2{
-    font-size: em(40);
-    font-variant: small-caps;
-    font-weight: 300;
-    line-height: 0.9em;
-    strong{
-        font-weight: 500;
-    }
-}
-
-
 // ==============================================================
 // Couleur du header
 // ==============================================================
@@ -197,11 +182,6 @@ h2{
         font-variant: small-caps;
         font-size: em(18);
         padding: em(10,18) 0;
-    }
-
-    h3{
-        font-size: em(24);
-        margin-bottom: 0.6em;
     }
 
     p{

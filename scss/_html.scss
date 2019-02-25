@@ -43,3 +43,47 @@ body{
 .invisible{
     display: none;
 }
+
+p{
+    font-size: 100%;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    // text-align: justify;
+}
+
+h2{
+    font-size: em(60);
+    // margin-bottom: .8em;
+    font-weight: 300;
+    font-variant: small-caps;
+    strong{
+        font-weight: 500;
+    }
+}
+
+h3{
+    font-size: em(42);
+    font-weight: 200;
+    margin-bottom: .8em;
+    font-variant: small-caps;
+    strong{
+        font-weight: 400;
+    }
+}
+
+h4{
+    font-size: em(30);
+    font-weight: 300;
+    margin-bottom: .5em;
+}
+
+@media screen and (min-width: 725px){
+
+    h2{
+        font-size: em(80);
+    }
+    
+    h3{
+        font-size: em(55); 
+    }
+}

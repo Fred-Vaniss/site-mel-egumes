@@ -3,29 +3,6 @@
 @import "header";
 @import "functions";
 
-p{
-    line-height: 1.4em;
-    margin-bottom: 45px;
-    
-}
-
-h2{
-	font-size: em(40);
-    font-variant: small-caps;
-    font-weight: 300;
-    line-height: 0.9em;
-    margin-top:30px;
-    margin-bottom:30px;
-}
-
-strong{
-	font-weight: 500;
-}
-
-
-
-
-
 // ==============================================================
 // Couleur du header
 // ==============================================================
@@ -79,6 +56,9 @@ strong{
 // Un vrai projet de vie
 // ==============================================================
 
+.projet{
+    padding: 2.5em 0;
+}
 
 // ==============================================================
 // Gallerie d'images
@@ -148,18 +128,6 @@ strong{
     align-self: flex-end;
 
 }
-
-
-h3{
-    font-family: 'Montserrat', medium;
-    text-align: center;
-    font-weight: 700;
-    font-size:em(20);
-    margin-bottom: 30px;
-}
-
-
-
 
 .contactRdv{
     font-size: em(18);

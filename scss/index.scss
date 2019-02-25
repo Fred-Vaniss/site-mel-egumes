@@ -7,12 +7,6 @@ h2{
 	margin-bottom: 0.3em;
 }
 
-p{
-	font-size: em(18);
-	margin: em(20) 0;
-	line-height: 1.5em;
-	text-align: justify;
-}
 
 strong{
 	font-weight: 500;
@@ -74,8 +68,9 @@ strong{
 	text-align: right;
     h2{
 		font-size: em(60);
-		margin-bottom: 0;
+		margin-bottom: .2em;
 		font-family: 'Oleo Script', cursive;
+		font-variant: normal;
     }
     p{
 		text-align: right;
@@ -260,9 +255,6 @@ strong{
 // ==============================================================
 
 @media screen and (min-width: 725px){
-	p{
-		font-size: 1em;
-	}
 
 	// ==============================================================
 	// Feuilles d'arbre
@@ -330,7 +322,10 @@ strong{
 			justify-content: space-between;
 			
 			.image{
-				width: em(450); 
+				width: em(450);
+				img{
+					margin-top: 0;
+				} 
 			}
 
 			.paragraphsBox{
