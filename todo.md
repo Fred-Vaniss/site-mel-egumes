@@ -11,7 +11,8 @@
 - [ ] Centrer le slogan permaculture
 - [ ] Forme des bouttons
 - [ ] Retour à la ligne Eat good, feel good.
-- [ ] Vérifier taille du texte de citation sur mobile
+- [ ] Mettre le lien *"commander votre panier"* directement vers la section formulaire?
+- [ ] **Mobile:** Vérifier taille du texte de citation 
 
 ## Nos Produits
 - [x] Ajuster les positions et feuilles
@@ -23,10 +24,18 @@
 - [ ] Déplacer le petit message de commande à l'intérieur du cadre du formulaire
 - [ ] Corriger l'association entre labels et formulaire
 - [ ] Changer la forme de la croix pour fermer la sélection des légumes en mobile (plus fin et moins impactant)
+- [ ] **Mobile:** Centrer le titre
+- [ ] **Mobile:** Espace blanc entre les produits et les imagres
 
 ## Nos activités
 - [ ] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
 - [ ] Le boutton "contactez nous" ne s'affiche pas correctement sur certaines machines
+- [ ] Mettre un lien directement sur le formulaire
+- [ ] Descendre un peu le footer
+
+## Communauté
+- [ ] **Mobile:** Descentre un peu le titre
+- [ ] **Mobile:** Descendre un peu la photo (mosaïc)
 
 ## Contact
 - [ ] Adresse sur deux lignes
