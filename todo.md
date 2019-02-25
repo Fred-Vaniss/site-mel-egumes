@@ -1,9 +1,9 @@
 # Corrections à faire
 
 ## Général
-- [ ] Mettre un lien au logo Mél'égumes pour ramener vers la page d'accueil
-- [ ] Vérifier la sémantique des pages (h1, h2, ...)
-- [ ] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
+- [x] Mettre un lien au logo Mél'égumes pour ramener vers la page d'accueil
+- [x] Vérifier la sémantique des pages (h1, h2, ...)
+- [x] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
 
 ## Accueil
 - [ ] Interligne entre le titre et le slogan
