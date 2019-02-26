@@ -729,6 +729,10 @@ nav {
   font-weight: 300;
 }
 
+.hoverCont p {
+  margin-bottom: 0;
+}
+
 .hoverCont .imgCont {
   display: none;
   width: 3.125em;
@@ -863,6 +867,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nomCont p {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 725px) {

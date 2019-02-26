@@ -372,6 +372,10 @@
     font-variant: small-caps;
     font-weight: 300;
 
+    p{
+        margin-bottom: 0;
+    } 
+
     .imgCont{
         display: none;
         width: em(50); height: em(50);
@@ -487,6 +491,7 @@
     img{
         width: 100%;
     }
+
 }
 
 .nomCont{
@@ -503,6 +508,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    p{
+        margin-bottom: 0;
+    }
 }
 
 // ==============================================================

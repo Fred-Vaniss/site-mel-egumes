@@ -482,11 +482,13 @@ article h3 {
   font-size: 1.125em;
   margin: 0.83333em 0;
   font-weight: 500;
+  font-variant: normal;
 }
 
 article p {
   font-weight: 300;
   padding-bottom: 0.625em;
+  margin-bottom: 0;
 }
 
 .form {
@@ -673,9 +675,6 @@ article p {
 @media screen and (min-width: 725px) {
   .intro {
     height: calc(100vh - 27em);
-  }
-  .intro h2 {
-    font-size: 5.25em;
   }
   .flexCoords {
     -webkit-box-orient: horizontal;

@@ -453,6 +453,14 @@ nav {
           justify-content: center;
 }
 
+.savoir h4 {
+  font-weight: 700;
+  font-size: 1.25em;
+  font-variant: normal;
+  text-align: center;
+  margin-bottom: 1.875em;
+}
+
 .ecoles {
   margin-top: 100px;
 }
@@ -497,10 +505,6 @@ nav {
 }
 
 @media screen and (min-width: 769px) {
-  h2 {
-    font-size: 5em;
-    font-weight: 300;
-  }
   .intro {
     height: 41.3125em;
   }
