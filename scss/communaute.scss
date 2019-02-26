@@ -39,31 +39,9 @@
 // Propriété général
 // ==============================================================
 
-
-h2{
-	font-variant: small-caps;
-	font-size: em(32);
-	font-weight: 300;
-
-	margin-bottom: .8em;
-}
-
-strong{
-	font-weight: 500;
-}
-
-p{
-	font-size: em(18);
-	margin-bottom: .8em;
-	line-height: 1.4em;
-	text-align: justify;
-}
-
 img{
 	width: 100%;
 }
-
-
 
 .imgCont{
 	min-width: 100%;
@@ -72,10 +50,6 @@ img{
 .intro{
 	padding-top: em(20);
 	height: em(220);
-	
-	h2{
-		font-size: em(40);
-	}
 }
 
 .histoire{
@@ -110,20 +84,12 @@ img{
 // ==============================================================
 
 @media screen and (min-width: 725px){
-	h2{
-		font-size: em(50);
-		font-weight: 100;
-	}
-	strong{
-		font-weight: 300;
-	}
+
 
 	.intro{
 		padding-top: em(200);
 		height: em(500);
-		h2{
-			font-size: em(85);
-		}
+
 	}
 
 	.imgCont{

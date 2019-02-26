@@ -17,11 +17,7 @@
 	background-position-y: center;
 	
 	h2{
-		font-family: 'Montserrat', sans-serif;
-		font-variant: small-caps;
-		font-weight: 500;
 		color: white;
-		font-size: em(35);
 	}
 }
 
@@ -42,14 +38,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	a{
-		color: black;
-		text-decoration: none;
-		&:hover > .coord .picto{
-			animation: butHover 0.5s;
-		}
-	}
 }
 
 @keyframes butHover {
@@ -62,15 +50,22 @@
 
 article{
 	width: 100%;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
 	min-height: em(190);
-	max-width: em(220);
-
 	text-align: center;
+
+	a{
+		color: black;
+		text-decoration: none;
+
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+
+		&:hover >  .picto{
+			animation: butHover 0.5s;
+		}
+	}
+	
 	.picto{
 		// background-color: $theme-contact;
 		padding: em(15);
@@ -89,10 +84,12 @@ article{
 		font-size: em(18);
 		margin: em(15,18) 0;
 		font-weight: 500;
+		font-variant: normal;
 	}
 	p{
 		font-weight: 300;
 		padding-bottom: em(10);
+		margin-bottom: 0;
 	}
 }
 
@@ -101,15 +98,7 @@ article{
 // ==============================================================
 
 .form{
-	padding-bottom: em(120) ;
-
-	h3{
-		font-family: 'Oleo Script', cursive;
-		text-align: center;
-		font-size: em(28);
-
-		padding-bottom: em(20,28);
-	}
+	padding-bottom: em(120) ;	
 }
 
 .field{
@@ -248,7 +237,7 @@ article{
 			margin-right: 1em;
 		}
 		.picto{
-			width: em(75);
+			width: em(50);
 			&:hover{
 				animation: butHover 0.5s;
 			}
@@ -293,9 +282,6 @@ article{
 	.intro{
 		height: calc(100vh - 27em);
 		// height: em(315);
-		h2{
-			font-size: em(84);
-		}
 	}
 
 	// ==============================================================
@@ -303,9 +289,11 @@ article{
 	// ==============================================================
 
 	.flexCoords{
-		flex-direction: row;
-		justify-content: space-around;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: .5em;
+		justify-content: center;
+		align-items: start;
 	}
 
 	// ==============================================================
@@ -367,7 +355,7 @@ article{
 	// ==============================================================
 
 	.mapBg{
-		height: em(540);
+		height: calc(100vh - 10.375em);
 	}
 }
 

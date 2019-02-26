@@ -2,9 +2,11 @@ console.clear()
 let log = console.log
 
 let $$ = document.querySelectorAll.bind(document);
+// let $ = document.querySelector.bind(document);
 
 let chkbxField = $$("input[type='checkbox']");
 let textArea = $("#msg");
+log(textArea)
 
 
 for (let i = 0; i < chkbxField.length; i++) {
@@ -41,9 +43,9 @@ function messageCompletion(event){
                 checkedItemDone ++
             }
         }
-        textArea.value = `Bonjour Mélanie,\n\nJe voudrais commander ${partiePhrase}.\n\nMerci`
+        textArea.val(`Bonjour Mélanie,\n\nJe voudrais commander ${partiePhrase}.\n\nMerci`)
     } else { 
-        textArea.value = ""
+        textArea.val("")
     }
 }
 
