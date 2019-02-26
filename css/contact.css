@@ -386,16 +386,6 @@ nav {
           align-items: center;
 }
 
-.flexCoords a {
-  color: black;
-  text-decoration: none;
-}
-
-.flexCoords a:hover > .coord .picto {
-  -webkit-animation: butHover 0.5s;
-          animation: butHover 0.5s;
-}
-
 @-webkit-keyframes butHover {
   0% {
     -webkit-transform: rotate(0deg);
@@ -444,9 +434,16 @@ nav {
 
 article {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  min-height: 11.875em;
+  text-align: center;
+}
+
+article a {
+  color: black;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -454,9 +451,11 @@ article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 11.875em;
-  max-width: 13.75em;
-  text-align: center;
+}
+
+article a:hover > .picto {
+  -webkit-animation: butHover 0.5s;
+          animation: butHover 0.5s;
 }
 
 article .picto {
@@ -643,7 +642,7 @@ article p {
 }
 
 .contactMsg .socButtons .picto {
-  width: 4.6875em;
+  width: 3.125em;
 }
 
 .contactMsg .socButtons .picto:hover {
@@ -677,14 +676,17 @@ article p {
     height: calc(100vh - 27em);
   }
   .flexCoords {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: .5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .formContainer {
     display: -ms-grid;

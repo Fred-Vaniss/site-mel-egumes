@@ -34,15 +34,17 @@
 - [ ] Descendre un peu le footer
 
 ## Communauté
+- [ ] Mettre un espace pour l'article *"une histoire..."*
+- [ ] Couper la ligne noir sur l'image avec le drapeau canadien
 - [ ] **Mobile:** Descentre un peu le titre
 - [ ] **Mobile:** Descendre un peu la photo (mosaïc)
 
 ## Contact
-- [ ] Adresse sur deux lignes
-- [ ] Corriger les espacement entre les pictos des coordonées (intervertir les balises A et article)
-- [ ] Interligne phrase contact
-- [ ] Diminuer la taille de Facebook et Instagram
-- [ ] Retirer l'espace blanc en bas
+- [x] Adresse sur deux lignes
+- [x] Corriger les espacement entre les pictos des coordonées (intervertir les balises A et article)
+- [x] Interligne phrase contact
+- [x] Diminuer la taille de Facebook et Instagram
+- [x] Retirer l'espace blanc en bas
 
 ## Footer
 - [ ] Enlever le border top.
