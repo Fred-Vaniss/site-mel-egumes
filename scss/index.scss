@@ -61,7 +61,7 @@ strong{
 
 .introtext{
 	position: absolute;
-	width: em(312);
+	width: em(280);
 	bottom: 20%;
 	right: em(24);
 	color: white;
@@ -198,28 +198,21 @@ strong{
 	font-size: em(24);
 	font-weight: 300;
 	text-transform: uppercase;
+	color: white;
+
 
 	text-decoration: none;
 	text-align: center;
 
 	display: inline-block;
-	width: 100%;
 	vertical-align: middle;
-	padding: em(15);
+	padding: em(10,24) em(15,24);
+	border-radius: em(5,24);
+	
 	margin-top: em(10);
 
-	border-radius: em(10);
-
-	span{
-		vertical-align: middle;
-		display: inline-block;
-		line-height: 2.5;
-	}
-}
-
-.commPanier{
-	color: white;
 	background-color: $theme-accueil;
+	box-shadow: 0 em(4,24) 0 $theme-accueil-border;
 
 	&:hover{
 		background-color: lighten($theme-accueil, 10%);
@@ -228,21 +221,11 @@ strong{
 	&:active{
 		background-color: darken($theme-accueil, 10%);
 	}
-}
 
-.plusInfo{
-	color: $theme-accueil;
-	background-color: white;
-	border: 4px solid $theme-accueil;
-
-	&:hover{
-		border-color: lighten($theme-accueil, 10%);
-		color: lighten($theme-accueil, 10%);
-	}
-
-	&:active{
-		border-color: darken($theme-accueil, 10%);
-		color: darken($theme-accueil, 10%);
+	span{
+		vertical-align: middle;
+		display: inline-block;
+		line-height: 2.5;
 	}
 }
 
@@ -394,7 +377,7 @@ strong{
 			float: right; 
 
 			position: relative;
-			top: em(380,20);
+			top: 10em;
 
 			text-align-last: left;
 

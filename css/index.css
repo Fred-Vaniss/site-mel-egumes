@@ -395,7 +395,7 @@ strong {
 
 .introtext {
   position: absolute;
-  width: 19.5em;
+  width: 17.5em;
   bottom: 20%;
   right: 1.5em;
   color: white;
@@ -526,49 +526,31 @@ strong {
   font-size: 1.5em;
   font-weight: 300;
   text-transform: uppercase;
+  color: white;
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  width: 100%;
   vertical-align: middle;
-  padding: 0.9375em;
+  padding: 0.41667em 0.625em;
+  border-radius: 0.20833em;
   margin-top: 0.625em;
-  border-radius: 0.625em;
+  background-color: #872f39;
+  -webkit-box-shadow: 0 0.16667em 0 #3b1519;
+          box-shadow: 0 0.16667em 0 #3b1519;
+}
+
+.commPanier:hover, .plusInfo:hover {
+  background-color: #ad3c49;
+}
+
+.commPanier:active, .plusInfo:active {
+  background-color: #612229;
 }
 
 .commPanier span, .plusInfo span {
   vertical-align: middle;
   display: inline-block;
   line-height: 2.5;
-}
-
-.commPanier {
-  color: white;
-  background-color: #872f39;
-}
-
-.commPanier:hover {
-  background-color: #ad3c49;
-}
-
-.commPanier:active {
-  background-color: #612229;
-}
-
-.plusInfo {
-  color: #872f39;
-  background-color: white;
-  border: 4px solid #872f39;
-}
-
-.plusInfo:hover {
-  border-color: #ad3c49;
-  color: #ad3c49;
-}
-
-.plusInfo:active {
-  border-color: #612229;
-  color: #612229;
 }
 
 .prop1, .prop2 {
@@ -691,7 +673,7 @@ strong {
     width: unset;
     float: right;
     position: relative;
-    top: 19em;
+    top: 10em;
     text-align-last: left;
     color: white;
     background-color: rgba(0, 0, 0, 0.6);

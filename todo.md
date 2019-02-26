@@ -4,14 +4,16 @@
 - [x] Mettre un lien au logo Mél'égumes pour ramener vers la page d'accueil
 - [x] Vérifier la sémantique des pages (h1, h2, ...)
 - [x] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
+- [ ] **Mobile:** Pouvoir fermer le menu burger en cliquant à l'extérieur
 
 ## Accueil
-- [ ] Interligne entre le titre et le slogan
-- [ ] Interligne permaculture
-- [ ] Centrer le slogan permaculture
-- [ ] Forme des bouttons
-- [ ] Retour à la ligne Eat good, feel good.
-- [ ] Mettre le lien *"commander votre panier"* directement vers la section formulaire?
+- [x] Interligne entre le titre et le slogan
+- [x] Interligne permaculture
+- [x] Centrer le slogan permaculture
+- [x] Forme des bouttons
+- [x] Mettre le lien *"commander votre panier"* directement vers la section formulaire?
+  - [ ] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
+- [x] **Mobile** Retour à la ligne Eat good, feel good.
 - [ ] **Mobile:** Vérifier taille du texte de citation 
 
 ## Nos Produits
