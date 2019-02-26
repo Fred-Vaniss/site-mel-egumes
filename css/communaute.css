@@ -96,7 +96,7 @@ p {
 }
 
 h2 {
-  font-size: 3.75em;
+  font-size: 3.125em;
   font-weight: 300;
   font-variant: small-caps;
 }
@@ -370,17 +370,17 @@ img {
 }
 
 .imgCont {
+  margin-top: 3em;
   min-width: 100%;
 }
 
 .intro {
-  padding-top: 1.25em;
+  padding-top: 2.5em;
   height: 13.75em;
 }
 
 .histoire {
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
+  padding: 4em 0;
 }
 
 .imageFond {
@@ -411,7 +411,11 @@ img {
     height: 31.25em;
   }
   .imgCont {
+    margin-top: 0;
     min-width: unset;
+  }
+  .histoire {
+    padding: 8em 0;
   }
   .histoire .wrapper {
     display: -ms-grid;
@@ -466,8 +470,8 @@ img {
   .recompense .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: .9fr 1.1fr;
+        grid-template-columns: .9fr 1.1fr;
     -ms-grid-rows: 6.625em auto;
         grid-template-rows: 6.625em auto;
     grid-column-gap: 1em;
@@ -553,5 +557,9 @@ footer p {
   .footButton a {
     margin-left: 0.625em;
   }
+}
+
+.footButton a:hover {
+  color: #d2b79d;
 }
 /*# sourceMappingURL=communaute.css.map */

@@ -39,11 +39,12 @@
 
 
 ## Communauté
-- [ ] Mettre un espace pour l'article *"une histoire..."*
-- [ ] Couper la ligne noir sur l'image avec le drapeau canadien
-- [ ] **Mobile:** Descentre un peu le titre
-- [ ] **Mobile:** Descendre un peu la photo (mosaïc)
-- [ ] **Footer:** couleur du logo facebook et instagram
+- [x] Mettre un espace pour l'article *"une histoire..."*
+- [x] Couper la ligne noir sur l'image avec le drapeau canadien
+- [ ] Règler le problème avec le titre de la récompense
+- [x] **Mobile:** Descentre un peu le titre
+- [x] **Mobile:** Descendre un peu la photo (mosaïc)
+- [x] **Footer:** couleur du logo facebook et instagram
 
 
 ## Contact
@@ -52,10 +53,10 @@
 - [x] Interligne phrase contact
 - [x] Diminuer la taille de Facebook et Instagram
 - [x] Retirer l'espace blanc en bas
-- [ ] **Footer:** couleur du logo facebook et instagram
+- [x] **Footer:** couleur du logo facebook et instagram
 
 
 ## Footer
 - [ ] Enlever le border top.
-- [ ] Vérifier les couleurs des logos pour chaque page
+- [x] Vérifier les couleurs des logos pour chaque page
 - [ ] Ajouter le logo "copyright"

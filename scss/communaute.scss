@@ -44,17 +44,17 @@ img{
 }
 
 .imgCont{
+	margin-top: 3em;
 	min-width: 100%;
 }
 
 .intro{
-	padding-top: em(20);
+	padding-top: em(40);
 	height: em(220);
 }
 
 .histoire{
-	padding-top: em(40);
-	padding-bottom: em(40);
+	padding: 4em 0;
 }
 
 .imageFond{
@@ -93,9 +93,11 @@ img{
 	}
 
 	.imgCont{
+		margin-top: 0;
 		min-width: unset;
 	}
 	.histoire {
+		padding: 8em 0;
 		.wrapper{
 			display: grid;
 			grid-column-gap: 1em;
@@ -150,7 +152,7 @@ img{
 	.recompense{
 		.wrapper{
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: .9fr 1.1fr;
 			grid-template-rows: em(106) auto;
 			grid-column-gap: 1em;
 			grid-row-gap: 4em;
@@ -176,3 +178,7 @@ img{
 }
 
 @import 'footer';
+
+.footButton a:hover{
+	color: $theme-commu;
+}
