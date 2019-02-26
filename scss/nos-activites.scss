@@ -57,7 +57,7 @@
 // ==============================================================
 
 .projet{
-    padding: 2.5em 0;
+    padding: 4em 0 5em 0;
 }
 
 // ==============================================================
@@ -130,7 +130,7 @@
 }
 
 .buttonCont{
-    width: 175px;
+    width: 100%;
     flex-grow: 0;
     align-self: flex-end;
 
@@ -209,13 +209,16 @@
         width: 32%; padding-top: 32%;
     }
 
-    .flex{
-        margin-top: 4em;
-
-        display: grid;
-        align-items: flex-start;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 5em;
+    .projet{ 
+        .flex{
+            margin-top: 4em;
+            margin-bottom: 2em;
+    
+            display: grid;
+            align-items: flex-start;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 5em;
+        }
     }
 
     .ecoles{
@@ -229,8 +232,8 @@
     }
 
     .desk{
-        display: block;
-        margin: 2em auto;
+        display: flex;
+        justify-content: center;
         a{
             padding: em(12,18) em(35,18);
         }
@@ -239,3 +242,7 @@
 
 
 @import 'footer';
+
+.footButton a:hover{
+	color: $theme-activites;
+}

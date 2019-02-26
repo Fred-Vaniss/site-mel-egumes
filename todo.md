@@ -30,11 +30,12 @@
 - [x] **Footer:** couleur du logo facebook et instagram
 
 ## Nos activités
-- [ ] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
-- [ ] Le boutton "contactez nous" ne s'affiche pas correctement sur certaines machines
+- [x] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
+- [x] Le boutton "contactez nous" ne s'affiche pas correctement sur certaines machines
 - [ ] Mettre un lien directement sur le formulaire
-- [ ] Descendre un peu le footer
-- [ ] **Footer:** couleur du logo facebook et instagram
+  - [ ] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
+- [x] Descendre un peu le footer
+- [x] **Footer:** couleur du logo facebook et instagram
 
 
 ## Communauté

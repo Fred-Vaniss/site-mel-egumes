@@ -213,18 +213,15 @@ nav {
   width: calc(100vw - 7.5em);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .showNav {
   -webkit-transform: translateX(calc( -100vw + 7.5em));
-      -ms-transform: translateX(calc( -100vw + 7.5em));
           transform: translateX(calc( -100vw + 7.5em));
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
@@ -280,7 +277,6 @@ nav {
   }
   .showNav {
     -webkit-transform: translateX(-13.75em);
-        -ms-transform: translateX(-13.75em);
             transform: translateX(-13.75em);
   }
 }
@@ -308,12 +304,10 @@ nav {
   nav {
     position: static;
     -webkit-transform: unset;
-        -ms-transform: unset;
             transform: unset;
     width: unset;
     height: unset;
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
   .menuButton {
@@ -341,10 +335,8 @@ nav {
   }
   .showNav {
     -webkit-transform: none;
-        -ms-transform: none;
             transform: none;
     -webkit-transition: none;
-    -o-transition: none;
     transition: none;
   }
 }
@@ -389,7 +381,7 @@ nav {
 }
 
 .projet {
-  padding: 2.5em 0;
+  padding: 4em 0 5em 0;
 }
 
 .gallerie {
@@ -466,7 +458,7 @@ nav {
 }
 
 .buttonCont {
-  width: 175px;
+  width: 100%;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -540,8 +532,9 @@ nav {
     width: 32%;
     padding-top: 32%;
   }
-  .flex {
+  .projet .flex {
     margin-top: 4em;
+    margin-bottom: 2em;
     display: -ms-grid;
     display: grid;
     -webkit-box-align: start;
@@ -558,8 +551,12 @@ nav {
     display: none;
   }
   .desk {
-    display: block;
-    margin: 2em auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .desk a {
     padding: 0.66667em 1.94444em;
@@ -623,5 +620,9 @@ footer p {
   .footButton a {
     margin-left: 0.625em;
   }
+}
+
+.footButton a:hover {
+  color: #4d837d;
 }
 /*# sourceMappingURL=nos-activites.css.map */
