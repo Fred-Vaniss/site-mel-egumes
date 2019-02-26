@@ -374,7 +374,7 @@ nav {
 }
 
 .intro {
-  height: 12.5em;
+  height: 15.625em;
 }
 
 .intro .wrapper {
@@ -383,7 +383,7 @@ nav {
 
 .intro h2 {
   position: absolute;
-  bottom: 0.5em;
+  bottom: 0.375em;
   color: white;
 }
 
@@ -432,7 +432,7 @@ nav {
 }
 
 .paniers .panPrix {
-  margin-top: 0.07692em;
+  margin-bottom: 0;
   font-size: 1.625em;
   font-weight: 500;
 }
@@ -488,27 +488,10 @@ nav {
 
 .commande {
   background-color: #efece8;
-  padding-top: 0.625em;
-  padding-bottom: 0.625em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
   background-repeat: no-repeat;
   background-position-x: center;
-}
-
-.commande .fleche {
-  font-size: 5em;
-  color: #a69a54;
-  margin: 0;
-  text-align: center;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.commande .fleche .fas {
-  display: block;
-  height: 0.925em;
-  -webkit-transform: translateY(0.0375em);
-      -ms-transform: translateY(0.0375em);
-          transform: translateY(0.0375em);
 }
 
 .commande .checkboxes, .commande .msgBox, .commande .buttBox {
@@ -766,7 +749,7 @@ nav {
   height: calc(100vh - 4.375em);
   width: 100%;
   overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   padding-bottom: 8em;
   display: none;
 }
@@ -796,8 +779,13 @@ nav {
 }
 
 .closeBtn {
-  font-size: 3.125em;
+  margin: 1em 0;
+  padding-top: 1em;
   text-align: right;
+}
+
+.closeBtn img {
+  width: 1.5625em;
 }
 
 .hidden {
@@ -944,28 +932,42 @@ nav {
     border: 3px solid white;
     border-radius: 1.25em;
     padding: 1.5625em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+        grid-template-areas: "checkboxes msgbox" "remarque   remarque" "buttbox    buttbox";
   }
   .commande textarea {
     height: 20.625em;
   }
-  .commande .checkboxes, .commande .msgBox {
-    width: 47%;
+  .commande .checkboxes {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: checkboxes;
+  }
+  .commande .msgBox {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: msgbox;
   }
   .commande .buttBox {
     margin-top: 1em;
-    -ms-grid-column-align: right;
-        justify-self: right;
+    -ms-grid-column-align: left;
+        justify-self: left;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: buttbox;
   }
   .commande .remarque {
     margin-top: 0.625em;
+    margin-bottom: 0;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: remarque;
   }
   .paniers {
     position: static;
@@ -973,16 +975,17 @@ nav {
     padding-top: 7.8125em;
   }
   .paniers .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
   }
   .paniers .panier {
-    max-width: 23.4375em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto 10.9375em auto auto;
+        grid-template-rows: auto 10.9375em auto auto;
   }
   .selSaison {
     width: 24%;
@@ -1094,5 +1097,9 @@ footer p {
   .footButton a {
     margin-left: 0.625em;
   }
+}
+
+.footButton a:hover {
+  color: #a69a54;
 }
 /*# sourceMappingURL=nos-produits.css.map */

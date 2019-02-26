@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mél'égumes - Nos produits</title>
-    <link rel="stylesheet" href="vendor/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nos-produits.css">
     <link rel="shortcut icon" href="img/nos_produits/favicon.png" type="image/x-icon">
@@ -60,28 +59,36 @@
         <div class="wrapper">
             <article class="panier">
                 <h3>Panier de base</h3>
-                <p class="panDesc">Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques. </p>
+                <div class="description">
+                    <p class="panDesc">Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques. </p>
+                </div>
                 <p class="panPers">1-2 personnes</p>
                 <p class="panPrix">25€</p>
             </article>
             <article class="panier">
                 <h3>Panier découverte</h3>
-                <p class="panDesc">Celui-ci est parfait pour découvrir ou re-découvrir la saveur d’un bon légume cultivé sainement et avec amour.</p> 
-                <p class="panDesc">Ce panier contient un assortiment de 5 sortes de légumes de saison.</p>
+                <div class="description">
+                    <p class="panDesc">Celui-ci est parfait pour découvrir ou re-découvrir la saveur d’un bon légume cultivé sainement et avec amour.</p> 
+                    <p class="panDesc">Ce panier contient un assortiment de 5 sortes de légumes de saison.</p>
+                </div>
                 <p class="panPers">2 personnes</p>
                 <p class="panPrix">20€</p>
             </article>
             <article class="panier">
                 <h3>Panier gourmand</h3>
-                <p class="panDesc">Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques.</p>
-                <p class="panDesc">En plus grande quantité que le panier de base. </p>
+                <div class="description">
+                    <p class="panDesc">Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques.</p>
+                    <p class="panDesc">En plus grande quantité que le panier de base. </p>
+                </div>
                 <p class="panPers">2 gourmands ou 3 personnes</p>
                 <p class="panPrix">30€</p>
             </article>
             <article class="panier">
                 <h3>Panier familial</h3>
-                <p class="panDesc">Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques.</p>
-                <p class="panDesc">Celui-ci apportera la variété dont votre petite famille a besoin. </p>
+                <div class="description">
+                    <p class="panDesc">Ce panier contient un assortiment de légumes et aromates de saison, vous permettant de découvrir quelques légumes oubliés à associer avec les herbes aromatiques.</p>
+                    <p class="panDesc">Celui-ci apportera la variété dont votre petite famille a besoin. </p>
+                </div>
                 <p class="panPers">3-4 personnes</p>
                 <p class="panPrix">35€</p>
             </article>
@@ -121,7 +128,6 @@
     </section>
 
     <section id="commande" class="commande">
-        <p class="fleche animated bounce"><i class="fas fa-angle-down"></i></p>
         <div class="wrapper">
             <h3>Mon panier</h3>
             <form action="post">
@@ -142,12 +148,12 @@
                                 <label for="lName">Nom et prénom</label>
                             </div>
                             <div class="field">
-                                <input type="text" name="lName" id="lName" required>
-                                <label for="lName">E-mail</label>
+                                <input type="text" name="email" id="email" required>
+                                <label for="email">E-mail</label>
                             </div>
                             <div class="field">
-                                <input type="text" name="lName" id="lName" required>
-                                <label for="lName">Téléphone</label>
+                                <input type="text" name="tel" id="tel" required>
+                                <label for="tel">Téléphone</label>
                             </div>
                         </div>
                     </div>
@@ -157,11 +163,11 @@
                     <div class="field">
                         <textarea name="msg" id="msg" cols="30" rows="10"></textarea>                    </div>
                 </div>
+                <p class="remarque">Vos paniers sont à venir chercher au potager. Le paiement de vos paniers s’effectue sur place.</p>
                 <div class="buttBox">
                     <button>Envoyer ma commande</button>
                 </div>
             </form>
-            <p class="remarque">Vos paniers sont à venir chercher au potager. Le paiement de vos paniers s’effectue sur place.</p>
         </div>
     </section>
 
@@ -211,7 +217,7 @@
         <div class="listLegs" id="pri">
             <h3>Printemps</h3>
             <div class="listLegsWrapper">
-                <p class="closeBtn" onclick="showSeason('pri')"><i class="far fa-times-circle"></i></p>
+                <p class="closeBtn" onclick="showSeason('pri')"><img src="img/nos_produits/close.svg" alt="Fermer"></p>
                 <div class="legsFlex">
                     <div class="legume">
                         <div class="legumeCont">
@@ -270,7 +276,7 @@
         <div class="listLegs" id="ete">
             <h3>Été</h3>
             <div class="listLegsWrapper">
-                <p class="closeBtn" onclick="showSeason('ete')"><i class="far fa-times-circle"></i></p>
+                <p class="closeBtn" onclick="showSeason('ete')"><img src="img/nos_produits/close.svg" alt="Fermer"></p>
                 <div class="legsFlex">
                     <div class="legume">
                         <div class="legumeCont">
@@ -329,7 +335,7 @@
         <div class="listLegs" id="aut">
             <h3>Automne</h3>
             <div class="listLegsWrapper">
-                <p class="closeBtn" onclick="showSeason('aut')"><i class="far fa-times-circle"></i></p>
+                <p class="closeBtn" onclick="showSeason('aut')"><img src="img/nos_produits/close.svg" alt="Fermer"></p>
                 <div class="legsFlex">
                     <div class="legume">
                         <div class="legumeCont">
@@ -388,7 +394,7 @@
         <div class="listLegs" id="hiv">
             <h3>Hiver</h3>
             <div class="listLegsWrapper">
-                <p class="closeBtn" onclick="showSeason('hiv')"><i class="far fa-times-circle"></i></p>
+                <p class="closeBtn" onclick="showSeason('hiv')"><img src="img/nos_produits/close.svg" alt="Fermer"></p>
                 <div class="legsFlex">
                     <div class="legume">
                         <div class="legumeCont">

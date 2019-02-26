@@ -40,13 +40,13 @@
 // ==============================================================
 
 .intro{
-    height: em(200);
+    height: em(250);
     .wrapper{ 
         position: relative;
     }
     h2{
         position: absolute;
-        bottom: em(20,40);
+        bottom: em(15,40);
         color: white;
     }
 }
@@ -98,7 +98,7 @@
     }
 
     .panPrix{
-        margin-top: em(2,26);
+        margin-bottom: 0; 
         font-size: em(26);
         font-weight: 500;
     }
@@ -148,23 +148,10 @@
 
 .commande{
     background-color: #efece8;
-    padding-top: em(10);
-    padding-bottom: em(10);
+    padding-top: em(40);
+    padding-bottom: em(40);
     background-repeat: no-repeat;
     background-position-x: center;
-
-    .fleche{
-        font-size: em(80);
-        color: $theme-produits;
-        margin: 0;
-        text-align: center;
-        animation-iteration-count: infinite;
-        .fas{
-            display: block;
-            height: em(74,80);
-            transform: translateY(em(3,80))
-        }
-    }
 
     .checkboxes, .msgBox, .buttBox{
         margin-bottom: 2em;
@@ -412,7 +399,7 @@
     height: calc(100vh - 4.375em); width: 100%;
     overflow-y: scroll;
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
 
     padding-bottom: 8em;
 
@@ -440,7 +427,12 @@
 }
 
 .closeBtn{
-    font-size: em(50);
+    margin: 1em 0;
+    padding-top: 1em;
+
+    img{
+        width: em(25);
+    }
     text-align: right;
 }
 
@@ -593,25 +585,38 @@
             border-radius: em(20);
             padding: em(25);
             
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 1em;
+            grid-template-areas: 
+                "checkboxes msgbox"
+                "remarque   remarque"
+                "buttbox    buttbox"
         }
         textarea{
             height: em(330);
         }
 
-        .checkboxes, .msgBox{
-            width: 47%;
+        .checkboxes{
+            grid-area: checkboxes;
+        }
+
+        .msgBox{
+            grid-area: msgbox;
         }
 
         .buttBox{
             margin-top: 1em;
-            justify-self: right;
+            justify-self: left;
+
+            grid-area: buttbox;
         }
 
         .remarque{
             margin-top: em(10);
+            margin-bottom: 0;
+
+            grid-area: remarque;
         }
     }
 
@@ -627,13 +632,16 @@
         padding-top: em(125);
 
         .wrapper{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 1em;
         }
 
         .panier{
-            max-width: em(375);
+            // max-width: em(375);
+
+            display: grid;
+            grid-template-rows: auto em(175) auto auto;
         }
     }
 
@@ -710,3 +718,7 @@
 
 
 @import 'footer';
+
+.footButton a:hover{
+	color: $theme-produits;
+}

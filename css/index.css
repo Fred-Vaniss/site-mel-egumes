@@ -440,6 +440,27 @@ strong {
   background-color: #a5a19b;
 }
 
+.fleche {
+  font-size: 5em;
+  color: #872f39;
+  margin: 0;
+  text-align: center;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  bottom: .1em;
+  width: 100%;
+  text-align: center;
+}
+
+.fleche .fas {
+  display: block;
+  height: 0.925em;
+  -webkit-transform: translateY(0.0375em);
+      -ms-transform: translateY(0.0375em);
+          transform: translateY(0.0375em);
+}
+
 .salades {
   padding: 3.75em 0;
 }

@@ -101,6 +101,28 @@ strong{
 			background-color: rgb(165, 161, 155);
 		}
 	}
+
+	// position: relative;
+}
+
+.fleche{
+	font-size: em(80);
+	color: $theme-accueil;
+	margin: 0;
+	text-align: center;
+	animation-iteration-count: infinite;
+
+	position: absolute;
+	bottom: .1em;
+
+	width: 100%;
+	text-align: center;
+
+	.fas{
+		display: block;
+		height: em(74,80);
+		transform: translateY(em(3,80))
+	}
 }
 
 // ==============================================================
