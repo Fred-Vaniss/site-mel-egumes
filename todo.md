@@ -50,7 +50,7 @@
 - [x] **Mobile:** Descentre un peu le titre
 - [x] **Mobile:** Descendre un peu la photo (mosaïc)
 - [x] **Footer:** couleur du logo facebook et instagram
-- [ ] Mettre une taille minimal pour le fond avec les cuisiniers
+- [x] Mettre une taille minimal pour le fond avec les cuisiniers
 
 
 ## Contact
@@ -63,6 +63,6 @@
 
 
 ## Footer
-- [ ] Enlever le border top.
+- [x] Enlever l'ombre.
 - [x] Vérifier les couleurs des logos pour chaque page
 - [ ] Ajouter le logo "copyright"

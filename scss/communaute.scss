@@ -100,7 +100,7 @@ img{
 		padding: 8em 0;
 		.wrapper{
 			display: grid;
-			grid-column-gap: 1em;
+			grid-column-gap: 2em;
 			grid-template-columns: 1fr 1fr;
 			grid-template-areas: "img txt";
 
@@ -115,6 +115,7 @@ img{
 	}
 	.imageFond{
 		height: 70vh;
+		min-height: em(455);
 		.wrapper{
 			position: relative;
 		}
@@ -152,9 +153,9 @@ img{
 	.recompense{
 		.wrapper{
 			display: grid;
-			grid-template-columns: .9fr 1.1fr;
+			grid-template-columns: .65fr 1.45fr;
 			grid-template-rows: em(106) auto;
-			grid-column-gap: 1em;
+			grid-column-gap: 2em;
 			grid-row-gap: 4em;
 
 			grid-template-areas: 

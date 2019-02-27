@@ -61,6 +61,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -554,6 +555,9 @@ nav {
         grid-template-columns: 1fr 1fr;
     grid-column-gap: 5em;
   }
+  .projet h4 {
+    margin-top: 1em;
+  }
   .ecoles {
     margin-top: 0;
   }
@@ -574,8 +578,6 @@ nav {
 }
 
 footer {
-  -webkit-box-shadow: 0 -1px 2px #0000003d;
-          box-shadow: 0 -1px 2px #0000003d;
   background-color: #f0ede9;
   padding: 0.9375em 0;
 }

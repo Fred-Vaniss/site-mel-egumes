@@ -61,6 +61,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -430,7 +431,7 @@ img {
   .histoire .wrapper {
     display: -ms-grid;
     display: grid;
-    grid-column-gap: 1em;
+    grid-column-gap: 2em;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "img txt";
@@ -448,6 +449,7 @@ img {
   }
   .imageFond {
     height: 70vh;
+    min-height: 28.4375em;
   }
   .imageFond .wrapper {
     position: relative;
@@ -480,11 +482,11 @@ img {
   .recompense .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: .9fr 1.1fr;
-        grid-template-columns: .9fr 1.1fr;
+    -ms-grid-columns: .65fr 1.45fr;
+        grid-template-columns: .65fr 1.45fr;
     -ms-grid-rows: 6.625em auto;
         grid-template-rows: 6.625em auto;
-    grid-column-gap: 1em;
+    grid-column-gap: 2em;
     grid-row-gap: 4em;
         grid-template-areas: "svg	title" "img	para";
   }
@@ -511,8 +513,6 @@ img {
 }
 
 footer {
-  -webkit-box-shadow: 0 -1px 2px #0000003d;
-          box-shadow: 0 -1px 2px #0000003d;
   background-color: #f0ede9;
   padding: 0.9375em 0;
 }
