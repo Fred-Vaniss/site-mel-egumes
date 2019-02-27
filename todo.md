@@ -5,7 +5,7 @@
 - [x] Vérifier la sémantique des pages (h1, h2, ...)
 - [x] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
 - [ ] **Mobile:** Pouvoir fermer le menu burger en cliquant à l'extérieur
-- [ ] Trouver un moyen d'harmoniser avec la différence du typo du titre de l'accueil avec les autres
+- [x] Trouver un moyen d'harmoniser avec la différence du typo du titre de l'accueil avec les autres
 
 ## Accueil
 - [x] Interligne entre le titre et le slogan
@@ -17,6 +17,7 @@
 - [x] **Mobile** Retour à la ligne Eat good, feel good.
 - [x] **Mobile:** Vérifier taille du texte de citation 
 - [ ] Ajuster les positions des feuilles
+- [ ] Rendre la flèche cliquable
 
 ## Nos Produits
 - [x] Ajuster les positions et feuilles
@@ -45,7 +46,7 @@
 ## Communauté
 - [x] Mettre un espace pour l'article *"une histoire..."*
 - [x] Couper la ligne noir sur l'image avec le drapeau canadien
-- [ ] Règler le problème avec le titre de la récompense
+- [x] Règler le problème avec le titre de la récompense
 - [x] **Mobile:** Descentre un peu le titre
 - [x] **Mobile:** Descendre un peu la photo (mosaïc)
 - [x] **Footer:** couleur du logo facebook et instagram

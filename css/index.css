@@ -102,6 +102,8 @@ h2 {
 }
 
 h2 strong {
+  font-family: 'Oleo Script';
+  font-variant: normal;
   font-weight: 500;
 }
 
@@ -213,15 +215,18 @@ nav {
   width: calc(100vw - 7.5em);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .showNav {
   -webkit-transform: translateX(calc( -100vw + 7.5em));
+      -ms-transform: translateX(calc( -100vw + 7.5em));
           transform: translateX(calc( -100vw + 7.5em));
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
@@ -277,6 +282,7 @@ nav {
   }
   .showNav {
     -webkit-transform: translateX(-13.75em);
+        -ms-transform: translateX(-13.75em);
             transform: translateX(-13.75em);
   }
 }
@@ -304,10 +310,12 @@ nav {
   nav {
     position: static;
     -webkit-transform: unset;
+        -ms-transform: unset;
             transform: unset;
     width: unset;
     height: unset;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
   .menuButton {
@@ -335,8 +343,10 @@ nav {
   }
   .showNav {
     -webkit-transform: none;
+        -ms-transform: none;
             transform: none;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
 }
@@ -449,6 +459,7 @@ strong {
   display: block;
   height: 0.925em;
   -webkit-transform: translateY(0.0375em);
+      -ms-transform: translateY(0.0375em);
           transform: translateY(0.0375em);
 }
 

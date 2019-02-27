@@ -102,6 +102,8 @@ h2 {
 }
 
 h2 strong {
+  font-family: 'Oleo Script';
+  font-variant: normal;
   font-weight: 500;
 }
 
@@ -213,15 +215,18 @@ nav {
   width: calc(100vw - 7.5em);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .showNav {
   -webkit-transform: translateX(calc( -100vw + 7.5em));
+      -ms-transform: translateX(calc( -100vw + 7.5em));
           transform: translateX(calc( -100vw + 7.5em));
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
@@ -277,6 +282,7 @@ nav {
   }
   .showNav {
     -webkit-transform: translateX(-13.75em);
+        -ms-transform: translateX(-13.75em);
             transform: translateX(-13.75em);
   }
 }
@@ -304,10 +310,12 @@ nav {
   nav {
     position: static;
     -webkit-transform: unset;
+        -ms-transform: unset;
             transform: unset;
     width: unset;
     height: unset;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
   .menuButton {
@@ -335,8 +343,10 @@ nav {
   }
   .showNav {
     -webkit-transform: none;
+        -ms-transform: none;
             transform: none;
     -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
 }
@@ -562,6 +572,7 @@ nav {
   color: #b2b2b2;
   -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
   transition: font-size 0.1s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, font-size 0.1s;
   transition: transform 0.1s, font-size 0.1s;
   transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
 }
@@ -591,11 +602,13 @@ nav {
 .field input:focus + label, .field textarea:focus + label {
   color: black;
   -webkit-transform: translateY(-1.5em);
+      -ms-transform: translateY(-1.5em);
           transform: translateY(-1.5em);
   background-color: #efece8;
   font-size: 0.75em;
   -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
   transition: font-size 0.1s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, font-size 0.1s;
   transition: transform 0.1s, font-size 0.1s;
   transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
 }
@@ -603,11 +616,13 @@ nav {
 .field input:valid + label, .field textarea:valid + label {
   color: black;
   -webkit-transform: translateY(-1.5em);
+      -ms-transform: translateY(-1.5em);
           transform: translateY(-1.5em);
   font-size: 0.75em;
   background-color: #efece8;
   -webkit-transition: font-size 0.1s, -webkit-transform 0.1s;
   transition: font-size 0.1s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, font-size 0.1s;
   transition: transform 0.1s, font-size 0.1s;
   transition: transform 0.1s, font-size 0.1s, -webkit-transform 0.1s;
 }
@@ -655,6 +670,7 @@ nav {
   margin-bottom: 1.25em;
   cursor: pointer;
   -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
   transition: opacity .5s;
 }
 
@@ -662,6 +678,7 @@ nav {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
   transition: opacity .5s;
 }
 
@@ -983,6 +1000,7 @@ nav {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: visibility .5s, opacity .5s;
+    -o-transition: visibility .5s, opacity .5s;
     transition: visibility .5s, opacity .5s;
   }
   .hoverCont .imgCont {
@@ -994,6 +1012,7 @@ nav {
     visibility: visible;
     opacity: 1;
     -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
     transition: opacity .5s;
   }
   .listLegs {
