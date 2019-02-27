@@ -1,0 +1,18 @@
+@import "css-reset";
+@import "html";
+@import "header";
+@import "functions";
+
+.erreur{
+    height: calc(100vh - 4.125em);
+    display: flex;
+    align-items: center;
+    .wrapper{
+        height: unset;
+    }
+    h2,p{
+        text-align: center;
+    }
+}
+
+@import 'footer';
