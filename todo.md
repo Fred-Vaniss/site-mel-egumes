@@ -5,6 +5,7 @@
 - [x] Vérifier la sémantique des pages (h1, h2, ...)
 - [x] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
 - [ ] **Mobile:** Pouvoir fermer le menu burger en cliquant à l'extérieur
+- [ ] Trouver un moyen d'harmoniser avec la différence du typo du titre de l'accueil avec les autres
 
 ## Accueil
 - [x] Interligne entre le titre et le slogan
@@ -12,9 +13,10 @@
 - [x] Centrer le slogan permaculture
 - [x] Forme des bouttons
 - [x] Mettre le lien *"commander votre panier"* directement vers la section formulaire?
-  - [ ] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
+  - [x] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
 - [x] **Mobile** Retour à la ligne Eat good, feel good.
 - [x] **Mobile:** Vérifier taille du texte de citation 
+- [ ] Ajuster les positions des feuilles
 
 ## Nos Produits
 - [x] Ajuster les positions et feuilles
@@ -28,14 +30,16 @@
 - [x] **Mobile:** Centrer le titre
 - [x] **Mobile:** Espace blanc entre les produits et les images
 - [x] **Footer:** couleur du logo facebook et instagram
+- [ ] Ajouter d'autres légumes aux listes
 
 ## Nos activités
 - [x] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
 - [x] Le boutton "contactez nous" ne s'affiche pas correctement sur certaines machines
 - [ ] Mettre un lien directement sur le formulaire
-  - [ ] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
+  - [x] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
 - [x] Descendre un peu le footer
 - [x] **Footer:** couleur du logo facebook et instagram
+- [ ] Résoudre le soucis de lisibilité au titre
 
 
 ## Communauté
@@ -45,6 +49,7 @@
 - [x] **Mobile:** Descentre un peu le titre
 - [x] **Mobile:** Descendre un peu la photo (mosaïc)
 - [x] **Footer:** couleur du logo facebook et instagram
+- [ ] Mettre une taille minimal pour le fond avec les cuisiniers
 
 
 ## Contact
