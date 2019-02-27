@@ -16,7 +16,7 @@
 }
 
 .menu {
-    li a:hover, .currentNav{
+    .currentNav{
 		background-color: $theme-produits;
 		color: white;
     }
@@ -24,10 +24,6 @@
 
 @media screen and (min-width: 769px){
     .menu{
-        li a:hover{
-            background-color: unset;
-            color: $theme-produits;
-        }
         .currentNav{
 			background-color: unset;
             color: $theme-produits;

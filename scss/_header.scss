@@ -107,9 +107,6 @@ nav{
 			width: 100%;
 			font-size: em(20);
 			padding: em(12,20) em(25,20) em(12,20) 0;
-			&:hover{
-				background-color: #dead65;
-			}
 		}
 	}
 	.menu-separator{
@@ -120,6 +117,25 @@ nav{
 		font-weight: 500;
 		
 		}
+}
+
+.nav-accu:hover{
+	background-color: $theme-accueil;
+}
+
+.nav-prod:hover{
+	background-color: $theme-produits;
+}
+
+.nav-acti:hover{
+	background-color: $theme-activites;
+}
+
+.nav-cont:hover{
+	background-color: $theme-contact;
+}
+.nav-comm:hover{
+	background-color: $theme-commu;
 }
 
 // Réduir la taille de la police du menu latéral pour le mode portrait
@@ -186,10 +202,6 @@ nav{
 				display: inline;
 				font-size: em(12);
 			}
-			a:hover{
-				background-color: unset;
-				color: #dead65;
-			}
 		}
 		.menu-separator{
 			display: unset;
@@ -200,6 +212,31 @@ nav{
 			// text-decoration: underline;
 		}
 	}
+
+	.nav-accu:hover{
+		background-color: unset;
+		color: $theme-accueil;
+	}
+	
+	.nav-prod:hover{
+		background-color: unset;
+		color: $theme-produits;
+	}
+	
+	.nav-acti:hover{
+		background-color: unset;
+		color: $theme-activites;
+	}
+	
+	.nav-cont:hover{
+		background-color: unset;
+		color: $theme-contact;
+	}
+	.nav-comm:hover{
+		background-color: unset;
+		color: $theme-commu;
+	}
+
 	.showNav{
 		transform: none;
 		transition: none;

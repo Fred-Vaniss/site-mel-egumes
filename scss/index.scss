@@ -29,7 +29,7 @@ strong{
 }
 
 .menu {
-    li a:hover, .currentNav{
+    .currentNav{
 		background-color: $theme-accueil;
 		color: white;
     }
@@ -37,10 +37,6 @@ strong{
 
 @media screen and (min-width: 769px){
     .menu{
-        li a:hover{
-            background-color: unset;
-            color: $theme-accueil;
-        }
         .currentNav{
 			background-color: unset;
             color: $theme-accueil;
