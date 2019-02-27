@@ -6,6 +6,7 @@
 - [x] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
 - [ ] **Mobile:** Pouvoir fermer le menu burger en cliquant à l'extérieur
 - [x] Trouver un moyen d'harmoniser avec la différence du typo du titre de l'accueil avec les autres
+- [ ] Uniformiser la taille des textes des bouttons
 
 ## Accueil
 - [x] Interligne entre le titre et le slogan
@@ -31,7 +32,7 @@
 - [x] **Mobile:** Centrer le titre
 - [x] **Mobile:** Espace blanc entre les produits et les images
 - [x] **Footer:** couleur du logo facebook et instagram
-- [ ] Ajouter d'autres légumes aux listes
+- [x] Ajouter d'autres légumes aux listes
 
 ## Nos activités
 - [x] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
