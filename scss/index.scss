@@ -134,7 +134,13 @@ strong{
 // Raconte moi des salades
 // ==============================================================
 
+#anchor{
+	position: absolute;
+	top: -2em
+}
+
 .salades{
+	position: relative;
 	padding: em(60) 0;
 	h2{
 		font-size: em(42);
@@ -287,7 +293,7 @@ strong{
 	}
 
 	.permaculture .feuilles{
-		top: em(-350);
+		top: em(-300);
 
 		left: 0;
 		z-index: 2;
@@ -320,6 +326,10 @@ strong{
 	// Raconte moi des salades
 	// ==============================================================
 
+	#anchor{
+		position: absolute;
+		top: -6.2em
+	}
 
 	.salades{
 		position: relative;

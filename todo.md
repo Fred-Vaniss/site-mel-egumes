@@ -16,8 +16,8 @@
   - [x] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
 - [x] **Mobile** Retour à la ligne Eat good, feel good.
 - [x] **Mobile:** Vérifier taille du texte de citation 
-- [ ] Ajuster les positions des feuilles
-- [ ] Rendre la flèche cliquable
+- [x] Ajuster les positions des feuilles
+- [x] Rendre la flèche cliquable
 
 ## Nos Produits
 - [x] Ajuster les positions et feuilles

@@ -469,7 +469,13 @@ strong {
           transform: translateY(0.0375em);
 }
 
+#anchor {
+  position: absolute;
+  top: -2em;
+}
+
 .salades {
+  position: relative;
   padding: 3.75em 0;
 }
 
@@ -602,7 +608,7 @@ strong {
     z-index: -1;
   }
   .permaculture .feuilles {
-    top: -21.875em;
+    top: -18.75em;
     left: 0;
     z-index: 2;
   }
@@ -619,6 +625,10 @@ strong {
   }
   .introtext p {
     font-size: 1.125em;
+  }
+  #anchor {
+    position: absolute;
+    top: -6.2em;
   }
   .salades {
     position: relative;

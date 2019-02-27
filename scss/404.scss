@@ -3,6 +3,10 @@
 @import "header";
 @import "functions";
 
+html{
+    overflow-y: scroll;
+}
+
 .erreur{
     height: calc(100vh - 4.125em);
     display: flex;
