@@ -26,6 +26,15 @@ footer{
 
     font-weight: 200;
     font-size: em(12);
+
+    a{
+        color: black;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
 
 .footButton{

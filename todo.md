@@ -41,7 +41,7 @@
   - [x] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
 - [x] Descendre un peu le footer
 - [x] **Footer:** couleur du logo facebook et instagram
-- [ ] Résoudre le soucis de lisibilité au titre
+- [x] Résoudre le soucis de lisibilité au titre
 
 
 ## Communauté
@@ -66,4 +66,4 @@
 ## Footer
 - [x] Enlever l'ombre.
 - [x] Vérifier les couleurs des logos pour chaque page
-- [ ] Ajouter le logo "copyright"
+- [x] Ajouter le logo "copyright"

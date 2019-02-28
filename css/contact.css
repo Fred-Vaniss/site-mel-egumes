@@ -798,6 +798,15 @@ footer p {
   font-size: 0.75em;
 }
 
+.textFooter a {
+  color: black;
+  text-decoration: none;
+}
+
+.textFooter a:hover {
+  text-decoration: underline;
+}
+
 .footButton {
   font-size: 1.5em;
   text-align: center;
