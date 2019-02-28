@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mél'égumes - Accueil</title>
     <link rel="stylesheet" href="vendor/animate.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/hamburgers.css">
     <link rel="stylesheet" href="css/mentions.css">
     <link rel="shortcut icon" href="img/contact/favicon.png" type="image/x-icon">
 </head>
@@ -25,7 +25,11 @@
             </div>
             <!-- Menu -->
             <div class="menuButton">
-                <button onclick="showMenu()">☰</button>
+                <button class="hamburger hamburger--spin" type="button" onclick="showMenu()">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
             <nav id = "menu">
                 <ul class="menu">
