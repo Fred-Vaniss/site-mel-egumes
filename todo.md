@@ -4,7 +4,7 @@
 - [x] Mettre un lien au logo Mél'égumes pour ramener vers la page d'accueil
 - [x] Vérifier la sémantique des pages (h1, h2, ...)
 - [x] Uniformiser le style CSS sur la globalité du site (un h2 pour toute les pages, ...)
-- [ ] **Mobile:** Pouvoir fermer le menu burger en cliquant à l'extérieur
+- [x] **Mobile:** Pouvoir fermer le menu burger en cliquant à l'extérieur
 - [x] Trouver un moyen d'harmoniser avec la différence du typo du titre de l'accueil avec les autres
 - [x] Uniformiser la taille des textes des bouttons
 
