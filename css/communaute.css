@@ -412,8 +412,9 @@ img {
 }
 
 .intro {
-  padding-top: 2.5em;
+  padding-top: 6.25em;
   height: 13.75em;
+  color: white;
 }
 
 .histoire {
@@ -442,10 +443,17 @@ img {
   margin-bottom: 1.25em;
 }
 
+@media screen and (min-width: 1180px) {
+  .parallax-slider[src="img/commu/bg1.jpg"] {
+    top: 4vw;
+  }
+}
+
 @media screen and (min-width: 725px) {
   .intro {
-    padding-top: 12.5em;
+    padding-top: 18.75em;
     height: 31.25em;
+    background-position: top;
   }
   .imgCont {
     margin-top: 0;

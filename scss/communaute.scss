@@ -45,8 +45,9 @@ img{
 }
 
 .intro{
-	padding-top: em(40);
+	padding-top: em(100);
 	height: em(220);
+	color: white;
 }
 
 .histoire{
@@ -79,13 +80,24 @@ img{
 // Version bureau
 // ==============================================================
 
+// @media screen and (min-width: 801px){
+//     .parallax-slider[src="img/commu/bg1.jpg"]{
+//         top: 80px;
+//     }
+// }   
+
+@media screen and (min-width: 1180px){
+    .parallax-slider[src="img/commu/bg1.jpg"]{
+        top: 4vw;
+    }
+}
+
 @media screen and (min-width: 725px){
-
-
 	.intro{
-		padding-top: em(200);
+		padding-top: em(300);
 		height: em(500);
 
+		background-position: top; 
 	}
 
 	.imgCont{
