@@ -1,0 +1,14 @@
+@import "css-reset";
+@import "html";
+@import "header";
+@import "functions";
+
+.mention{
+    padding-top: 4em;
+}
+
+strong{
+    font-weight: bold;
+}
+
+@import 'footer';

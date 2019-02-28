@@ -1,0 +1,449 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Cantarell:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  height: 100%;
+}
+
+.espace {
+  height: 500px;
+}
+
+.invisible {
+  display: none;
+}
+
+p {
+  font-size: 100%;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 3.125em;
+  font-weight: 300;
+  font-variant: small-caps;
+}
+
+h2 strong {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.625em;
+  font-weight: 200;
+  margin-bottom: .8em;
+  font-variant: small-caps;
+}
+
+h3 strong {
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.875em;
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+
+@media screen and (min-width: 725px) {
+  h2 {
+    font-size: 5em;
+  }
+  h3 {
+    font-size: 3.4375em;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 4.375em;
+  background-color: #f0ede9;
+  -webkit-box-shadow: 0 1px 2px #0000003d;
+          box-shadow: 0 1px 2px #0000003d;
+}
+
+.firstSection {
+  margin-top: 4.375em;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-left: 0;
+}
+
+.logoCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 7.5em;
+  height: 100%;
+  background-color: #dead65;
+}
+
+.logoCont h1 {
+  height: 100%;
+  margin-top: .8em;
+}
+
+.bannerSvg {
+  display: none;
+  fill: #dead65;
+}
+
+.logomel {
+  height: 85%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  fill: white;
+}
+
+.menuButton button {
+  border: none;
+  font-size: 38px;
+  background-color: transparent;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  right: calc( -100vw + 7.5em);
+  top: 4.375em;
+  z-index: 1;
+  background-color: #f0ede9;
+  height: 100%;
+  text-transform: uppercase;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: calc(100vw - 7.5em);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.showNav {
+  -webkit-transform: translateX(calc( -100vw + 7.5em));
+      -ms-transform: translateX(calc( -100vw + 7.5em));
+          transform: translateX(calc( -100vw + 7.5em));
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: right;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.25em;
+  padding: 0.6em 1.25em 0.6em 0;
+}
+
+.menu .menu-separator {
+  display: none;
+}
+
+.menu .currentNav {
+  background-color: #dead65;
+  font-weight: 500;
+}
+
+.nav-accu:hover {
+  background-color: #872f39;
+}
+
+.nav-prod:hover {
+  background-color: #a69a54;
+}
+
+.nav-acti:hover {
+  background-color: #4d837d;
+}
+
+.nav-cont:hover {
+  background-color: #dead65;
+}
+
+.nav-comm:hover {
+  background-color: #d2b79d;
+}
+
+@media screen and (max-height: 350px) {
+  nav {
+    width: 10.625em;
+  }
+  .menu li a {
+    font-size: 1.125em;
+    padding: 0.66667em 0.66667em;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  nav {
+    right: -13.75em;
+    width: 13.75em;
+  }
+  .showNav {
+    -webkit-transform: translateX(-13.75em);
+        -ms-transform: translateX(-13.75em);
+            transform: translateX(-13.75em);
+  }
+}
+
+@media screen and (min-width: 801px) {
+  header {
+    height: 6.25em;
+  }
+  .header {
+    padding-left: 1.5em;
+  }
+  .firstSection {
+    margin-top: 6.25em;
+  }
+  .logoCont {
+    width: 10em;
+    position: relative;
+  }
+  .bannerSvg {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1.5625em;
+  }
+  nav {
+    position: static;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+    width: unset;
+    height: unset;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  .menuButton {
+    display: none;
+  }
+  .menu li {
+    display: inline;
+    font-weight: 400;
+  }
+  .menu li a {
+    padding: 0.3125em;
+    display: inline;
+    font-size: 0.75em;
+  }
+  .menu .menu-separator {
+    display: unset;
+  }
+  .menu .currentNav {
+    background-color: unset;
+    color: #dead65;
+  }
+  .nav-accu:hover {
+    background-color: unset;
+    color: #872f39;
+  }
+  .nav-prod:hover {
+    background-color: unset;
+    color: #a69a54;
+  }
+  .nav-acti:hover {
+    background-color: unset;
+    color: #4d837d;
+  }
+  .nav-cont:hover {
+    background-color: unset;
+    color: #dead65;
+  }
+  .nav-comm:hover {
+    background-color: unset;
+    color: #d2b79d;
+  }
+  .showNav {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+.mention {
+  padding-top: 4em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #f0ede9;
+  padding: 0.9375em 0;
+}
+
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0;
+}
+
+.textFooter {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.75em;
+}
+
+.footButton {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.footButton a {
+  color: black;
+  margin-left: 0.4375em;
+}
+
+.footButton a:hover {
+  color: #dead65;
+}
+
+@media screen and (max-width: 390px) {
+  .textFooter {
+    font-size: 0.625em;
+  }
+  .footButton {
+    font-size: 1em;
+  }
+  .footButton a {
+    margin-left: 0.625em;
+  }
+}
+/*# sourceMappingURL=mentions.css.map */
