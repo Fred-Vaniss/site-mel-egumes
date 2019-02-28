@@ -185,26 +185,26 @@ article{
 }
 
 .submit{
-	font-size: em(24);
+	font-size: em(18);
 	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
 	color: white;
 
 	border: none;
 	background-color: $theme-contact;
-	box-shadow: 0 em(4,24) 0 $theme-contact-border;
+	box-shadow: 0 em(4,18) 0 $theme-contact-border;
 
-	padding: em(15,24) em(25,24);
-	border-radius: em(5,24);
+	padding: em(12,18) em(20,18);
+	border-radius: em(5,18);
 
 	&:hover{
 		background-color: lighten($theme-contact,10%);
-		box-shadow: 0 em(4,24) 0 lighten($theme-contact-border,10%);
+		box-shadow: 0 em(4,18) 0 lighten($theme-contact-border,10%);
 	}
 
 	&:active{
 		background-color: darken($theme-contact,10%);
-		box-shadow: 0 em(4,24) 0 darken($theme-contact-border,10%); 
+		box-shadow: 0 em(4,18) 0 darken($theme-contact-border,10%); 
 	}
 }
 
@@ -253,7 +253,6 @@ article{
 		text-align: center;
 		margin-top: 1.5em;
 		span{
-			color: $theme-contact;
 			font-weight: 700;
 		}
 	}
@@ -321,7 +320,7 @@ article{
 	}
 
 	.submit{
-		padding: em(5,24) em(15,24);
+		padding: em(12,18) em(20,18);
 	}
 
 	// ==============================================================

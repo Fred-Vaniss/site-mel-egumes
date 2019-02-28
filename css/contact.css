@@ -610,28 +610,28 @@ article p {
 }
 
 .submit {
-  font-size: 1.5em;
+  font-size: 1.125em;
   font-family: 'Montserrat', sans-serif;
   font-variant: small-caps;
   color: white;
   border: none;
   background-color: #dead65;
-  -webkit-box-shadow: 0 0.16667em 0 #b67c27;
-          box-shadow: 0 0.16667em 0 #b67c27;
-  padding: 0.625em 1.04167em;
-  border-radius: 0.20833em;
+  -webkit-box-shadow: 0 0.22222em 0 #b67c27;
+          box-shadow: 0 0.22222em 0 #b67c27;
+  padding: 0.66667em 1.11111em;
+  border-radius: 0.27778em;
 }
 
 .submit:hover {
   background-color: #e7c38f;
-  -webkit-box-shadow: 0 0.16667em 0 #d5973b;
-          box-shadow: 0 0.16667em 0 #d5973b;
+  -webkit-box-shadow: 0 0.22222em 0 #d5973b;
+          box-shadow: 0 0.22222em 0 #d5973b;
 }
 
 .submit:active {
   background-color: #d5973b;
-  -webkit-box-shadow: 0 0.16667em 0 #8c5f1e;
-          box-shadow: 0 0.16667em 0 #8c5f1e;
+  -webkit-box-shadow: 0 0.22222em 0 #8c5f1e;
+          box-shadow: 0 0.22222em 0 #8c5f1e;
 }
 
 .contactMsg {
@@ -694,7 +694,6 @@ article p {
 }
 
 .contactMsg p span {
-  color: #dead65;
   font-weight: 700;
 }
 
@@ -741,7 +740,7 @@ article p {
     height: 100%;
   }
   .submit {
-    padding: 0.20833em 0.625em;
+    padding: 0.66667em 1.11111em;
   }
   .contactMsg .retrouvez p {
     margin-bottom: 1.5em;
