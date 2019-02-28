@@ -162,7 +162,26 @@
     display: none;
 }
 
+
+@media screen and (min-width: 801px){
+    .parallax-slider[src="img/nos_activites/bg1.jpg"]{
+        top: 80px;
+    }
+}   
+
+@media screen and (min-width: 1080px){
+    .parallax-slider[src="img/nos_activites/bg1.jpg"]{
+        top: 10vw;
+    }
+}
+
+
+
+
+
+
 @media screen and (min-width: 769px){
+
 	.intro{
         height: em(661);
     }
