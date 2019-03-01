@@ -7,7 +7,7 @@
 - [x] **Mobile:** Pouvoir fermer le menu burger en cliquant à l'extérieur
 - [x] Trouver un moyen d'harmoniser avec la différence du typo du titre de l'accueil avec les autres
 - [x] Uniformiser la taille des textes des bouttons
-- [ ] Mettre un boutton pour remonter en haut de la page
+- [x] Mettre un boutton pour remonter en haut de la page
 
 ## Accueil
 - [x] Interligne entre le titre et le slogan
