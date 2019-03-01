@@ -49,9 +49,17 @@ img{
 }
 
 .intro{
-	padding-top: em(100);
 	height: em(220);
 	color: white;
+
+	.wrapper{
+		position: relative;
+	} 
+	h2{
+		position: absolute;
+		bottom: .2em;
+		left: .5em;
+	}
 }
 
 .histoire{
@@ -98,10 +106,13 @@ img{
 
 @media screen and (min-width: 725px){
 	.intro{
-		padding-top: em(300);
 		height: em(500);
-
 		background-position: top; 
+
+		h2{
+			left: .3em;
+			bottom: .5em;
+		}
 	}
 
 	.imgCont{

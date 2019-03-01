@@ -460,9 +460,18 @@ img {
 }
 
 .intro {
-  padding-top: 6.25em;
   height: 13.75em;
   color: white;
+}
+
+.intro .wrapper {
+  position: relative;
+}
+
+.intro h2 {
+  position: absolute;
+  bottom: .2em;
+  left: .5em;
 }
 
 .histoire {
@@ -499,9 +508,12 @@ img {
 
 @media screen and (min-width: 725px) {
   .intro {
-    padding-top: 18.75em;
     height: 31.25em;
     background-position: top;
+  }
+  .intro h2 {
+    left: .3em;
+    bottom: .5em;
   }
   .imgCont {
     margin-top: 0;
