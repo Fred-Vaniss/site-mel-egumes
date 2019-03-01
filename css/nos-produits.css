@@ -473,20 +473,23 @@ nav {
   font-size: 1.25em;
   font-variant: small-caps;
   margin: 0.75em;
+  position: relative;
+  top: 1em;
 }
 
 .introSuite img {
   width: 10em;
   height: 10em;
   z-index: 10;
+  position: relative;
+  top: 2.5em;
 }
 
 .paniers {
   z-index: -1;
-  position: relative;
-  top: -2.5em;
   background-color: #f9f7f4;
   padding-top: 2.5em;
+  padding-bottom: 1.25em;
 }
 
 .paniers .panier {
@@ -977,12 +980,14 @@ nav {
             justify-content: center;
   }
   .introSuite .wrapper p {
+    position: static;
     font-size: 1.875em;
     text-align: left;
   }
   .introSuite .wrapper img {
     width: 25em;
     height: 25em;
+    position: static;
   }
   .formules .formuCont {
     display: -webkit-box;

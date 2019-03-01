@@ -58,10 +58,16 @@
         font-size: em(20);
         font-variant: small-caps;
         margin: em(15,20);
+
+        position: relative;
+        top: 1em;
     }
     img{
         width: em(160); height: em(160);
         z-index: 10;
+
+        position: relative;
+        top: 2.5em;
     }
 }
 
@@ -71,11 +77,10 @@
 
 .paniers{
     z-index: -1;
-    position: relative;
-    top: em(-40);
 
     background-color: #f9f7f4;
     padding-top: em(40);
+    padding-bottom: em(20);
 
     .panier{
         margin-bottom: em(50);
@@ -541,11 +546,13 @@
             justify-content: center;
         }
         p{
+            position: static;
             font-size: em(30);
             text-align: left;
         }
         img{
             width: em(400); height: em(400);
+            position: static;
         }
     }
 
@@ -637,7 +644,7 @@
         .wrapper{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-column-gap: 1em;
+            grid-column-gap: 1em;  
         }
 
         .panier{
