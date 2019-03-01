@@ -37,6 +37,46 @@ body{
     // border: 1px solid #000;
 }
 
+#backToTop{
+    position: fixed;
+    bottom: 1.4em;
+    right: -3.7em;
+    font-size: 2.2em;
+    z-index: 100;
+
+    height: 1.5em;
+    width: 1.5em;
+
+    border-radius: 1em;
+    border: none;
+    
+    color: white;
+    background-color: $theme-contact;
+
+    transition: transform .2s;
+
+    box-shadow: 0 0 em(1) #000;
+
+    a{
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        text-align: center;
+        
+        padding-top: .25em;
+
+        color: white;
+    }
+}
+
+.btt-display{
+    transform: translateX(-4em);
+    transition: transform .2s;
+}
+
+
+
 .espace{
     height: 500px;
 }
@@ -88,5 +128,9 @@ h4{
     
     h3{
         font-size: em(55); 
+    }
+
+    #backToTop{
+        display: none;
     }
 }

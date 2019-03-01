@@ -27,3 +27,15 @@ function outsideClose(event){
         menuDisp = false;
     }
 }
+
+let bttButton = document.getElementById("backToTop")
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        bttButton.classList.add("btt-display");
+      } else {
+        bttButton.classList.remove("btt-display");
+    }
+}
