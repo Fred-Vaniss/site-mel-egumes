@@ -193,6 +193,9 @@ article{
 	border: none;
 	background-color: $theme-contact;
 	box-shadow: 0 em(4,18) 0 $theme-contact-border;
+	transition: background-color 0.2s, box-shadow 0.2s;
+
+	cursor: pointer;
 
 	padding: em(12,18) em(20,18);
 	border-radius: em(5,18);

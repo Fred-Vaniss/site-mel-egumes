@@ -618,6 +618,12 @@ article p {
   background-color: #dead65;
   -webkit-box-shadow: 0 0.22222em 0 #b67c27;
           box-shadow: 0 0.22222em 0 #b67c27;
+  -webkit-transition: background-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: background-color 0.2s, -webkit-box-shadow 0.2s;
+  -o-transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  cursor: pointer;
   padding: 0.66667em 1.11111em;
   border-radius: 0.27778em;
 }

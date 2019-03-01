@@ -442,6 +442,17 @@ nav {
   position: relative;
   margin-bottom: 1.25em;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.galSquare:hover {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .galCont {
@@ -515,6 +526,11 @@ nav {
           box-shadow: 0 0.22222em 0 #274340;
   padding: 0.66667em 1.11111em;
   border-radius: 0.27778em;
+  -webkit-transition: background-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: background-color 0.2s, -webkit-box-shadow 0.2s;
+  -o-transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 
 .contactRdv:hover {
@@ -552,7 +568,6 @@ nav {
   .texteprojet {
     width: 32em;
     margin: 0 auto;
-    text-align: justify;
   }
   .texteprojet h2, .projet h2 {
     font-weight: 100;

@@ -76,6 +76,11 @@
     margin-bottom: em(20);
 
     cursor:pointer;
+
+    transition: transform 0.2s;
+    &:hover{
+        transform: scale(0.95);
+    }
 }
 
 .galCont{
@@ -146,6 +151,7 @@
     padding: em(12,18) em(20,18);
     border-radius: em(5,18);
 
+    transition: background-color 0.2s, box-shadow 0.2s;
 
     &:hover{
         background-color: lighten($theme-activites,10%);
@@ -189,7 +195,6 @@
     .texteprojet{
         width: em(512);
         margin: 0 auto;
-        text-align: justify;
     }
 
     .texteprojet, .projet{

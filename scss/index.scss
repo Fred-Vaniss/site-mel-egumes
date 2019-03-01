@@ -226,7 +226,7 @@ strong{
 .commPanier, .plusInfo{
 	font-size: em(24);
 	font-weight: 300;
-	text-transform: uppercase;
+	font-variant: small-caps;
 	color: white;
 
 
@@ -242,6 +242,8 @@ strong{
 
 	background-color: $theme-accueil;
 	box-shadow: 0 em(4,24) 0 $theme-accueil-border;
+	transition: background-color 0.2s, box-shadow 0.2s;
+
 
 	&:hover{
 		background-color: lighten($theme-accueil, 10%);

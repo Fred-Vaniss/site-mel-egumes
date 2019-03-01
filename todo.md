@@ -7,6 +7,7 @@
 - [x] **Mobile:** Pouvoir fermer le menu burger en cliquant à l'extérieur
 - [x] Trouver un moyen d'harmoniser avec la différence du typo du titre de l'accueil avec les autres
 - [x] Uniformiser la taille des textes des bouttons
+- [ ] Mettre un boutton pour remonter en haut de la page
 
 ## Accueil
 - [x] Interligne entre le titre et le slogan
@@ -19,7 +20,7 @@
 - [x] **Mobile:** Vérifier taille du texte de citation 
 - [x] Ajuster les positions des feuilles
 - [x] Rendre la flèche cliquable
-- [ ] Faute d'orthographe paragraphe permaculture
+- [x] Faute d'orthographe paragraphe permaculture
 
 ## Nos Produits
 - [x] Ajuster les positions et feuilles
@@ -34,18 +35,18 @@
 - [x] **Mobile:** Espace blanc entre les produits et les images
 - [x] **Footer:** couleur du logo facebook et instagram
 - [x] Ajouter d'autres légumes aux listes
-- [ ] Changer l'ordre des paniers
+- [x] Changer l'ordre des paniers
 
 ## Nos activités
 - [x] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
 - [x] Le boutton "contactez nous" ne s'affiche pas correctement sur certaines machines
-- [ ] Mettre un lien directement sur le formulaire
+- [ ] ~~Mettre un lien directement sur le formulaire~~
   - [x] **⚠ Demander à Thomas son avis concernant cette modification le mercredi ⚠**
 - [x] Descendre un peu le footer
 - [x] **Footer:** couleur du logo facebook et instagram
 - [x] Résoudre le soucis de lisibilité au titre
-- [ ] Retirer justification des paragraphes
-- [ ] Animation hover pour la gallerie photo
+- [x] Retirer justification des paragraphes
+- [x] Animation hover pour la gallerie photo
 
 
 ## Communauté
@@ -65,6 +66,7 @@
 - [x] Diminuer la taille de Facebook et Instagram
 - [x] Retirer l'espace blanc en bas
 - [x] **Footer:** couleur du logo facebook et instagram
+- [x] Mettre à jour le numéro de téléphone
 
 
 ## Footer

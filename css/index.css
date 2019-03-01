@@ -586,7 +586,7 @@ strong {
 .commPanier, .plusInfo {
   font-size: 1.5em;
   font-weight: 300;
-  text-transform: uppercase;
+  font-variant: small-caps;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -598,6 +598,11 @@ strong {
   background-color: #872f39;
   -webkit-box-shadow: 0 0.16667em 0 #3b1519;
           box-shadow: 0 0.16667em 0 #3b1519;
+  -webkit-transition: background-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: background-color 0.2s, -webkit-box-shadow 0.2s;
+  -o-transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 
 .commPanier:hover, .plusInfo:hover {
