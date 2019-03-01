@@ -19,6 +19,7 @@
 - [x] **Mobile:** Vérifier taille du texte de citation 
 - [x] Ajuster les positions des feuilles
 - [x] Rendre la flèche cliquable
+- [ ] Faute d'orthographe paragraphe permaculture
 
 ## Nos Produits
 - [x] Ajuster les positions et feuilles
@@ -33,6 +34,7 @@
 - [x] **Mobile:** Espace blanc entre les produits et les images
 - [x] **Footer:** couleur du logo facebook et instagram
 - [x] Ajouter d'autres légumes aux listes
+- [ ] Changer l'ordre des paniers
 
 ## Nos activités
 - [x] La gallerie ne s'affiche pas sur deux lignes et trois colonnes sur certaines machines
@@ -42,6 +44,8 @@
 - [x] Descendre un peu le footer
 - [x] **Footer:** couleur du logo facebook et instagram
 - [x] Résoudre le soucis de lisibilité au titre
+- [ ] Retirer justification des paragraphes
+- [ ] Animation hover pour la gallerie photo
 
 
 ## Communauté
