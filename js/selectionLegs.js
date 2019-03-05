@@ -1,9 +1,10 @@
-let btns = $$(".selSaison")
+let btns = $$(".selSaison");
+let html = $("html")[0];
 
-log(btns)
+log(btns);
 
-let openedTabId = null
-let openedTabCl = null
+let openedTabId = null;
+let openedTabCl = null;
 
 function showSeason (target){
     let id = `#${target}` ;
@@ -12,6 +13,7 @@ function showSeason (target){
     if (id == openedTabId) {
         $(id).slideUp();
         $(openedTabCl+' .hoverCont')[0].classList.remove("selected");
+        html.classList.remove("lock-html");
         openedTabId = null;
         openedTabCl = null;
         return;
@@ -19,11 +21,13 @@ function showSeason (target){
 
     $(id).slideDown();
     $(cl+' .hoverCont')[0].classList.add("selected");
+    html.classList.add("lock-html");
 
 
     if (openedTabId != null){
         $(openedTabId).slideUp();
         $(openedTabCl+' .hoverCont')[0].classList.remove("selected");
+        html.classList.remove("lock-html");
     }
 
     openedTabId = id;

@@ -75,6 +75,10 @@ body {
   overflow-x: hidden;
 }
 
+.lock-html {
+  overflow-y: hidden;
+}
+
 .wrapper {
   max-width: 60em;
   margin: 0 auto;
@@ -87,7 +91,7 @@ body {
   bottom: 1.4em;
   right: -3.7em;
   font-size: 2.2em;
-  z-index: 100;
+  z-index: 1;
   height: 1.5em;
   width: 1.5em;
   border-radius: 1em;
@@ -173,6 +177,9 @@ h4 {
   }
   #backToTop {
     display: none;
+  }
+  .lock-html {
+    overflow-y: unset;
   }
 }
 
@@ -835,6 +842,7 @@ nav {
   height: calc(100vh - 4.375em);
   width: 100%;
   overflow-y: scroll;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.9);
   padding-bottom: 8em;
   display: none;
