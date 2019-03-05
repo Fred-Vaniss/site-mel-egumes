@@ -134,11 +134,13 @@ h4{
         font-size: em(55); 
     }
 
-    #backToTop{
-        display: none;
-    }
-
     .lock-html{
         overflow-y: unset;
+    }
+}
+
+@media screen and (min-width: 801px){
+    #backToTop{
+        display: none;
     }
 }

@@ -175,11 +175,14 @@ h4 {
   h3 {
     font-size: 3.4375em;
   }
-  #backToTop {
-    display: none;
-  }
   .lock-html {
     overflow-y: unset;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #backToTop {
+    display: none;
   }
 }
 
