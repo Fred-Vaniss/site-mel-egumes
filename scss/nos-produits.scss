@@ -354,8 +354,13 @@
 .hoverCont{
     position: absolute;
     bottom: 0; left: 0;
-    height: em(40); 
     width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s;
+
 
     background-color: #ffffffc2;
 
@@ -367,13 +372,22 @@
     font-variant: small-caps;
     font-weight: 300;
 
+    .imgCont{
+        width: 60%; height: 60%;
+    }
+
     p{
         margin-bottom: 0;
     } 
+}
+
+.mobileMode{
+    height: em(40); 
+    visibility: visible;
+    opacity: 1;
 
     .imgCont{
         display: none;
-        width: em(50); height: em(50);
     }
 }
 
@@ -668,18 +682,7 @@
     }
 
     .hoverCont{
-        height: 100%;
-
         font-size: em(22);
-
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility .5s, opacity .5s;
-
-        .imgCont{
-            display: unset;
-            width: em(100,22); height: em(100,22);
-        }
     }
 
     .selected{

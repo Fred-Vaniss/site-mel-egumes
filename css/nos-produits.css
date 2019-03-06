@@ -788,8 +788,13 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2.5em;
   width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility .5s, opacity .5s;
+  -o-transition: visibility .5s, opacity .5s;
+  transition: visibility .5s, opacity .5s;
   background-color: #ffffffc2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,14 +813,23 @@ nav {
   font-weight: 300;
 }
 
+.hoverCont .imgCont {
+  width: 60%;
+  height: 60%;
+}
+
 .hoverCont p {
   margin-bottom: 0;
 }
 
-.hoverCont .imgCont {
+.mobileMode {
+  height: 2.5em;
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobileMode .imgCont {
   display: none;
-  width: 3.125em;
-  height: 3.125em;
 }
 
 .aut {
@@ -1092,18 +1106,7 @@ nav {
     cursor: pointer;
   }
   .hoverCont {
-    height: 100%;
     font-size: 1.375em;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: visibility .5s, opacity .5s;
-    -o-transition: visibility .5s, opacity .5s;
-    transition: visibility .5s, opacity .5s;
-  }
-  .hoverCont .imgCont {
-    display: unset;
-    width: 4.54545em;
-    height: 4.54545em;
   }
   .selected {
     visibility: visible;

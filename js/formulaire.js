@@ -6,7 +6,6 @@ let $$ = document.querySelectorAll.bind(document);
 
 let chkbxField = $$("input[type='checkbox']");
 let textArea = $("#msg");
-log(textArea)
 
 
 for (let i = 0; i < chkbxField.length; i++) {
