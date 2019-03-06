@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 801px){
     .menu{
         .currentNav{
 			background-color: unset;
@@ -653,7 +653,7 @@
             // max-width: em(375);
 
             display: grid;
-            grid-template-rows: auto em(175) auto auto;
+            grid-template-rows: auto em(200) auto auto;
         }
     }
 
