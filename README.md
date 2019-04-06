@@ -10,4 +10,4 @@ Ce fut une expérience très intéressante, j'ai pu appliquer mes compétences e
 ## L'équipe
 - **Frédérick Van Isschot (moi)**: développeur web
 - **Flavia Beninato**: pictogrammes, recherche et mise en page
-- **Nathalie Dupire**: dessinatrice et mise. en page 
+- **Nathalie Dupire**: dessinatrice et mise en page 
